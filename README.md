@@ -12,3 +12,8 @@ My smiley shaved face on HolyJS website:
 https://holyjs-moscow.ru/en/talks/4lfrt7et7wwmuaaiequwcy/
 
 HolyJS youtube channel: https://www.youtube.com/channel/UC2Jwo4Q0s-ucjGseHP8XUSQ
+
+
+# Preparations
+
+systemctl start mongodb
