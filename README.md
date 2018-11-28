@@ -16,6 +16,13 @@ HolyJS youtube channel: https://www.youtube.com/channel/UC2Jwo4Q0s-ucjGseHP8XUSQ
 
 # Preparations
 
+**Install Dependencies**
+
+```bash
+$ npm i
+```
+
+**Start [MongoDB](https://www.mongodb.com/)**
 ```bash
 # systemctl start mongodb
 ```
