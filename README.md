@@ -16,4 +16,6 @@ HolyJS youtube channel: https://www.youtube.com/channel/UC2Jwo4Q0s-ucjGseHP8XUSQ
 
 # Preparations
 
-systemctl start mongodb
+```bash
+# systemctl start mongodb
+```
