@@ -1,0 +1,93 @@
+body {
+	background : #070707;
+}
+
+body img {
+	border: 1px solid gray !important;
+	background : #070707 !important;
+}
+
+div.uCircus img {
+	border: 0px solid gray !important;
+}
+
+#asynchronous-zero {
+	font-size: 3em;
+}
+
+#holyjs-logo {
+	position: absolute;
+	top : -120px;
+	left: 50px;
+	height: 170px !important;
+	border: 0px !important;;
+}
+
+#ukit-group-logo {
+	position: absolute;
+	top : -50px;
+	right: 100px;
+	height: 50px;
+	border: 0px !important;;
+}
+
+h1.borderline {
+	position: absolute;
+	right: -0.23em;
+	top: -0.10em;
+	font-size: 1700%;
+	color:rgb(67, 45, 190);
+}
+
+h1.borderline2 {
+	position: absolute;
+	right: -0.15em;
+	top: 0.20em;
+	font-size: 1700%;
+	color:rgb(67, 45, 190);
+}
+
+.slide-number-b {
+	background-color: #070707;
+}
+.slide-number-delimiter, .slide-number-b {
+	display: none
+}
+
+code {
+	padding: 22pt 0 20pt 0 !important;
+}
+
+.navigate-up, .navigate-down {
+	display: none
+}
+
+.centered {
+	text-align:center
+}
+
+img.noborder {
+	border: 0 !important;
+	box-shadow: 0 0 0 0 !important;
+}
+
+section {
+	margin-top: 20px !important;
+	vertical-align: top;
+}
+
+@media print {
+	body.print-pdf {
+		background-color: black !important;
+		/* transform: scale(.7); */
+	}
+	
+	body.print-pdf section {
+		/* font-size: .7em !important; */
+	}
+	
+	body.print-pdf #chalkboard {
+		display: none;
+	}
+}
+

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="358 177 1002 405" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="360" y="180" width="168.291" height="400"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="360" y="180" width="168.291" height="400"/>
+    <text font-size="22.5774" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="444.146" y="217.006">
+      <tspan x="444.146" y="217.006">Entrypoints</tspan>
+      <tspan x="444.146" y="245.228"></tspan>
+      <tspan x="444.146" y="273.45"></tspan>
+      <tspan x="444.146" y="301.672"></tspan>
+      <tspan x="444.146" y="329.894"></tspan>
+      <tspan x="444.146" y="358.117"></tspan>
+      <tspan x="444.146" y="386.339"></tspan>
+      <tspan x="444.146" y="414.561"></tspan>
+      <tspan x="444.146" y="442.783"></tspan>
+      <tspan x="444.146" y="471.006"></tspan>
+      <tspan x="444.146" y="499.228"></tspan>
+      <tspan x="444.146" y="527.45"></tspan>
+      <tspan x="444.146" y="555.672"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #000099" cx="440.567" cy="302.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="440.567" cy="302.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="440.567" y="305.634">
+      <tspan x="440.567" y="305.634"></tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="2">
+    <ellipse style="fill: #000099" cx="440.567" cy="302.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="440.567" cy="302.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="31" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="440.567" y="305.634">
+      <tspan x="440.567" y="311">?</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="440.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="440.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="440.567" y="405.634">
+      <tspan x="440.567" y="405.634"></tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="3">
+    <ellipse style="fill: #ff0000" cx="440.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="440.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="31" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="440.567" y="405.634">
+      <tspan x="440.567" y="411">?</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #000099" cx="440.567" cy="502.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="440.567" cy="502.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="440.567" y="505.634">
+      <tspan x="440.567" y="505.634"></tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="4">
+    <ellipse style="fill: #000099" cx="440.567" cy="502.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="440.567" cy="502.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="31" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="440.567" y="505.634">
+      <tspan x="440.567" y="511">?</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="562" y="178.919" width="601.973" height="400.923"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="562" y="178.919" width="601.973" height="400.923"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="862.986" y="216.386">
+      <tspan x="862.986" y="216.386">Logic Flow : Context</tspan>
+      <tspan x="862.986" y="244.608"></tspan>
+      <tspan x="862.986" y="272.83"></tspan>
+      <tspan x="862.986" y="301.052"></tspan>
+      <tspan x="862.986" y="329.275"></tspan>
+      <tspan x="862.986" y="357.497"></tspan>
+      <tspan x="862.986" y="385.719"></tspan>
+      <tspan x="862.986" y="413.941"></tspan>
+      <tspan x="862.986" y="442.164"></tspan>
+      <tspan x="862.986" y="470.386"></tspan>
+      <tspan x="862.986" y="498.608"></tspan>
+      <tspan x="862.986" y="526.83"></tspan>
+      <tspan x="862.986" y="555.052"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="640.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="640.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="640.567" y="405.634">
+      <tspan x="640.567" y="405.634"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1191.24" y="180" width="168.291" height="400.923"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1191.24" y="180" width="168.291" height="400.923"/>
+    <text font-size="22.5774" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1275.38" y="217.467">
+      <tspan x="1275.38" y="217.467">Outputs</tspan>
+      <tspan x="1275.38" y="245.689"></tspan>
+      <tspan x="1275.38" y="273.911"></tspan>
+      <tspan x="1275.38" y="302.134"></tspan>
+      <tspan x="1275.38" y="330.356"></tspan>
+      <tspan x="1275.38" y="358.578"></tspan>
+      <tspan x="1275.38" y="386.8"></tspan>
+      <tspan x="1275.38" y="415.022"></tspan>
+      <tspan x="1275.38" y="443.245"></tspan>
+      <tspan x="1275.38" y="471.467"></tspan>
+      <tspan x="1275.38" y="499.689"></tspan>
+      <tspan x="1275.38" y="527.911"></tspan>
+      <tspan x="1275.38" y="556.134"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: black" cx="1278.29" cy="397.829" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1278.29" cy="397.829" rx="40.5673" ry="42.0336"/>
+    <text font-size="31" style="fill: white;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="1280.29" y="401.429">
+      <tspan x="1278.29" y="407.429">?</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #000099" cx="1282.11" cy="508.518" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1282.11" cy="508.518" rx="40.5673" ry="42.0336"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1280.29" y="512.118">
+      <tspan x="1282.11" y="512.118"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #000099" cx="1280.21" cy="288.518" rx="40.5673" ry="42.0336"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1280.21" cy="288.518" rx="40.5673" ry="42.0336"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1280.29" y="292.118">
+      <tspan x="1280.21" y="292.118"></tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="500,390 540,390 540,380 580,400 540,420 540,410 500,410 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="500,390 540,390 540,380 580,400 540,420 540,410 500,410 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="500,390 540,390 540,380 580,400 540,420 540,410 500,410 "/>
+  </g>
+  <g>
+    <g>
+      <g>
+        <ellipse style="fill: black" cx="780.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="780.567" cy="402.034" rx="40.5673" ry="42.0336"/>
+        <text font-size="30" style="fill: white;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="780.567" y="405.634">
+          <tspan x="780.567" y="412">X</tspan>
+        </text>
+      </g>
+      <g>
+        <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="682.138" y1="402.034" x2="726.76" y2="402.034"/>
+        <polygon style="fill: #ffffff" points="726.76,407.034 736.76,402.034 726.76,397.034 "/>
+        <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="726.76,407.034 736.76,402.034 726.76,397.034 "/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <ellipse style="fill: #ff0000" cx="780.567" cy="502.034" rx="40.5673" ry="42.0336"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="780.567" cy="502.034" rx="40.5673" ry="42.0336"/>
+        <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="780.567" y="505.634">
+          <tspan x="780.567" y="505.634"></tspan>
+        </text>
+      </g>
+      <g>
+        <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="674.764" y1="426.46" x2="736.414" y2="470.495"/>
+        <polygon style="fill: #ffffff" points="733.507,474.564 744.551,476.308 739.32,466.427 "/>
+        <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="733.507,474.564 744.551,476.308 739.32,466.427 "/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <ellipse style="fill: #ff0000" cx="780.567" cy="302.034" rx="40.5673" ry="42.0336"/>
+        <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="780.567" cy="302.034" rx="40.5673" ry="42.0336"/>
+        <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="780.567" y="305.634">
+          <tspan x="780.567" y="305.634"></tspan>
+        </text>
+      </g>
+      <g>
+        <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="674.764" y1="377.607" x2="736.414" y2="333.572"/>
+        <polygon style="fill: #ffffff" points="739.32,337.641 744.551,327.76 733.507,329.503 "/>
+        <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="739.32,337.641 744.551,327.76 733.507,329.503 "/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="822.109" y1="402.034" x2="881.337" y2="402.034"/>
+      <polygon style="fill: #ffffff" points="881.337,407.034 891.337,402.034 881.337,397.034 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="881.337,407.034 891.337,402.034 881.337,397.034 "/>
+    </g>
+    <g>
+      <ellipse style="fill: black" cx="935.115" cy="402.034" rx="40.5673" ry="42.0336"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="935.115" cy="402.034" rx="40.5673" ry="42.0336"/>
+      <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="935.115" y="405.634">
+        <tspan x="31" y="405.634">X</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="815.818" y1="324.842" x2="889.591" y2="372.578"/>
+      <polygon style="fill: #ffffff" points="886.875,376.775 897.987,378.01 892.307,368.38 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="886.875,376.775 897.987,378.01 892.307,368.38 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="815.818" y1="479.225" x2="889.591" y2="431.49"/>
+      <polygon style="fill: #ffffff" points="892.307,435.688 897.987,426.057 886.875,427.292 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="892.307,435.688 897.987,426.057 886.875,427.292 "/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="976.682" y1="402.034" x2="1029.85" y2="402.034"/>
+      <polygon style="fill: #ffffff" points="1029.85,407.034 1039.85,402.034 1029.85,397.034 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1029.85,407.034 1039.85,402.034 1029.85,397.034 "/>
+    </g>
+    <g>
+      <ellipse style="fill: black" cx="1083.65" cy="402.034" rx="40.5673" ry="42.0336"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1083.65" cy="402.034" rx="40.5673" ry="42.0336"/>
+      <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1083.65" y="405.634">
+        <tspan x="1083.65" y="405.634"></tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff" points="1140,390 1180,390 1180,380 1220,400 1180,420 1180,410 1140,410 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1140,390 1180,390 1180,380 1220,400 1180,420 1180,410 1140,410 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1140,390 1180,390 1180,380 1220,400 1180,420 1180,410 1140,410 "/>
+    </g>
+  </g>
+  <g class="fragment" data-fragment-index="7">
+    <text font-size="300" style="fill: black;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="1280.29" y="401.429">
+      <tspan x="1000" y="451">?</tspan>
+    </text>
+  </g>
+</svg>

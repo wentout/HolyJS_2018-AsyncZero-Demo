@@ -1,0 +1,45 @@
+{
+	"name": "aynchronous-zero",
+	"displayName": "aynchronous-zero-holy",
+	"description": "holyjs Moscow 2018 aynchronous zero presentation",
+	"version": "1.0.0",
+	"publisher": "went.out",
+	"author": "went.out@gmail.com",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wentout/aynchronous-zero"
+	},
+	"engines": {
+		"nodejs": "^10.12.0"
+	},
+	"keywords": [
+		"markdown",
+		"reveal js",
+		"slide",
+		"presenttion",
+		"async_hooks"
+	],
+	"main": "./app.js",
+	"dependencies": {
+		"async": "^2.5.0",
+		"cli-color": "^1.4.0",
+		"cli-highlight": "^2.0.0",
+		"context-dive": "^2.2.5",
+		"express": "^4.16.2",
+		"fs-extra": "^5.0.0",
+		"gray-matter": "^3.1.1",
+		"highlight.js": "^9.12.0",
+		"lodash": "^4.17.4",
+		"moment": "^2.18.1",
+		"mongoose": "^5.3.12",
+		"repl-sockets": "^1.0.5",
+		"reveal.js": "^3.6.0",
+		"serve-favicon": "^2.4.3"
+	},
+	"devDependencies": {
+		"jshint": "^2.9.5",
+		"shelljs": "^0.7.8",
+		"supervisor": "^0.12.0"
+	}
+}

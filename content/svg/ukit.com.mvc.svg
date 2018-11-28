@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="86 283 1111 617" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="87.2058" y="284.922" width="1108.69" height="614.667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="87.2058" y="284.922" width="1108.69" height="614.667"/>
+    <text font-size="39.5111" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="641.552" y="323.372">
+      <tspan x="641.552" y="323.372">ukit.com Abstract Architecture</tspan>
+      <tspan x="641.552" y="372.761"></tspan>
+      <tspan x="641.552" y="422.15"></tspan>
+      <tspan x="641.552" y="471.539"></tspan>
+      <tspan x="641.552" y="520.928"></tspan>
+      <tspan x="641.552" y="570.316"></tspan>
+      <tspan x="641.552" y="619.705"></tspan>
+      <tspan x="641.552" y="669.094"></tspan>
+      <tspan x="641.552" y="718.483"></tspan>
+      <tspan x="641.552" y="767.872"></tspan>
+      <tspan x="641.552" y="817.261"></tspan>
+      <tspan x="641.552" y="866.65"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="755.716" y="378.212" width="418.95" height="490.17"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="755.716" y="378.212" width="418.95" height="490.17"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="1145.67" y="435.131">
+      <tspan x="1145.67" y="435.131">L</tspan>
+      <tspan x="1145.67" y="477.464">I</tspan>
+      <tspan x="1145.67" y="519.797">F</tspan>
+      <tspan x="1145.67" y="562.13">E</tspan>
+      <tspan x="1145.67" y="604.464"></tspan>
+      <tspan x="1145.67" y="646.797">C</tspan>
+      <tspan x="1145.67" y="689.13">Y</tspan>
+      <tspan x="1145.67" y="731.464">C</tspan>
+      <tspan x="1145.67" y="773.797">L</tspan>
+      <tspan x="1145.67" y="816.13">E</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="122.205" y="368.212" width="482.674" height="502.61"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="122.205" y="368.212" width="482.674" height="502.61"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="363.542" y="409.811">
+      <tspan x="363.542" y="409.811">Mongoose.js (Data Layer)</tspan>
+      <tspan x="363.542" y="445.089"></tspan>
+      <tspan x="363.542" y="480.367"></tspan>
+      <tspan x="363.542" y="515.645"></tspan>
+      <tspan x="363.542" y="550.923"></tspan>
+      <tspan x="363.542" y="586.2"></tspan>
+      <tspan x="363.542" y="621.478"></tspan>
+      <tspan x="363.542" y="656.756"></tspan>
+      <tspan x="363.542" y="692.034"></tspan>
+      <tspan x="363.542" y="727.311"></tspan>
+      <tspan x="363.542" y="762.589"></tspan>
+      <tspan x="363.542" y="797.867"></tspan>
+      <tspan x="363.542" y="833.145"></tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="157.618" y="619.97" width="199.068" height="74.6945"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="157.618" y="619.97" width="199.068" height="74.6945"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="257.151" y="658.906">
+        <tspan x="257.151" y="658.906">File System</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="154.494" y="728.528" width="199.389" height="75.1466"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="154.494" y="728.528" width="199.389" height="75.1466"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="254.189" y="767.69">
+        <tspan x="254.189" y="767.69">Foregn APIs</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 160.649 482.062 C 198.649,465.187 217.649,459.562 255.649,459.562 C 293.649,459.562 312.649,465.187 350.649,482.062 L 350.649,572.062 C 312.649,588.937 293.649,594.562 255.649,594.562 C 217.649,594.562 198.649,588.937 160.649,572.062 L 160.649,482.062z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 160.649 482.062 C 198.649,465.187 217.649,459.562 255.649,459.562 C 293.649,459.562 312.649,465.187 350.649,482.062 L 350.649,572.062 C 312.649,588.937 293.649,594.562 255.649,594.562 C 217.649,594.562 198.649,588.937 160.649,572.062 L 160.649,482.062"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 160.649 482.062 C 198.649,498.937 217.649,504.562 255.649,504.562 C 293.649,504.562 312.649,498.937 350.649,482.062"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="255.649" y="541.134">
+        <tspan x="255.649" y="541.134">Mongo DB</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="393.202" y="445.828" width="344.996" height="381.381"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="393.202" y="445.828" width="344.996" height="381.381"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="565.7" y="479.729">
+      <tspan x="565.7" y="479.729">Interface</tspan>
+      <tspan x="565.7" y="515.007"></tspan>
+      <tspan x="565.7" y="550.285"></tspan>
+      <tspan x="565.7" y="585.563"></tspan>
+      <tspan x="565.7" y="620.84"></tspan>
+      <tspan x="565.7" y="656.118"></tspan>
+      <tspan x="565.7" y="691.396"></tspan>
+      <tspan x="565.7" y="726.674"></tspan>
+      <tspan x="565.7" y="761.952"></tspan>
+      <tspan x="565.7" y="797.229"></tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <path style="fill: #ffffff" d="M 860.902 637.21 L 1048.9,637.21 C 1074.86,637.21 1095.9,658.476 1095.9,684.71 C 1095.9,710.943 1074.86,732.209 1048.9,732.209 L 860.902,732.209 C 834.944,732.209 813.902,710.943 813.902,684.71 C 813.902,658.476 834.944,637.21 860.902,637.21z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 860.902 637.21 L 1048.9,637.21 C 1074.86,637.21 1095.9,658.476 1095.9,684.71 C 1095.9,710.943 1074.86,732.209 1048.9,732.209 L 860.902,732.209 C 834.944,732.209 813.902,710.943 813.902,684.71 C 813.902,658.476 834.944,637.21 860.902,637.21"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="954.901" y="687.532">
+        <tspan x="954.901" y="687.532">MQ Brokers</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 860.102 524.81 L 1048.1,524.81 C 1074.06,524.81 1095.1,546.076 1095.1,572.31 C 1095.1,598.543 1074.06,619.809 1048.1,619.809 L 860.102,619.809 C 834.144,619.809 813.102,598.543 813.102,572.31 C 813.102,546.076 834.144,524.81 860.102,524.81z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 860.102 524.81 L 1048.1,524.81 C 1074.06,524.81 1095.1,546.076 1095.1,572.31 C 1095.1,598.543 1074.06,619.809 1048.1,619.809 L 860.102,619.809 C 834.144,619.809 813.102,598.543 813.102,572.31 C 813.102,546.076 834.144,524.81 860.102,524.81"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="954.101" y="575.132">
+        <tspan x="954.101" y="575.132">CRON bin</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 866.102 748.808 L 1054.1,748.808 C 1080.06,748.808 1101.1,770.074 1101.1,796.308 C 1101.1,822.541 1080.06,843.807 1054.1,843.807 L 866.102,843.807 C 840.144,843.807 819.102,822.541 819.102,796.308 C 819.102,770.074 840.144,748.808 866.102,748.808z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 866.102 748.808 L 1054.1,748.808 C 1080.06,748.808 1101.1,770.074 1101.1,796.308 C 1101.1,822.541 1080.06,843.807 1054.1,843.807 L 866.102,843.807 C 840.144,843.807 819.102,822.541 819.102,796.308 C 819.102,770.074 840.144,748.808 866.102,748.808"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="960.101" y="799.13">
+        <tspan x="960.101" y="799.13">Queue System</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 860.102 411.812 L 1048.1,411.812 C 1074.06,411.812 1095.1,433.078 1095.1,459.312 C 1095.1,485.545 1074.06,506.811 1048.1,506.811 L 860.102,506.811 C 834.144,506.811 813.102,485.545 813.102,459.312 C 813.102,433.078 834.144,411.812 860.102,411.812z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 860.102 411.812 L 1048.1,411.812 C 1074.06,411.812 1095.1,433.078 1095.1,459.312 C 1095.1,485.545 1074.06,506.811 1048.1,506.811 L 860.102,506.811 C 834.144,506.811 813.102,485.545 813.102,459.312 C 813.102,433.078 834.144,411.812 860.102,411.812"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="954.101" y="462.134">
+        <tspan x="954.101" y="462.134">HTTP Routes</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="770.938,621.181 725.189,621.181 725.189,609.744 702.314,632.619 725.189,655.494 725.189,644.056 770.938,644.056 770.938,655.494 793.813,632.619 770.938,609.744 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="770.938,621.181 725.189,621.181 725.189,609.744 702.314,632.619 725.189,655.494 725.189,644.056 770.938,644.056 770.938,655.494 793.813,632.619 770.938,609.744 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="770.938,621.181 725.189,621.181 725.189,609.744 702.314,632.619 725.189,655.494 725.189,644.056 770.938,644.056 770.938,655.494 793.813,632.619 770.938,609.744 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="771.138,511.661 725.389,511.661 725.389,500.224 702.514,523.099 725.389,545.974 725.389,534.536 771.138,534.536 771.138,545.974 794.013,523.099 771.138,500.224 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="771.138,511.661 725.389,511.661 725.389,500.224 702.514,523.099 725.389,545.974 725.389,534.536 771.138,534.536 771.138,545.974 794.013,523.099 771.138,500.224 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="771.138,511.661 725.389,511.661 725.389,500.224 702.514,523.099 725.389,545.974 725.389,534.536 771.138,534.536 771.138,545.974 794.013,523.099 771.138,500.224 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="770.428,735.427 724.679,735.427 724.679,723.99 701.804,746.865 724.679,769.74 724.679,758.302 770.428,758.302 770.428,769.74 793.303,746.865 770.428,723.99 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="770.428,735.427 724.679,735.427 724.679,723.99 701.804,746.865 724.679,769.74 724.679,758.302 770.428,758.302 770.428,769.74 793.303,746.865 770.428,723.99 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="770.428,735.427 724.679,735.427 724.679,723.99 701.804,746.865 724.679,769.74 724.679,758.302 770.428,758.302 770.428,769.74 793.303,746.865 770.428,723.99 "/>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="424.084" y="704.024" width="237.494" height="74.7972"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="424.084" y="704.024" width="237.494" height="74.7972"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="542.831" y="743.011">
+        <tspan x="542.831" y="743.011">Helpers &amp; Libs</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="422.846" y="528.268" width="237.494" height="74.7972"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="422.846" y="528.268" width="237.494" height="74.7972"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="541.593" y="567.255">
+        <tspan x="541.593" y="567.255">Business Logic</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="423.36" y="615.838" width="237.494" height="74.7972"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="423.36" y="615.838" width="237.494" height="74.7972"/>
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="542.107" y="654.825">
+        <tspan x="542.107" y="654.825">Schedulers Conf</tspan>
+      </text>
+    </g>
+  </g>
+  <text class="ft-fragment" font-size="400" style="fill: #000000;text-anchor:start;font-family:Droid Sans;font-style:normal;font-weight:700" x="243" y="900">
+    <tspan x="70" y="800">MC</tspan>
+  </text>
+  <text class="ft-fragment" font-size="400" style="fill: #000000;text-anchor:start;font-family:Droid Sans;font-style:normal;font-weight:700" x="914.2" y="900">
+    <tspan x="820" y="800">V</tspan>
+  </text>
+</svg>

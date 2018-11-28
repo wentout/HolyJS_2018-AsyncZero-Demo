@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="370 217 1286 675" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g class="fragment" data-fragment-index="1">
+    <rect style="fill: #ffffff" x="372" y="218.718" width="1283" height="672.282"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="372" y="218.718" width="1283" height="672.282"/>
+    <text font-size="39.5105" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1013.5" y="269.631">
+      <tspan x="1013.5" y="269.631">application</tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="2">
+    <g>
+      <ellipse style="fill: #ffffff" cx="1006.19" cy="585.967" rx="623.5" ry="285.636"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1006.19" cy="585.967" rx="623.5" ry="285.636"/>
+      <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1006.19" y="589.567">
+        <tspan x="1006.19" y="589.567"></tspan>
+      </text>
+    </g>
+    <text font-size="23.1419" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="452.931" y="535.745">
+      <tspan x="452.931" y="535.745">IO interceptions</tspan>
+      <tspan x="452.931" y="564.673">: stdin</tspan>
+      <tspan x="452.931" y="593.601">: stdout</tspan>
+      <tspan x="452.931" y="622.528">: stderr</tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="3">
+    <ellipse style="fill: #ffffff" cx="942.693" cy="575.693" rx="153.102" ry="39.8102"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="942.693" cy="575.693" rx="153.102" ry="39.8102"/>
+    <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="942.693" y="582.179">
+      <tspan x="942.693" y="582.179">Algorythm</tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="7">
+    <ellipse style="fill: navy" cx="942.693" cy="575.693" rx="153.102" ry="39.8102"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="942.693" cy="575.693" rx="153.102" ry="39.8102"/>
+    <text font-size="23.1419" style="fill: white;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="942.693" y="582.179">
+      <tspan x="942.693" y="582.179">Algorythm</tspan>
+    </text>
+  </g>
+  <g class="fragment" data-fragment-index="4">
+    <polygon style="fill: #ffffff" points="724.916,561.902 654.121,561.902 654.121,544.203 618.724,579.601 654.121,614.998 654.121,597.299 724.916,597.299 724.916,614.998 760.313,579.601 724.916,544.203 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="724.916,561.902 654.121,561.902 654.121,544.203 618.724,579.601 654.121,614.998 654.121,597.299 724.916,597.299 724.916,614.998 760.313,579.601 724.916,544.203 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="724.916,561.902 654.121,561.902 654.121,544.203 618.724,579.601 654.121,614.998 654.121,597.299 724.916,597.299 724.916,614.998 760.313,579.601 724.916,544.203 "/>
+  </g>
+  <g class="fragment" data-fragment-index="5">
+    <g>
+      <ellipse style="fill: #ffffff" cx="881.65" cy="469.536" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="881.65" cy="469.536" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="881.65" y="476.022">
+        <tspan x="881.65" y="476.022">Algorythm</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="1000.52" cy="678.928" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1000.52" cy="678.928" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1000.52" y="685.414">
+        <tspan x="1000.52" y="685.414">Algorythm</tspan>
+      </text>
+    </g>
+  </g>
+  <g class="fragment" data-fragment-index="7">
+    <g>
+      <ellipse style="fill: #ffffff" cx="1248.62" cy="500.691" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1248.62" cy="500.691" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1248.62" y="507.177">
+        <tspan x="1248.62" y="507.177">Algorythm</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="1184.22" cy="415.048" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1184.22" cy="415.048" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1184.22" y="421.535">
+        <tspan x="1184.22" y="421.535">Algorythm</tspan>
+      </text>
+    </g>
+    <g class="fragment" data-fragment-index="9">
+      <ellipse style="fill: yellow" cx="1184.22" cy="415.048" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1184.22" cy="415.048" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1184.22" y="421.535">
+        <tspan x="1184.22" y="421.535">Algorythm</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="1308.06" cy="601.453" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1308.06" cy="601.453" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1308.06" y="607.939">
+        <tspan x="1308.06" y="607.939">Algorythm</tspan>
+      </text>
+    </g>
+    <g class="fragment" data-fragment-index="11">
+      <ellipse style="fill: black" cx="1308.06" cy="601.453" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1308.06" cy="601.453" rx="153.102" ry="39.8102"/>
+      <text font-size="41" style="fill: white;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:bold" x="1308.06" y="607.939">
+        <tspan x="1308.06" y="617.939">X</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="1345.1" cy="719.209" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1345.1" cy="719.209" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1345.1" y="725.695">
+        <tspan x="1345.1" y="725.695">Algorythm</tspan>
+      </text>
+    </g>
+    <g class="fragment" data-fragment-index="10">
+      <ellipse style="fill: red" cx="1345.1" cy="719.209" rx="153.102" ry="39.8102"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1345.1" cy="719.209" rx="153.102" ry="39.8102"/>
+      <text font-size="23.1419" style="fill: white;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1345.1" y="725.695">
+        <tspan x="1345.1" y="725.695">Algorythm</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
+
+
+

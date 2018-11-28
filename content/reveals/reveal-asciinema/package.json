@@ -1,0 +1,17 @@
+{
+  "name": "reveal-asciinema",
+  "version": "1.0.0",
+  "description": "Asciinema player plugin for Reveal.js",
+  "author": {
+    "name": "Rob Lemley",
+    "email": "roblemley@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "main": "asciinema.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-template": "~1.1.4-1",
+    "grunt-curl": "^2.2.0"
+  }
+}
