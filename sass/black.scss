@@ -1,0 +1,266 @@
+/**
+* Black theme for reveal.js. This is the opposite of the 'white' theme.
+*
+* By Hakim El Hattab, http://hakim.se
+*/
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+$color000: #000000;
+$color001: #bee4fd;
+$color002: #42affa;
+$color003: #222222;
+$color004: #8dcffc;
+$color005: #068de9;
+$color255: #ffffff;
+
+section.has-light-background {
+	h1, h2, h3, h4, h5, h6 { color: $color003; }
+}
+ 
+/*********************************************
+* GLOBAL STYLES
+*********************************************/
+ body {
+   background: $color003;
+   background-color: $color003;
+}
+ 
+.reveal {
+   font-family: "Source Sans Pro", Helvetica, sans-serif;
+   font-size: 42px;
+   font-weight: normal;
+   color: $color255;
+}
+ 
+ ::selection,
+ ::-moz-selection {
+   color: $color255;
+   background: $color001;
+	 text-shadow: none;
+	}
+ 
+	.reveal {
+		.slides {
+			section,
+			section > section {
+				line-height: 1.3;
+   				font-weight: inherit;
+			} 
+		}
+/*********************************************
+  * HEADERS
+  *********************************************/ 
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0 0 20px 0;
+			color: $color255;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-weight: 600;
+			line-height: 1.2;
+			letter-spacing: normal;
+			text-transform: uppercase;
+			text-shadow: none;
+			word-wrap: break-word;
+		}
+
+		h1 { font-size: 2.5em; }
+		h2 { font-size: 1.6em; }
+		h3 { font-size: 1.3em; }
+		h4 { font-size: 1em; }
+
+ 
+ /*********************************************
+  * OTHER
+  *********************************************/
+		p {
+			margin: 20px 0;
+			line-height: 1.3;
+		}
+
+ /* Ensure certain elements are never larger than the slide itself */ 
+		img,
+		video,
+		iframe {
+			max-width: 95%;
+			max-height: 95%;
+		}
+
+		strong, b { font-weight: bold; }
+		em { font-style: italic; }
+
+		ol, dl, ul {
+			display: inline-block;
+			text-align: left;
+			margin: 0 0 0 1em;
+		}
+
+		ol { list-style-type: decimal; }
+
+		ul {
+			list-style-type: disc;
+
+			ul { list-style-type: square; }
+			ul ul { list-style-type: circle; }
+		}
+
+		ul, ol {
+			ul, ol {
+				display: block;
+				margin-left: 40px;
+			}
+		}
+
+		dt { font-weight: bold; }
+		dd { margin-left: 40px; }
+
+		blockquote,
+		pre {
+			display: block;
+			position: relative;
+			margin: 20px auto;
+		}
+
+		blockquote {
+			width: 70%;
+			padding: 5px;
+			font-style: italic;
+			background: rgba($color255, 0.05);
+			box-shadow: 0px 0px 2px rgba($color000, 0.2);
+
+			p {
+				&:first-child,
+				&:last-child { display: inline-block; }
+			}
+		}
+
+		q { font-style: italic; }
+
+		pre {
+			width: 90%;
+			text-align: left;
+			font-size: 0.55em;
+			font-family: monospace;
+			line-height: 1.2em;
+			word-wrap: break-word;
+			box-shadow: 0px 0px 6px rgba($color000, 0.3);
+
+			code {
+				display: block;
+				padding: 5px;
+				overflow: auto;
+				max-height: 400px;
+				word-wrap: normal;
+			}
+		}
+
+		code {
+			font-family: monospace;
+			text-transform: none; 
+		}
+
+		table {
+			margin: auto;
+			border-collapse: collapse;
+			border-spacing: 0;
+
+			th { font-weight: bold; }
+
+			th, td {
+				text-align: left;
+				padding: 0.2em 0.5em 0.2em 0.5em;
+				border-bottom: 1px solid;
+
+				&[align="center"] { text-align: center; }
+				&[align="right"] { text-align: right; }
+			}
+
+			table {
+				tr {
+					&:last-child {
+						th, td { border-bottom: none; }
+					}
+				}
+			}
+		}
+
+		sup,
+		sub { font-size: smaller;}
+
+		sup { vertical-align: super; }
+		sub { vertical-align: sub; }
+
+		small {
+			display: inline-block;
+			font-size: 0.6em;
+			line-height: 1.2em;
+			vertical-align: top;
+
+			* { vertical-align: top; }
+		}
+
+/*********************************************
+  * LINKS
+	*********************************************/
+		a {
+			color: $color002;
+			text-decoration: none;
+			transition: color .15s ease;
+
+			&:hover {
+				color: $color004;
+				text-shadow: none;
+				border: none;
+
+				img {
+					background: rgba($color255, 0.2);
+					border-color: $color002;
+					box-shadow: 0 0 20px rgba($color000, 0.55);
+				}
+			}
+
+			img { transition: all .15s linear; }
+		}
+
+		.roll {
+			span:after {
+				color: $color255;
+				background: $color005;
+			}
+		}
+ /*********************************************
+  * IMAGES
+	*********************************************/
+	section {
+		img {
+			margin: 15px 0px;
+			background: rgba($color255, 0.12);
+			border: 4px solid $color255;
+			box-shadow: 0 0 10px rgba($color000, 0.15);
+
+			&.plain {
+				border: 0;
+				box-shadow: none;
+			}
+		}
+	}
+
+/*********************************************
+  * NAVIGATION CONTROLS
+	*********************************************/
+	.controls { color: $color002; }
+
+/*********************************************
+  * PROGRESS BAR
+	*********************************************/
+	.progress {
+		background: rgba($color000, 0.2);
+		color: $color002;
+
+		span { transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+	}
+}
+ /*********************************************
+  * PRINT BACKGROUND
+  *********************************************/
+@media print {
+	 .backgrounds { background-color: $color003; }
+}
+ 

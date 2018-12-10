@@ -1,3 +1,3 @@
 enableFailure()
-enableEverything()
+printFile('routes/find')
 route('extreme:dive')
