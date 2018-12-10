@@ -3,8 +3,6 @@
 const log = require('./log');
 const ioc = require('./ioc');
 
-// # systemctl start mongodb before !
-
 const mongoose = require('mongoose');
 
 mongoose
