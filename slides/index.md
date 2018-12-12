@@ -1,5 +1,5 @@
 
-<!-- .slide: data-state="nocontrols" data-external="slides/1st.html" -->
+<!-- .slide: class="slide slide--introduction introduction" data-state="nocontrols" data-external="slides/1st.html" -->
 
 ---
 
@@ -9,61 +9,63 @@ programmer's lullaby
 
 ---
 
----
-### who am I
+---<!-- .slide: class="slide slide--who-am-i who-am-i"  -->
+### who am I <!-- .element: class="who-am-i__header" -->
 
 <div class="who-am-i">
 <p class="fragment text who-am-i__text who-am-i__text--indent "> all my entire life ... 
  <span class="fragment"> I do something with JavaScript </span></p>
 
 <br>
-<h3 class="fragment header header__h3 header--no-transform"> nowdays for <a href="ukit.group" class="link">ukit.group</a></h3>
+<h3 class="fragment header header__h3 header--no-transform who-am-i__text who-am-i__text--nowdays"> nowdays for <a href="ukit.group" class="link">ukit.group</a></h3>
 <br>
 <p class="text who-am-i__text"> <span class="fragment">1st commercial site with JS at 2001.</span><br>
 <span class="fragment">Then MS driven JS: IIS Active Server Pages,<br> Windows Scripting Host for Active Directory &<br> HTML Applications for Intranet.</span><br> <span class="fragment">Then Rhino & Nashorn for Alfresco & Asterisk.</span><br> <span class="fragment">Then XUL Runner. Cordova. ExtJS. </span></p>
 
-<h3 class="fragment header header__h3"> And finally NodeJS.</h3>
+<h3 class="fragment header header__h3 who-am-i__text--finally"> And finally NodeJS.</h3>
 
 <p class="fragment text who-am-i__text who-am-i__text--meanwhile">
 meanwile former researcher of IT Economy <br> ... and still very interested</p>
 </div>
 
 ---
-<!-- .slide: data-transition="none" -->
+<!-- .slide: class="slide slide--team-mascots-me team-mascots-me" data-transition="none" -->
 
-## team mascots me
+## team mascots me <!-- .element: class="team-mascots-me__header" -->
 
 <br>
-<img class="image image--border team-mascots__image"  src="/img/js-everywhere.jpg" alt="js everywhere" title="js everywhere" width ="50%">
+<img class="image image--border team-mascots-me__image"  src="/img/js-everywhere.jpg" alt="js everywhere" title="js everywhere" width ="50%">
 
 ---
 
-<!-- .slide: class="dream" data-transition="zoom" data-background="#101010"-->
-# &nbsp;&mdash;&nbsp; I have a dream &nbsp;&mdash;&nbsp;
+<!-- .slide: class="slide slide--dream dream" data-transition="zoom" data-background="#101010"-->
+# &nbsp;&mdash;&nbsp; I have a dream &nbsp;&mdash;&nbsp; <!-- .element: class="dream__header" -->
 
 
 <br>
 is really hard  to think of an idea for 15 years  
 <br>
-
-> dreams are the sort of things you  
+<!-- .element: class="dream__text " -->
+> dreams are the sort of things you
+<br>
 can't stop think about & get rid of  
-
+<!-- .element: class="dream__blockquote" -->
 ---
-## so this talk was made
+<!-- .slide: class="slide slide__this-talk this-talk" -->
+## so this talk was made <!-- .element: class="this-talk__header" -->
 
 <br>
 
-- seems important ... <span class="fragment" data-fragment-index="0">[ for me ]</span>
-- reveal current technology state
-- tell about problems & solutions
+- seems important ... <!-- .element: class="this-talk__text" --><span class="fragment" data-fragment-index="0">[ for me ]</span>
+- reveal current technology state <!-- .element: class="this-talk__text" -->
+- tell about problems & solutions <!-- .element: class="this-talk__text" -->
 
 
 ---
 
 
 ---
-
+<!-- .slide: class="slide slide--intro intro"-->
 <h1 class="intro__header">... intro ...</h1>
 
 <h1 class="side-digit side-digit__1">-1</h1>
