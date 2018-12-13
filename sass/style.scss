@@ -34,9 +34,6 @@ section {
 }
 
 .reveal {
-	width: 100%; height: 100%;
-	position: relative;
-	
 	pre {
 		overflow: visible;
 		position: relative;
@@ -166,6 +163,7 @@ section {
 				margin-top: 3%;
 			}
 		}
+
 	}
 
 	.dream {
@@ -215,7 +213,7 @@ section {
 		}
 	}
 
-	.metophor {
+	.metaphor {
 		&__header {
 			font-size: 5em;
 			margin-top: 25px;
@@ -286,7 +284,7 @@ section {
 			&__header {
 				z-index: 5;
 				color:red;
-				font-size: 7.1em;
+				font-size: 16vw; // 7.1em
 				position: absolute;
 				top: 145px; left: 80px
 			}
@@ -983,6 +981,19 @@ section {
 	}
 }
 
+@media ( max-width: 1124px ) {
+	.reveal {
+		.and-word-was {
+			&__subtitle { font-size: 4.5em; }
+		}
+
+		.relations {
+			&__subheader { font-size: 1.8em; }
+			&__header { font-size: 3em; }
+		}
+	}
+}
+
 @media ( max-width: 1024px ) {
 	.reveal {
 		.present {
@@ -993,6 +1004,12 @@ section {
 			&__header { font-size: 70px; }
 			&__text { font-size: 28px; }
 			&__blockquote { font-size: 26px; }
+		}
+
+		.significant {
+			&__image { width: 90%; }
+			br { display: none; }
+			&__text { font-size: 30px;}
 		}
 	}
 }
@@ -1025,17 +1042,106 @@ section {
 
 		.present { margin: 0 !important; }
 
-		.who-am-i {
-			padding: 0 10px;
+		// .who-am-i {
+		// 	padding: 0 10px;
 
+		// 	br { display: none; }
+
+		// 	&__header { font-size: 30px; }
+		// 	&__text {
+		// 		font-size: 25px;
+
+		// 		&--nowdays { font-size: 30px; }
+		// 		&--finally { font-size: 30px; }
+		// 	}
+		// }
+		.and-word-was {
+			&__subtitle { font-size: 3.5em; }
+		}
+
+
+
+		.they-invented {
 			br { display: none; }
+			&__header { font-size: 36px; }
+			&__subheader { font-size: 20px; }	
+		}
+  
+		.all-complicated {
+			&__header { font-size: 1.6em; }
+			&__subheader { font-size: 1.1em; }
+		}
 
-			&__header { font-size: 30px; }
-			&__text {
-				font-size: 25px;
+		.all-complicated,
+		.they-invented {
+			&__code { font-size: 14px; padding: 10px 5px!important; }
+		}
 
-				&--nowdays { font-size: 30px; }
-				&--finally { font-size: 30px; }
+		.relations {
+			&__subheader { font-size: 1.3em; }
+			&__header { font-size: 2.2em; }
+		}
+
+		.debug--in-progress,
+		.debug--in-production,
+		.node-fatal,
+		.push-button,
+		.coding,
+		.bug-assignment,
+		.situa,
+		.boss {
+			&__image { width: 90%; }
+			&__header { font-size: 1em; }
+		}
+
+		.push-button,
+		.coding,
+		.bug-assignment,
+		.stack {
+			br { display: none; }
+		}
+
+		.push-button,
+		.coding {
+			&__header { font-size: 0.8em; }
+		}
+
+		.what-we-have {
+			&__header {  font-size: 1.5em; }
+			&__text { font-size: 1em; }
+		}
+
+		.metaphor {
+			&__header { font-size: 3em; }
+			&__subheader { font-size: 1.4em; }
+		}
+		
+		.bug-assignment {
+			padding: 0 10px !important;
+
+			&__image {
+				&--fun {
+					width: 30%;
+					top: auto; bottom: 0; 
+				}
+			}
+		}
+
+		.stack {
+			padding: 0 10px!important;
+
+			&--1 {
+				&__header { font-size: 0.8em; margin-bottom: 0; }
+			}
+
+			&--2 {
+				&__header { top: 50%; left: 0; }
+			}
+
+			&__image {
+				top: 50%;
+
+				&--4 { top: 60%; }
 			}
 		}
 	}
@@ -1072,10 +1178,19 @@ section {
 		}
 
 		.who-am-i {
+			padding: 0 10px; 
+
+			&__header { font-size: 1em; margin-bottom: 0; }
+			br { display: none;}
+
 			&__text {
 				font-size: 20px;
 
-				&--nowdays { font-size: 25px; }
+				&--nowdays {
+					font-size: 25px; margin-bottom: 20px;
+
+					
+				}
 				&--finally { font-size: 25px; }
 			}
 		}
@@ -1110,6 +1225,38 @@ section {
 			font-size: 500px;
 			top: 0;
 		}
+
+		.and-word-was {
+			padding: 0 10px !important;
+			box-sizing: border-box;
+
+			&__subtitle { font-size: 60px; margin-bottom: 30px; }
+			&__header { font-size: 30px; }
+			&__text { font-size: 25px; }
+		}
+
+		.all-complicated {
+			&__header { font-size: 1.1em; }
+			&__subheader { font-size: 0.8em; }
+		}
+
+		.relations {
+			&__subheader { font-size: 1em; }
+			&__header { font-size: 1.5em; }
+		}
+
+		.what-we-have {
+			z-index: 0;
+			padding: 0 30px !important;
+			box-sizing: border-box;
+
+			&__header {  font-size: 1.1em; }
+			&__text { font-size: 0.7em; }
+			&__digit { z-index: -1; }
+
+			&__header,
+			&__text { z-index: 1; }
+		}
 	}
 }
 
@@ -1135,6 +1282,11 @@ section {
 		.team-mascots-me {
 			&__header { font-size: 45px; }
 		}
+
+		.what-we-have {
+			br:first-child { display: none; }
+		}
+		
 	}
 }
 
@@ -1176,6 +1328,11 @@ section {
 			font-size: 300px;
 			top: .1em;
 		}
+
+		.metaphor {
+			&__header { font-size: 1.8em; }
+			&__subheader { font-size: 0.9em; }
+		}
 	}
 }
 
@@ -1184,6 +1341,20 @@ section {
 		.this-talk {
 			&__header { font-size: 30px; }
 			&__text { font-size: 22px; }
+		}
+
+		.relations {
+			&__subheader { font-size: 22px; z-index: 100;}
+			&__header { font-size: 26px; z-index: 100;}
+		}
+	}
+}
+
+@media ( max-width: 340px ) {
+	.reveal {
+		.metaphor {
+			&__header { font-size: 1.5em; }
+			&__subheader { font-size: 0.9em; }
 		}
 	}
 }
@@ -1255,8 +1426,74 @@ section {
 			font-size: 400px;
 			top: -50%;
 		}
+
+		.and-word-was {
+			padding: 0 10px !important;
+			box-sizing: border-box;
+
+			&__subtitle { font-size: 60px; margin-bottom: 30px; }
+			&__header { font-size: 30px; }
+			&__text { font-size: 25px; }
+		}
+
+		.relations {
+			&__subheader { font-size: 1em; }
+			&__header { font-size: 1.5em; margin-top: 50px; }
+			// &__digit { top: 0; }
+		}
+
+		.debug--in-progress,
+		.debug--in-production,
+		.node-fatal,
+		.push-button,
+		.coding,
+		.bug-assignment,
+		.situa,
+		.boss  {
+			&__image { width: 70%; }
+			&__header { font-size: 1em; margin-bottom: 0; }
+		}
+
+		.push-button,
+		.coding {
+			&__header { font-size: 0.7em; }
+			&__image { max-width: 50%; }
+		}
+
+		.situa,
+		.boss {
+			&__image { max-width: 30%; }
+		}
+
+		.bug-assignment {
+			&__image {
+				&--fun {
+					width: 30%;
+					top: auto; bottom: 0; 
+				}
+			}
+		}
+
+		.stack {
+			&--1{
+				&__header { font-size: 0.8em; margin-bottom: 0; }
+			}
+
+			&--2 {
+				&__header { top: 30%; left: 0; }
+			}
+
+			&__image {
+				top: 30%;
+
+				&--4 { top: 40%; }
+			}
+		}
+
 	}
 }
+
+
 
 @media ( max-height: 700px ) {
 	.reveal {
@@ -1287,7 +1524,7 @@ section {
 }
 
 // Iphone 4
-@media ( max-width: 320px ) and ( max-height: 480px ) {
+@media ( max-width: 320px ) and ( max-width: 768px ) and ( max-height: 480px ) {
 	.reveal {
 		.introduction {
 			&__logo {
@@ -1304,7 +1541,7 @@ section {
 }
 
 // Iphone 5/SE
-@media ( max-width: 320px ) and ( max-height: 568px ) {
+@media ( max-width: 320px ) and ( max-width: 768px ) and ( max-height: 568px ) {
 	.reveal {
 		.introduction {
 			&__logo {
@@ -1316,7 +1553,7 @@ section {
 }
 
 // iPad
-@media ( min-width: 1024px ) and ( min-height: 768px ) and ( orientation: landscape ) {
+@media ( min-width: 1024px ) and ( min-height: 768px ) and ( orientation: landscape ) and (-webkit-min-device-pixel-ratio: 2) {
 	.reveal {
 		.introduction {
 			&__header {
@@ -1329,7 +1566,13 @@ section {
 
 			&__video,
 			&__text { float: none; }
+		}
 
+		.they-invented {
+			br { display: none; }
+			&__header { font-size: 2.8em; margin-bottom: 30px; }
+			&__subheader { font-size: 1.3px; }
+			&__code { font-size: 25px; }
 		}
 	}
 }
@@ -1381,6 +1624,18 @@ section {
 	.reveal {
 		.side-digit {
 			transform: translateY(20%);
+		}
+	}
+}
+
+// Blackberry Playbook
+@media only screen and (max-width: 1024px) and (orientation : landscape) {
+	.reveal {
+		.they-invented {
+			br { display: none; }
+			&__header { font-size: 36px; margin-bottom: 0; }
+			&__subheader { font-size: 20px; }
+			&__code { font-size: 16px; }
 		}
 	}
 }

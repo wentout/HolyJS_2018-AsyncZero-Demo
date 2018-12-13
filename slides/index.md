@@ -9,7 +9,7 @@ programmer's lullaby
 
 ---
 
----<!-- .slide: class="slide slide--who-am-i who-am-i"  -->
+---<!-- .slide: class="slide slide--who-am-i"  -->
 ### who am I <!-- .element: class="who-am-i__header" -->
 
 <div class="who-am-i">
@@ -74,26 +74,26 @@ can't stop think about & get rid of
 ---
 
 ---
-<!-- .slide: class="the-beginning" data-transition="none" -->
+<!-- .slide: class="slide the-beginning" data-transition="none" -->
 
-# In the beginning<br>was the Word
+# In the beginning<br>was the Word <!-- .element: class="the-beginning__header header header--h1" -->
 
 ---
 
-<!-- .slide: class="and-word-was" data-transition="zoom" -->
+<!-- .slide: class="slide and-word-was" data-transition="zoom" -->
 
-##### And word was
+##### And word was <!-- .element: class="and-word-was__header"-->
 
 <h1 class="and-word-was__subtitle">JavaScript</h1>
 
-single threaded synchronous programming language
+single threaded synchronous programming language <!-- .element: class="and-word-was__text" -->
 
 ---
 
-<!-- .slide: class="they-invented" data-transition="none" -->
+<!-- .slide: class="slide they-invented" data-transition="none" -->
 
-## But then they invented 
-# asynchrony
+## But then they invented <!-- .element: class="they-invented__subheader" -->
+# asynchrony <!-- .element: class="they-invented__header" -->
 <br>
 <pre><code class="lang-javascript hljs fragment they-invented__code">// and continued reproducing it everywhere
 </code></pre>
@@ -105,10 +105,10 @@ single threaded synchronous programming language
 
 ---
 
-<!-- .slide: class="all-complicated" data-transition="none" -->
+<!-- .slide: class="slide all-complicated" data-transition="none" -->
 
-## And this  
-## how all become
+## And this    <!-- .element: class="all-complicated__subheader" -->
+## how all become  <!-- .element: class="all-complicated__subheader" -->
 # too complicated<!-- .element: class="fragment all-complicated__header"-->
 <pre ><code class="lang-javascript hljs fragment all-complicated__code">// and going only worse
 </code></pre>
@@ -116,111 +116,120 @@ single threaded synchronous programming language
 ---
 <!-- .slide: data-state="nocontrols" -->
 
---- <!-- .slide: class="relations-->
+--- <!-- .slide: class="slide relations-->
 
 <h1 class="relations__header">relations </h1>
 
-### &
-# considerations
+### & <!-- .element: class="relations__subheader" -->
+# considerations <!-- .element: class="relations__subheader" -->
 
-<h1 class="side-digit side-digit__1">0</h1>
-
----
+<h1 class="side-digit side-digit__1 relations__digit">0</h1>
 
 ---
+
+--- <!-- .slide: class="slide significant" -->
 <br>
 <br>
 most of all significant data  
-collected from issues or meetings of  
+<!-- .element: class="significant__text" -->
+collected from issues or meetings of  <!-- .element: class="significant__text" -->
 
-[<img class="image image--border" src="/img/diag_group.png" alt="node diagnostics group" title="node diagnostics group" width ="50%">](https://github.com/nodejs/diagnostics)
+[<img class="image image--border significant__image" src="/img/diag_group.png" alt="node diagnostics group" title="node diagnostics group" width ="50%">](https://github.com/nodejs/diagnostics)
+
+
+---
+<!-- .slide: class="slide debug--in-progress" -->
+## Debugging in Production  <!-- .element: class="debug--in-progress__header" -->
+
+[<img class="image image--border debug--in-progress__image" src="/img/nickkooper.png" alt="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" title="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" width ="70%">](https://www.youtube.com/watch?v=_qzFJ2MPVWQ)
+
+---
+<!-- .slide: class="slide debug--in-production" -->
+
+## Debugging in Production <!-- .element: class="debug--in-production__header" -->
+
+[<img class="image image--border debug--in-production__image" src="/img/wa7son.png" alt="Debugging Node.js in Production — Thomas Watson" title="Debugging Node.js in Production — Thomas Watson" width ="70%">](https://www.youtube.com/watch?v=briH-bfleIM)
+
+---
+<!-- .slide: class="slide node-fatal" -->
+
+## Node Fatal flow <!-- .element: class="node-fatal__header" -->
+
+[<img class="image image--border node-fatal__image" src="/img/ai_boy.png" alt="fatal flow talk" title="fatal flow talk" width ="70%">](https://www.youtube.com/watch?v=Lrs6puJ4G2Q)
 
 
 ---
 
-## Debugging in Production
-
-[<img class="image image--border" src="/img/nickkooper.png" alt="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" title="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" width ="70%">](https://www.youtube.com/watch?v=_qzFJ2MPVWQ)
-
 ---
 
-## Debugging in Production
-
-[<img class="image image--border" src="/img/wa7son.png" alt="Debugging Node.js in Production — Thomas Watson" title="Debugging Node.js in Production — Thomas Watson" width ="70%">](https://www.youtube.com/watch?v=briH-bfleIM)
-
----
-
-## Node Fatal flow
-
-[<img class="image image--border" src="/img/ai_boy.png" alt="fatal flow talk" title="fatal flow talk" width ="70%">](https://www.youtube.com/watch?v=Lrs6puJ4G2Q)
-
-
----
-
----
-
-<!-- .slide: data-transition="zoom" -->
+<!-- .slide: class="slide what-we-have" data-transition="zoom" -->
 
 <br>
 <br>
 
-# what we have
+# what we have <!-- .element: class="what-we-have__header" -->
 
 <br>
-an approach to be meaningfull  
+an approach to be meaningfull
+<!-- .element: class="what-we-have__text" -->  
 [w]~[o] statless condition to any key
+<!-- .element: class="what-we-have__text" -->
 
-<h1 class="side-digit side-digit__1">1</h1>
-
----
-
---- <!-- .slide: class="metophor" -->
-
-<h1 class="metophor__header">metaphor</h1>
-
-### of async<!-- .element: class="fragment" -->
+<h1 class="side-digit side-digit__1 what-we-have__digit">1</h1>
 
 ---
-<!-- .slide: data-transition="none" -->
+
+--- <!-- .slide: class="slide metaphor" -->
+
+<h1 class="metaphor__header">metaphor</h1>
+
+### of async<!-- .element: class="fragment metaphor__subheader" -->
+
+---
+<!-- .slide: class="slide coding" data-transition="none" -->
 
 <br>
-### 4 coding
+### 4 coding <!-- .element: class="coding__header" -->
 
-<img class="image image--border" src="/img/fun/coding.gif" alt="code" title="code" width ="40%">
+<img class="image image--border coding__image" src="/img/fun/coding.gif" alt="code" title="code" width ="40%">
 
 
 ---
-<!-- .slide: data-transition="none" -->
+<!-- .slide: class="slide push-button" data-transition="none" -->
 <br>
 ### &mdash; and somehow ... somewhere &mdash;
-<img class="image image--border" src="/img/fun/button.gif" alt="button" title="button" width ="45%">
+<!-- .element: class="push-button__header" -->
+<img class="image image--border push-button__image" src="/img/fun/button.gif" alt="button" title="button" width ="45%">
 
 ---
-<!-- .slide: class="bug-assignment" data-transition="zoom" -->
+<!-- .slide: class="slide bug-assignment" data-transition="zoom" -->
 <br>
-### someone assigns me a bug
+### someone assigns me a bug  <!-- .element: class="bug-assignment__header" -->
 
 <img src="/img/jirabug.png" alt="bug" title="bug" width ="55%"  class="bug-assignment__image bug-assignment__image--note image image--border">
 <img src="/img/fun/aaaaa.jpg" alt="bug" title="bug" width ="35%" class="fragment bug-assignment__image bug-assignment__image--fun image image--border">
 
 ---
+<!-- .slide: class="slide situa" -->
 and it that situation  
+<!-- .element: class="situa__header"-->
 
-<img class="image image--border" src="/img/ucircus/500.jpeg" alt="500 sticker" title="ukit team" width="30%">
+<img class="image image--border situa__image" src="/img/ucircus/500.jpeg" alt="500 sticker" title="ukit team" width="30%">
 
 ---
 
 <img class="image image--border" src="/img/real_stack.png" alt="bug" title="bug" width ="85%">
 
 ---
-<!-- .slide: class="stack stack--1" data-state="nocontrols" data-external="slides/stack.html" data-transition="none" -->
+<!-- .slide: class="slide stack stack--1" data-state="nocontrols" data-external="slides/stack.html" data-transition="none" -->
 
 ---
-<!-- .slide: class="stack stack--2" data-state="nocontrols" data-external="slides/stack2.html" data-transition="none" -->
+<!-- .slide: class="slide stack stack--2" data-state="nocontrols" data-external="slides/stack2.html" data-transition="none" -->
 
 ---
-# boss  
-<img class="image image--border" src="/img/ucircus/boss2.jpeg" alt="boss sticker" title="ukit team" width="30%">
+<!-- .slide: class="slide boss" -->
+# boss  <!-- .element: class="boss__header" -->
+<img class="image image--border boss__image" src="/img/ucircus/boss2.jpeg" alt="boss sticker" title="ukit team" width="30%">
 
 
 ---
