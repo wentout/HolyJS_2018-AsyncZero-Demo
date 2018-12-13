@@ -215,6 +215,9 @@ section {
 .reveal .collect-data__image--note {
   width: 59%; }
 
+.reveal .collect-data__image--root {
+  max-width: 270px; }
+
 .reveal .available-data__image-root, .reveal .available-data__image-test, .reveal .available-data__image-team {
   position: absolute;
   z-index: 2; }
@@ -705,7 +708,9 @@ section {
     .reveal .introduction__logo {
       max-width: 100px; }
       .reveal .introduction__logo--ukit-group {
-        right: 50px; } }
+        right: 50px; }
+  .reveal .collect-data__image--root {
+    width: 18.7%; } }
 
 @media (max-width: 1124px) {
   .reveal .and-word-was__subtitle {
@@ -770,7 +775,8 @@ section {
   .reveal .coding__image,
   .reveal .bug-assignment__image,
   .reveal .situa__image,
-  .reveal .boss__image {
+  .reveal .boss__image,
+  .reveal .collect-data__image {
     width: 90%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -779,7 +785,8 @@ section {
   .reveal .coding__header,
   .reveal .bug-assignment__header,
   .reveal .situa__header,
-  .reveal .boss__header {
+  .reveal .boss__header,
+  .reveal .collect-data__header {
     font-size: 1em; }
   .reveal .push-button br,
   .reveal .coding br,
@@ -1031,7 +1038,8 @@ section {
   .reveal .coding__image,
   .reveal .bug-assignment__image,
   .reveal .situa__image,
-  .reveal .boss__image {
+  .reveal .boss__image,
+  .reveal .collect-data__image {
     width: 70%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1040,7 +1048,8 @@ section {
   .reveal .coding__header,
   .reveal .bug-assignment__header,
   .reveal .situa__header,
-  .reveal .boss__header {
+  .reveal .boss__header,
+  .reveal .collect-data__header {
     font-size: 1em;
     margin-bottom: 0; }
   .reveal .push-button__header,
@@ -1065,7 +1074,11 @@ section {
   .reveal .stack__image {
     top: 30%; }
     .reveal .stack__image--4 {
-      top: 40%; } }
+      top: 40%; }
+  .reveal .collect-data__header {
+    font-size: 0.8em; }
+  .reveal .collect-data__image--root {
+    width: 20%; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {

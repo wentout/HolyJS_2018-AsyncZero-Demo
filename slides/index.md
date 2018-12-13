@@ -233,12 +233,12 @@ and it that situation
 
 
 ---
-<!-- .slide: class="collect-data" data-transition="none" style="min-height: 900px !important" -->
-### you collect all available data <!-- .element: class="fragment" -->
+<!-- .slide: class="slide collect-data" data-transition="none" style="min-height: 900px !important" -->
+### you collect all available data <!-- .element: class="collect-data__header fragment" -->
 
 <img src="/img/kibana.png" alt="kibana" title="kibana" class="fragment collect-data collect-data__image collect-data__image--note image image--border">
 
-<img src="/img/ucircus/rootlogs.jpeg" alt="faster" title="ukit team" class="fragment collect-data collect-data__image collect-data__image--team image image--border">
+<img src="/img/ucircus/rootlogs.jpeg" alt="faster" title="ukit team" class="fragment collect-data collect-data__image collect-data__image--team collect-data__image--root image image--border">
 
 
 ---

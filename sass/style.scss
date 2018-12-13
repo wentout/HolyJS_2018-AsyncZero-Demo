@@ -303,6 +303,11 @@ section {
 			&--note {
 				width: 59%;
 			}
+
+			&--root {
+				max-width: 270px;
+
+			}
 		}
 	}
 
@@ -978,6 +983,12 @@ section {
 				&--ukit-group { right: 50px; }
 			}
 		}
+
+		.collect-data {
+			&__image {
+				&--root { width: 18.7%; }
+			}
+		}
 	}
 }
 
@@ -1089,7 +1100,8 @@ section {
 		.coding,
 		.bug-assignment,
 		.situa,
-		.boss {
+		.boss,
+		.collect-data {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1449,7 +1461,8 @@ section {
 		.coding,
 		.bug-assignment,
 		.situa,
-		.boss  {
+		.boss,
+		.collect-data  {
 			&__image { width: 70%; }
 			&__header { font-size: 1em; margin-bottom: 0; }
 		}
@@ -1490,10 +1503,15 @@ section {
 			}
 		}
 
+		.collect-data {
+			&__header { font-size: 0.8em;}
+			&__image {
+				&--root { width: 20%; }
+			}
+		}
+
 	}
 }
-
-
 
 @media ( max-height: 700px ) {
 	.reveal {
