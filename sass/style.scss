@@ -313,24 +313,24 @@ section {
 
 	.available-data {
 			&__image {
-				&-root,
-				&-test,
-				&-team {
+				&--root,
+				&--test,
+				&--team {
 					z-index:2;
 					position: absolute;
 				}
 
-				&-root,
-				&-test {
+				&--root,
+				&--test {
 					width: 270px;
 					top: 125px;
 				}
 
-				&-root { left: 30px; }
-				&-aaa { width: 25%; }
-				&-test { right: 30px; }
+				&--root { left: 30px; }
+				&--aaa { width: 25%; }
+				&--test { right: 30px; }
 
-				&-team {
+				&--team {
 					left: 42%; top: 400px;
 					width: 350px;
 				}
@@ -984,10 +984,26 @@ section {
 			}
 		}
 
-		.collect-data {
+		.collect-data,
+		.available-data {
 			&__image {
 				&--root { width: 18.7%; }
 			}
+		}
+
+		.available-data {
+			&__image {
+				&--test { width: 18.7%; }
+				
+				&--team {
+					left: 50%; top: 30%;
+					transform: translateX(-50%);
+					width: 35%; 
+				}
+			}
+
+			&__header { font-size: 1.1em; }
+			&__subheader { font-size: 1.3em; }
 		}
 	}
 }
@@ -1269,6 +1285,29 @@ section {
 			&__header,
 			&__text { z-index: 1; }
 		}
+
+		.collect-data {
+			&__header { font-size: 0.8em;}
+			&__image {
+				&--root { width: 20%; top: 25%; }
+			}
+		}
+
+		.available-data {
+			padding: 0 10px !important;
+
+			br { display: none; }
+
+			&__image {
+				&--test,
+				&--root { width: 20%; }
+				
+				&--team { width: 50%; top: 30%; }
+			}
+
+			&__header { font-size: 0.8em; }
+			&__subheader { font-size: 1em; }
+		}
 	}
 }
 
@@ -1344,6 +1383,11 @@ section {
 		.metaphor {
 			&__header { font-size: 1.8em; }
 			&__subheader { font-size: 0.9em; }
+		}
+
+		.available-data {
+			&__header { font-size: 0.5em; }
+			&__subheader { font-size: 0.8em; }
 		}
 	}
 }
@@ -1506,8 +1550,22 @@ section {
 		.collect-data {
 			&__header { font-size: 0.8em;}
 			&__image {
-				&--root { width: 20%; }
+				&--root { width: 20%; top: 10%; }
 			}
+		}
+
+		.available-data {
+			br { display: none; }
+			&__image {
+				top: 10%;
+
+				&--team {
+					width: 20%;
+					top: 15%;
+				}
+			}
+			&__header { font-size: 0.5em; }
+			&__subheader { font-size: 0.8em; margin-bottom: 0; }
 		}
 
 	}

@@ -242,32 +242,32 @@ and it that situation
 
 
 ---
-<!-- .slide: class="available-data " data-transition="none" style="min-height: 900px !important"-->
-### you collect all available data
+<!-- .slide: class="available-data slide " data-transition="none" style="min-height: 900px !important"-->
+### you collect all available data <!-- .element: class="available-data__header" -->
 
 <img src="/img/ucircus/rootlogs.jpeg" alt="faster" title="ukit team"
-	class="available-data__image available-data__image-root image image--border">
+	class="available-data__image available-data__image--root image image--border">
 
-## prepeare test samples
+## prepeare test samples <!-- .element: class="available-data__subheader" -->
 
 
-<img src="/img/aaaa.jpg" alt="aaaa" title="aaaa" class="fragment available-data__image available-data--1__image-aaa image image--border">
+<img src="/img/aaaa.jpg" alt="aaaa" title="aaaa" class="fragment available-data__image available-data__image--aaa image image--border">
 
-<img src="/img/ucircus/testenv.jpeg" alt="faster" title="ukit team" class="fragment available-data__image  available-data__image-test image image--border">
+<img src="/img/ucircus/testenv.jpeg" alt="faster" title="ukit team" class="fragment available-data__image  available-data__image--test image image--border">
 	
 ---
-<!-- .slide: data-transition="none" style="min-height: 900px !important" -->
-### you collect all available data
+<!-- .slide: class="slide" data-transition="none" style="min-height: 900px !important" -->
+### you collect all available data <!-- .element: class="available-data__header" -->
 
-<img src="/img/ucircus/rootlogs.jpeg" alt="faster" title="ukit team" class="available-data__image available-data__image-root image image--border">
+<img src="/img/ucircus/rootlogs.jpeg" alt="faster" title="ukit team" class="available-data__image available-data__image--root image image--border">
 
-## prepeare test samples
+## prepeare test samples <!-- .element: class="available-data__header" -->
 
-<img src="/img/ucircus/testenv.jpeg" alt="faster" title="ukit team" class="available-data__image  available-data__image-test image image--border">
+<img src="/img/ucircus/testenv.jpeg" alt="faster" title="ukit team" class="available-data__image  available-data__image--test image image--border">
 	
-# nothing helps 
+# nothing helps  <!-- .element: class="available-data__subheader" -->
 
-<img src="/img/ucircus/team.jpeg" alt="nothing_helps" title="nothing_helps" class="fragment available-data__image  available-data__image-team image image--border">
+<img src="/img/ucircus/team.jpeg" alt="nothing_helps" title="nothing_helps" class="fragment available-data__image  available-data__image--team image image--border">
 
 
 --- <!-- .slide: class="shrodinger"-->
