@@ -342,9 +342,9 @@ section {
 			z-index:2;
 			position: absolute;
 
-			&--1 {left: 2%; top: 59%; }
+			&--cat {left: 2%; top: 59%; }
 
-			&--2 {
+			&--heisenbug {
 				right: 2%; top: 69%;
 				width: 70%;
 			}
@@ -955,6 +955,10 @@ section {
 	.conclusion {
 		&__reveal { font-size: 25pt; }
 	}
+
+	.live-demo {
+		&__separator { width: 50%; }
+	}
 }
 
 @media print {
@@ -1004,6 +1008,16 @@ section {
 
 			&__header { font-size: 1.1em; }
 			&__subheader { font-size: 1.3em; }
+		}
+
+		.schrodinger {
+			&__header { font-size: 1.2em; }
+			&__subheader { font-size: 1.8em; }
+
+			&__image {
+				&--cat { width: 30%; }
+				&--heisenbug { width: 60%; }
+			}
 		}
 	}
 }
@@ -1172,6 +1186,21 @@ section {
 				&--4 { top: 60%; }
 			}
 		}
+
+		.schrodinger {
+			&__subheader {
+				&--heisenbug { padding-left: 10%;  }
+			}
+		}
+
+		.trace {
+			&__header { margin-top: 0; }
+		}
+
+		.sti,
+		.polymorph {
+			&__header { font-size: 1em; }
+		}
 	}
 }
 
@@ -1308,11 +1337,47 @@ section {
 			&__header { font-size: 0.8em; }
 			&__subheader { font-size: 1em; }
 		}
+
+		.schrodinger {
+			br { display: none; }
+			&__header { font-size: 0.7em; }
+			&__subheader {
+				font-size: 1.2em;
+			}
+		}
+
+		.live-demo {
+			&__separator { width: 90%; }
+			&__video { width: 90%; }
+		}
+
+		.trace {
+			&__header {
+				margin-top: 0;
+				font-size: 1.7em;
+			}
+			&__subheader {
+				font-size: 0.7em;
+
+				&--small { font-size: 0.4em; }
+			}
+		}
+
+		.sti,
+		.polymorph {
+			padding: 0 10px!important;
+
+			&__header { font-size: 0.6em; }
+		}
 	}
 }
 
-@media 	( max-width: 768px ) and ( orientation: landscape ),
-		( max-width: 812px ) and ( max-height: 375px) and ( orientation: landscape ) {
+@media 	( max-width: 768px )
+		and ( orientation: landscape ),
+
+		( max-width: 812px )
+		and ( max-height: 375px)
+		and ( orientation: landscape ) {
 	.reveal {
 		.team-mascots-me {
 			br { display: none; }
@@ -1336,6 +1401,12 @@ section {
 
 		.what-we-have {
 			br:first-child { display: none; }
+		}
+
+		.live-demo {
+			&__header,
+			&__subheader { font-size: 1.1em; }
+			&__text { font-size: 0.8em; }
 		}
 		
 	}
@@ -1389,6 +1460,23 @@ section {
 			&__header { font-size: 0.5em; }
 			&__subheader { font-size: 0.8em; }
 		}
+
+		.schrodinger {
+			&__header { font-size: 0.5em; }
+			&__subheader {
+				font-size: 0.7em;
+			}
+		}
+
+		.live-demo {
+			&__header,
+			&__subheader { font-size: 0.7em; }
+			&__text { font-size: 0.4em; }
+		}
+
+		.trace {
+			&__header { font-size: 1em; }
+		}
 	}
 }
 
@@ -1403,6 +1491,7 @@ section {
 			&__subheader { font-size: 22px; z-index: 100;}
 			&__header { font-size: 26px; z-index: 100;}
 		}
+		
 	}
 }
 
@@ -1424,12 +1513,27 @@ section {
 	}
 }
 
-@media	( max-width: 667px ) and ( max-height: 375px ),
-		( max-width: 736px ) and ( max-height: 414px ),
-		( max-width: 812px ) and ( max-height: 375px ),
-		( max-height: 800px ) and ( orientation: landscape ) and ( max-width: 1024px ),
+@media	only screen
+		and ( max-width: 667px )
+		and ( max-height: 375px ),
+
+		only screen
+		and ( max-width: 736px )
+		and ( max-height: 414px ),
+
+		only screen
+		and ( max-width: 812px )
+		and ( max-height: 375px ),
+
+		only screen
+		and ( max-height: 800px )
+		and ( orientation: landscape )
+		and ( max-width: 1024px ),
 		// Nokia N9
-		( max-width: 854px ) and ( max-height: 480px ) and ( orientation: landscape ) {
+		only screen
+		and ( max-width: 854px )
+		and ( max-height: 480px )
+		and ( orientation: landscape ) {
 	.reveal {
 		.introduction {
 			padding-top: 50px!important;
@@ -1568,6 +1672,24 @@ section {
 			&__subheader { font-size: 0.8em; margin-bottom: 0; }
 		}
 
+		.schrodinger {
+			&__header { font-size: 0.4em; }
+			&__subheader { font-size: 0.8em; }
+		}
+
+		.live-demo {
+			&__header,
+			&__subheader { font-size: 0.7em; }
+			&__text { font-size: 0.4em; }
+			&__video { max-width: 50%; max-height: 120px;  }
+			&__separator { margin: 5px auto; }
+		}
+
+
+		.sti,
+		.polymorph {
+			&__header { font-size: 1em; }
+		}
 	}
 }
 
@@ -1580,8 +1702,11 @@ section {
 	}
 }
 
-@media	( max-height: 320px ) and ( orientation: landscape ),
-		( max-width: 320px ) and ( max-height: 533px ) {
+@media	( max-height: 320px )
+		and ( orientation: landscape ),
+
+		( max-width: 320px )
+		and ( max-height: 533px ) {
 	.reveal {
 		.introduction {
 			&__separator { margin: 5px auto; }
@@ -1600,7 +1725,9 @@ section {
 }
 
 // Iphone 4
-@media ( max-width: 320px ) and ( max-width: 768px ) and ( max-height: 480px ) {
+@media 	( max-width: 320px )
+		and ( max-width: 768px )
+		and ( max-height: 480px ) {
 	.reveal {
 		.introduction {
 			&__logo {
@@ -1617,7 +1744,9 @@ section {
 }
 
 // Iphone 5/SE
-@media ( max-width: 320px ) and ( max-width: 768px ) and ( max-height: 568px ) {
+@media 	( max-width: 320px )
+		and ( max-width: 768px )
+		and ( max-height: 568px ) {
 	.reveal {
 		.introduction {
 			&__logo {
@@ -1629,7 +1758,11 @@ section {
 }
 
 // iPad
-@media ( min-width: 1024px ) and ( min-height: 768px ) and ( orientation: landscape ) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen
+	and ( min-width: 1024px )
+	and ( min-height: 768px )
+	and ( orientation: landscape )
+	and (-webkit-min-device-pixel-ratio: 2) {
 	.reveal {
 		.introduction {
 			&__header {
@@ -1653,7 +1786,8 @@ section {
 	}
 }
 
-@media ( min-height: 769px ) and ( max-height: 980px ) {
+@media 	( min-height: 769px )
+		and ( max-height: 980px ) {
 	.reveal {
 		.introduction {
 			&__header { margin-bottom: 30px; }
@@ -1663,7 +1797,8 @@ section {
 }
 
 // Nokia Lumia
-@media ( max-height: 320px ) and ( orientation: landscape ) {
+@media 	( max-height: 320px )
+		and ( orientation: landscape ) {
 	.reveal {
 		.who-am-i {
 			&__text { font-size: 16px; }
@@ -1681,7 +1816,10 @@ section {
 }
 
 // iPad Mini Portrait
-@media ( min-width: 768px ) and ( max-height: 1024px ) and ( orientation: portrait ) {
+@media	only screen 
+		and ( min-width: 768px )
+		and ( max-height: 1024px )
+		and ( orientation: portrait ) {
 	.reveal {
 		.dream {
 			&__header { font-size: 45px; }
@@ -1692,11 +1830,18 @@ section {
 }
 
 
-@media	
+@media	only screen
 		// iPhone X landscape
-		( max-width: 812px ) and ( max-height: 375px ) and ( orientation: landscape ) and ( -webkit-min-device-pixel-ratio: 2 ),
+		and ( max-width: 812px )
+		and ( max-height: 375px )
+		and ( orientation: landscape )
+		and ( -webkit-min-device-pixel-ratio: 2 ),
 		// iPad landscape
-		( min-device-width: 768px) and ( max-device-width: 1024px ) and ( orientation: landscape ) and ( -webkit-min-device-pixel-ratio: 2 ) {
+		only screen
+		and ( min-device-width: 768px)
+		and ( max-device-width: 1024px )
+		and ( orientation: landscape )
+		and ( -webkit-min-device-pixel-ratio: 2 ) {
 	.reveal {
 		.side-digit {
 			transform: translateY(20%);
@@ -1704,8 +1849,10 @@ section {
 	}
 }
 
-// Blackberry Playbook
-@media only screen and (max-width: 1024px) and (orientation : landscape) {
+// Blackberry Playbook Landscape
+@media only screen 
+	and ( max-width: 1024px )
+	and ( orientation : landscape ) {
 	.reveal {
 		.they-invented {
 			br { display: none; }
@@ -1715,3 +1862,50 @@ section {
 		}
 	}
 }
+
+// iPhone X Landscape
+@media only screen 
+	and ( min-device-width: 375px ) 
+	and ( max-device-width: 812px )  
+	and ( -webkit-device-pixel-ratio : 3 )
+	and ( orientation: landscape ) {
+		.reveal {
+			.schrodinger {
+				br { display: none; }
+
+				&__image {
+					&--cat {
+						width: 20%;
+						top: 40%;
+					}
+				}
+			}
+
+			.trace {
+				&__header {
+					font-size: 1.7em;
+				}
+				&__subheader {
+					font-size: 0.7em;
+	
+					&--small { font-size: 0.4em; }
+				}
+			}
+		}
+}
+
+@media 	only screen
+		and ( max-width: 850px )
+		and ( max-height: 420px )
+		and ( orientation: landscape ) {
+			.trace {
+				&__header {
+					font-size: 1.7em;
+				}
+				&__subheader {
+					font-size: 0.7em;
+	
+					&--small { font-size: 0.4em; }
+				}
+			}
+		}

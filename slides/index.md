@@ -270,49 +270,61 @@ and it that situation
 <img src="/img/ucircus/team.jpeg" alt="nothing_helps" title="nothing_helps" class="fragment available-data__image  available-data__image--team image image--border">
 
 
---- <!-- .slide: class="shrodinger"-->
+--- <!-- .slide: class="slide schrodinger"-->
 <br>
 ### so what is it ?
+<!-- .element: class="schrodinger__header" -->
 
-# schrodinger's<br> code ? <!-- .element: class="fragment" -->
-<img src="/img/fun/shr_cat.jpg" alt="schrodinger" title="schrodinger" class="fragment schrodinger__image schrodinger__image--1 image image--border">
+# schrodinger's<br> code ?
+<!-- .element: class="fragment schrodinger__subheader" -->
+<img src="/img/fun/shr_cat.jpg" alt="schrodinger" title="schrodinger" class="fragment schrodinger__image schrodinger__image--cat image image--border">
 
-# &nbsp; &nbsp; &nbsp; &nbsp; heisenbug ? <!-- .element: class="fragment" -->
-<img src="/img/fun/heisenbug.jpg" alt="heisenbug" title="heisenbug" class="fragment schrodinger__image schrodinger__image--2 image image--border">
+# &nbsp; &nbsp; &nbsp; &nbsp; heisenbug ?
+<!-- .element: class="fragment schrodinger__subheader schrodinger__subheader--heisenbug" -->
+<img src="/img/fun/heisenbug.jpg" alt="heisenbug" title="heisenbug" class="fragment schrodinger__image schrodinger__image--heisenbug image image--border">
 
 ---
-
+<!-- .slide: class="slide live-demo" -->
 ## LIVE DEMO 1
+<!-- .element: class="live-demo__header"  -->
 
-what the 500 looks like  
+what the 500 looks like 
+<!-- .element: class="live-demo__text" -->
 ### use youtube below
+<!-- .element: class="live-demo__subheader" -->
 
-<hr width="50%">
+
+<hr class="live-demo__separator">
 
 <iframe width="560"
     height="315"
     src="https://www.youtube.com/embed/2g34LNLxpIY?start=21"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+    allowfullscreen
+	class="live-demo__video"></iframe>
 
 
---- <!-- .slide: class="trace" -->
+--- <!-- .slide: class="slide trace" -->
 
 ### we have trace & code
+<!-- .element: class="trace__subheader" -->
 ##### but not
+<!-- .element: class="trace__subheader trace__subheader--small" -->
 <h1 class="trace__header">the state 2 fix</h1>
-#### meaning : when & how ? <!-- .element: class="fragment" -->
-### let me describe ... <!-- .element: class="fragment" -->
+#### meaning : when & how ? <!-- .element: class="fragment trace__subheader trace__subheader--small" -->
+### let me describe ... <!-- .element: class="fragment trace__subheader" -->
 
 ---
 <!-- .slide: class="polymorph" data-transition="zoom" -->
 ### our data layer is a sort of [polymorph](https://youtu.be/Zc3CDFUfHUA?t=1695)
+<!-- .element: class="polymorph__header "-->
 <div data-external="svg/poly.svg" class="polymorph__image" ></div>
 
 ---
-<!-- .slide: class="sti" data-transition="fade" -->
+<!-- .slide: class="slide sti" data-transition="fade" -->
 ### it has fractal struct: [STI & AOP](https://youtu.be/Zc3CDFUfHUA?t=1695)
+<!-- .element: class="sti__header" -->
 <div data-external="svg/poly_struct.svg" class="sti__image"></div>
 
 ---
