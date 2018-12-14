@@ -737,13 +737,34 @@ section {
   .reveal .schrodinger__image--heisenbug {
     width: 60%; } }
 
+@media (max-width: 1370px) {
+  .reveal .oops__image {
+    max-width: 350px; } }
+
+@media (max-width: 1200px) {
+  .reveal .oops__code {
+    font-size: 30px; }
+  .reveal .oops__image {
+    left: 20px;
+    right: auto; } }
+
 @media (max-width: 1124px) {
   .reveal .and-word-was__subtitle {
     font-size: 4.5em; }
   .reveal .relations__subheader {
     font-size: 1.8em; }
   .reveal .relations__header {
-    font-size: 3em; } }
+    font-size: 3em; }
+  .reveal .proto-chain__header--4 {
+    font-size: 0.7em; }
+  .reveal .proto-chain__header--3 {
+    font-size: 0.8em; }
+  .reveal .proto-chain__header--2 {
+    font-size: 1em; }
+  .reveal .proto-chain__text--state {
+    font-size: 2em; }
+  .reveal .proto-chain__text--context {
+    font-size: 1em; } }
 
 @media (max-width: 1024px) {
   .reveal .present {
@@ -759,7 +780,25 @@ section {
   .reveal .significant br {
     display: none; }
   .reveal .significant__text {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .reveal .driven-errors br,
+  .reveal .oops br {
+    display: none; }
+  .reveal .driven-errors__header,
+  .reveal .oops__header {
+    font-size: 1em; }
+  .reveal .driven-errors__code,
+  .reveal .oops__code {
+    font-size: 0.6em;
+    padding: 0 !important; }
+    .reveal .driven-errors__code-wrap,
+    .reveal .oops__code-wrap {
+      min-height: auto; }
+  .reveal .oops {
+    padding: 0 10px !important; }
+    .reveal .oops__image {
+      left: auto;
+      right: 20px; } }
 
 @media (max-width: 980px) {
   .reveal .header--h1 {
@@ -853,7 +892,21 @@ section {
     margin-top: 0; }
   .reveal .sti__header,
   .reveal .polymorph__header {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .reveal .proto-chain__header--4 {
+    font-size: 0.3em; }
+  .reveal .proto-chain__header--3 {
+    font-size: 0.4em; }
+  .reveal .proto-chain__header--2 {
+    font-size: 0.6em; }
+  .reveal .proto-chain__text--state {
+    font-size: 1.5em; }
+  .reveal .proto-chain__text--context {
+    font-size: 0.7em; }
+  .reveal .make-a-spike__header {
+    margin-bottom: 0; }
+  .reveal .make-a-spike br {
+    display: none; } }
 
 @media (max-width: 730px), (max-height: 768px) {
   .reveal .header--h1 {
@@ -977,7 +1030,33 @@ section {
     padding: 0 10px !important; }
     .reveal .sti__header,
     .reveal .polymorph__header {
-      font-size: 0.6em; } }
+      font-size: 0.6em; }
+  .reveal .code-example br,
+  .reveal .driven-errors br,
+  .reveal .oops br {
+    display: none; }
+  .reveal .driven-errors__header,
+  .reveal .oops__header {
+    font-size: 0.8em; }
+  .reveal .driven-errors__code,
+  .reveal .oops__code {
+    font-size: 0.3em;
+    min-height: auto; }
+    .reveal .driven-errors__code-wrap,
+    .reveal .oops__code-wrap {
+      line-height: 1.2; }
+  .reveal .oops__text {
+    font-size: 0.5em; }
+  .reveal .oops__header {
+    font-size: 0.7em;
+    margin-bottom: 0; }
+  .reveal .oops__code {
+    font-size: 16px; }
+  .reveal .oops__image {
+    left: 20px;
+    right: auto; }
+  .reveal .make-a-spike__header {
+    font-size: 1em; } }
 
 @media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
   .reveal .team-mascots-me br {
@@ -997,7 +1076,11 @@ section {
   .reveal .live-demo__header, .reveal .live-demo__subheader {
     font-size: 1.1em; }
   .reveal .live-demo__text {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+  .reveal .proto-chain__text--state {
+    font-size: 1em; }
+  .reveal .proto-chain__text--context {
+    font-size: 0.6em; } }
 
 @media (max-width: 550px) {
   .reveal .image--logo-holyjs {
@@ -1043,7 +1126,19 @@ section {
   .reveal .live-demo__text {
     font-size: 0.4em; }
   .reveal .trace__header {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .reveal .code-example__text {
+    font-size: 0.5em; }
+  .reveal .code-example__header {
+    font-size: 1em; }
+  .reveal .oops__image {
+    left: 50%;
+    right: auto;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50%; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1198,7 +1293,54 @@ section {
     margin: 5px auto; }
   .reveal .sti__header,
   .reveal .polymorph__header {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .reveal .proto-chain__header--4 {
+    font-size: 0.3em; }
+  .reveal .proto-chain__header--3 {
+    font-size: 0.4em; }
+  .reveal .proto-chain__header--2 {
+    font-size: 0.6em; }
+  .reveal .proto-chain__text--state {
+    font-size: 1em; }
+  .reveal .proto-chain__text--context {
+    font-size: 0.7em; }
+  .reveal .code-example__text {
+    font-size: 0.5em; }
+  .reveal .code-example__header {
+    font-size: 1em; }
+  .reveal .code-example__image {
+    width: 50%; }
+  .reveal .driven-errors__text,
+  .reveal .oops__text {
+    font-size: 0.5em; }
+  .reveal .driven-errors__header,
+  .reveal .oops__header {
+    font-size: 0.7em;
+    margin-bottom: 0; }
+  .reveal .driven-errors__code,
+  .reveal .oops__code {
+    font-size: 18px;
+    min-height: auto;
+    padding: 0 !important; }
+    .reveal .driven-errors__code-wrap,
+    .reveal .oops__code-wrap {
+      float: left;
+      line-height: 1.1;
+      width: 45%; }
+      .reveal .driven-errors__code-wrap--2,
+      .reveal .oops__code-wrap--2 {
+        float: right; }
+  .reveal .driven-errors__image,
+  .reveal .oops__image {
+    left: 50%;
+    right: auto;
+    top: 30%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50%; }
+  .reveal .make-a-spike__image {
+    max-width: 40%; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {
@@ -1305,7 +1447,11 @@ section {
   .reveal .trace__subheader {
     font-size: 0.7em; }
     .reveal .trace__subheader--small {
-      font-size: 0.4em; } }
+      font-size: 0.4em; }
+  .reveal .code-example br {
+    display: none; }
+  .reveal .make-a-spike__image {
+    max-width: 25%; } }
 
 @media only screen and (max-width: 850px) and (max-height: 420px) and (orientation: landscape) {
   .trace__header {

@@ -328,46 +328,54 @@ what the 500 looks like
 <div data-external="svg/poly_struct.svg" class="sti__image"></div>
 
 ---
-<!-- .slide: class="proto-chain" data-transition="none" -->
-<br>
-#### behaviour driven by prototype chain
-### depends on scope conditions <!-- .element: class="fragment" -->
-## & aims combined bvr for : <!-- .element: class="fragment" -->
+<!-- .slide: class="slide proto-chain" data-transition="none" -->
+#### behaviour driven by prototype chain <!-- .element: class="proto-chain__header proto-chain__header--4" -->
+### depends on scope conditions <!-- .element: class="fragment proto-chain__header proto-chain__header--3" -->
+## & aims combined bvr for : <!-- .element: class="fragment proto-chain proto-chain__header proto-chain__header--2" -->
 
 # proto + state + (args) <!-- .element: class="fragment proto-chain__text proto-chain__text--state" -->
 
 ### &mdash; superposition multiplied context &mdash; <!-- .element: class="fragment proto-chain__text proto-chain__text--context" -->
 
 ---
+<!-- .slide: class="slide live-demo" -->
 
-## LIVE DEMO 2
+## LIVE DEMO 2 
+<!-- .element: class=" live-demo__header" -->
 
 same stacktrace but  
+<!-- .element: class="live-demo__text" -->
 different modules  
+<!-- .element: class="live-demo__text" -->
 on same 500 stacktrace : fn.bind(state)  
+<!-- .element: class="live-demo__text" -->
 
 ### use youtube below
+<!-- .element: class="live-demo__subheader" -->
 
-<hr class="separator">
+
+<hr class="separator live-demo__separator">
 
 <iframe width="560"
     height="315"
     src="https://www.youtube.com/embed/2g34LNLxpIY?start=327"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+    allowfullscreen
+	class="live-demo__video"></iframe>
 
 
 ---
-**and you can have same code**
-### for example<!-- .element: class="fragment" -->
+<!-- .slide: class="slide code-example" -->
+**and you can have same code** <!-- .element: class="code-example__text" -->
+### for example<!-- .element: class="fragment code-example__header" -->
 <br>
-<img src="/img/error_bar.png" alt="error_bar" title="error_bar" class="fragment image image--border">
+<img src="/img/error_bar.png" alt="error_bar" title="error_bar" class="fragment code-example__image image image--border">
 
 
---- <!-- .slide: class="driven-errors" -->
+--- <!-- .slide: class="slide driven-errors" -->
 <br>
-### and have state driven errors
+### and have state driven errors <!-- .element: class="driven-errors__header" -->
 <br>
 <pre class="driven-errors__code-wrap">
 <code class="lang-javascript hljs fragment driven-errors__code">		var count = 0;
@@ -380,9 +388,9 @@ on same 500 stacktrace : fn.bind(state)
 </pre>
 
 
---- <!-- .slide: class="oops" -->
-**using ```console.log```** <!-- .element: class="fragment" -->
-### we oops : changed bvr & state <!-- .element: class="fragment" -->
+--- <!-- .slide: class="slide oops" -->
+**using ```console.log```** <!-- .element: class="oops__text fragment" -->
+### we oops : changed bvr & state <!-- .element: class="fragment oops__header" -->
 <pre class="oops__code-wrap"><code class="lang-javascript hljs oops__code">
 							var count = 0;
 							const s = () => {
@@ -392,7 +400,7 @@ on same 500 stacktrace : fn.bind(state)
 			
 </code></pre>
 <pre class="oops__code-wrap oops__code-wrap--2">
-<code class="lang-javascript hljs fragment oops__code--2">
+<code class="lang-javascript hljs fragment oops__code oops__code--2">
 			console.log(s());
 			if (s()) {
 				console.log('Oops!');
@@ -402,10 +410,12 @@ on same 500 stacktrace : fn.bind(state)
 <img src="/img/fun/girl_burns.jpeg" alt="girl_burns" title="girl_burns" class="fragment oops__image image  image--border">
 
 ---
+
+<!-- .slide: class="make-a-spike" -->
 <br>
-###  should make a spike
+###  should make a spike <!-- .element: class="make-a-spike__header" -->
 <br>
-<img class="image  image--border" src="/img/ucircus/spike.jpeg" alt="faster" title="ukit team">
+<img class="image  image--border make-a-spike__image" src="/img/ucircus/spike.jpeg" alt="faster" title="ukit team">
 
 
 ---
