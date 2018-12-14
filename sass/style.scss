@@ -416,12 +416,13 @@ section {
 			font-size: 5em;
 			margin-top: 225px
 		}
+
+		&__text { display: block; }
 	}
 
 	.statefull {
 		&__header {
 			font-size: 5em;
-			margin-top: 125px;
 			color: orange;
 		}
 	}
@@ -1105,6 +1106,11 @@ section {
 
 			&__image { left: auto; right: 20px; }
 		}
+
+		.statefull {
+			&__header { font-size: 3em; }
+			&__subheader { font-size: 1.8em; }
+		}
 	}
 }
 
@@ -1184,7 +1190,12 @@ section {
 		.bug-assignment,
 		.situa,
 		.boss,
-		.collect-data {
+		.collect-data,
+		.nodejs-robot,
+		.formal-verification,
+		.sertifying-algorithm,
+		.quantum-verification,
+		.twenty-years-ago {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1192,7 +1203,9 @@ section {
 		.push-button,
 		.coding,
 		.bug-assignment,
-		.stack {
+		.stack,
+		.nodejs-robot,
+		.twenty-years-ago {
 			br { display: none; }
 		}
 
@@ -1271,6 +1284,20 @@ section {
 		.make-a-spike {
 			&__header { margin-bottom: 0; }
 			br { display: none; }
+		}
+
+		.diving {
+			&__header { font-size: 3em; }
+			&__text { font-size: 30px; }
+		}
+
+		.banch-of-links {
+			padding: 0 10px !important;
+
+			br { display: none; }
+			&__header { font-size: 1em; margin-bottom: 0; }
+			&__link { font-size: 30px; word-wrap: break-word;	}
+			&__text { font-size: 28px; }
 		}
 	}
 }
@@ -1477,6 +1504,17 @@ section {
 		.make-a-spike {
 			&__header { font-size: 1em; }
 		}
+
+		.statefull {
+			&__header { font-size: 1.5em; }
+			&__subheader { font-size: 0.8em; }
+		}
+
+		.banch-of-links {
+			&__header { font-size: 0.6em; }
+			&__link { font-size: 20px; }
+			&__text { font-size: 18px; }
+		}
 	}
 }
 
@@ -1604,6 +1642,15 @@ section {
 				width: 50%;
 			}
 		}
+
+		.diving {
+			&__header {
+				font-size: 2em;
+				margin-top: 100px;
+			}
+
+			&__text { font-size: 20px; }
+		}
 	}
 }
 
@@ -1617,6 +1664,15 @@ section {
 		.relations {
 			&__subheader { font-size: 22px; z-index: 100;}
 			&__header { font-size: 26px; z-index: 100;}
+		}
+
+		.diving {
+			&__header { font-size: 1.2em; }
+			&__text { font-size: 18px; }
+		}
+
+		.twenty-years-ago {
+			&__header { font-size: 0.6em; }
 		}
 		
 	}
@@ -1737,7 +1793,12 @@ section {
 				.bug-assignment,
 				.situa,
 				.boss,
-				.collect-data  {
+				.collect-data,
+				.nodejs-robot,
+				.formal-verification,
+				.sertifying-algorithm,
+				.quantum-verification,
+				.twenty-years-ago  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -1869,6 +1930,34 @@ section {
 				.make-a-spike {
 					&__image {
 						max-width: 40%;
+					}
+				}
+
+				.diving {
+					&__header {
+						font-size: 2em;
+						margin-top: 50px;
+					}
+		
+					&__text { font-size: 20px; }
+
+					&__digit { top: -40%; }
+				}
+
+				.banch-of-links {
+					&__header { font-size: 0.6em; }
+					&__link { font-size: 20px; }
+					&__text { font-size: 18px; }
+				}
+
+				.twenty-years-ago  {
+					&__header { font-size: 0.8em; }
+					&__image {
+						margin-top: 30px;
+						max-width: 45%;
+						float: left;
+
+						&--xhr { float: right; }
 					}
 				}
 			}
@@ -2079,6 +2168,10 @@ section {
 
 			.make-a-spike {
 				&__image { max-width: 25%; }
+			}
+
+			.nodejs-robot {
+				&__image { max-width: 40%; }
 			}
 		}
 }

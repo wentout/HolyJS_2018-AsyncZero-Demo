@@ -296,10 +296,12 @@ section {
   font-size: 5em;
   margin-top: 225px; }
 
+.reveal .diving__text {
+  display: block; }
+
 .reveal .statefull__header {
   color: orange;
-  font-size: 5em;
-  margin-top: 125px; }
+  font-size: 5em; }
 
 .reveal .dump__header {
   color: orange;
@@ -798,7 +800,11 @@ section {
     padding: 0 10px !important; }
     .reveal .oops__image {
       left: auto;
-      right: 20px; } }
+      right: 20px; }
+  .reveal .statefull__header {
+    font-size: 3em; }
+  .reveal .statefull__subheader {
+    font-size: 1.8em; } }
 
 @media (max-width: 980px) {
   .reveal .header--h1 {
@@ -840,7 +846,12 @@ section {
   .reveal .bug-assignment__image,
   .reveal .situa__image,
   .reveal .boss__image,
-  .reveal .collect-data__image {
+  .reveal .collect-data__image,
+  .reveal .nodejs-robot__image,
+  .reveal .formal-verification__image,
+  .reveal .sertifying-algorithm__image,
+  .reveal .quantum-verification__image,
+  .reveal .twenty-years-ago__image {
     width: 90%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -850,12 +861,19 @@ section {
   .reveal .bug-assignment__header,
   .reveal .situa__header,
   .reveal .boss__header,
-  .reveal .collect-data__header {
+  .reveal .collect-data__header,
+  .reveal .nodejs-robot__header,
+  .reveal .formal-verification__header,
+  .reveal .sertifying-algorithm__header,
+  .reveal .quantum-verification__header,
+  .reveal .twenty-years-ago__header {
     font-size: 1em; }
   .reveal .push-button br,
   .reveal .coding br,
   .reveal .bug-assignment br,
-  .reveal .stack br {
+  .reveal .stack br,
+  .reveal .nodejs-robot br,
+  .reveal .twenty-years-ago br {
     display: none; }
   .reveal .push-button__header,
   .reveal .coding__header {
@@ -906,7 +924,23 @@ section {
   .reveal .make-a-spike__header {
     margin-bottom: 0; }
   .reveal .make-a-spike br {
-    display: none; } }
+    display: none; }
+  .reveal .diving__header {
+    font-size: 3em; }
+  .reveal .diving__text {
+    font-size: 30px; }
+  .reveal .banch-of-links {
+    padding: 0 10px !important; }
+    .reveal .banch-of-links br {
+      display: none; }
+    .reveal .banch-of-links__header {
+      font-size: 1em;
+      margin-bottom: 0; }
+    .reveal .banch-of-links__link {
+      font-size: 30px;
+      word-wrap: break-word; }
+    .reveal .banch-of-links__text {
+      font-size: 28px; } }
 
 @media (max-width: 730px), (max-height: 768px) {
   .reveal .header--h1 {
@@ -1056,7 +1090,17 @@ section {
     left: 20px;
     right: auto; }
   .reveal .make-a-spike__header {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .reveal .statefull__header {
+    font-size: 1.5em; }
+  .reveal .statefull__subheader {
+    font-size: 0.8em; }
+  .reveal .banch-of-links__header {
+    font-size: 0.6em; }
+  .reveal .banch-of-links__link {
+    font-size: 20px; }
+  .reveal .banch-of-links__text {
+    font-size: 18px; } }
 
 @media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
   .reveal .team-mascots-me br {
@@ -1138,7 +1182,12 @@ section {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 50%; } }
+    width: 50%; }
+  .reveal .diving__header {
+    font-size: 2em;
+    margin-top: 100px; }
+  .reveal .diving__text {
+    font-size: 20px; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1150,7 +1199,13 @@ section {
     z-index: 100; }
   .reveal .relations__header {
     font-size: 26px;
-    z-index: 100; } }
+    z-index: 100; }
+  .reveal .diving__header {
+    font-size: 1.2em; }
+  .reveal .diving__text {
+    font-size: 18px; }
+  .reveal .twenty-years-ago__header {
+    font-size: 0.6em; } }
 
 @media (max-width: 340px) {
   .reveal .metaphor__header {
@@ -1225,7 +1280,12 @@ section {
   .reveal .bug-assignment__image,
   .reveal .situa__image,
   .reveal .boss__image,
-  .reveal .collect-data__image {
+  .reveal .collect-data__image,
+  .reveal .nodejs-robot__image,
+  .reveal .formal-verification__image,
+  .reveal .sertifying-algorithm__image,
+  .reveal .quantum-verification__image,
+  .reveal .twenty-years-ago__image {
     width: 70%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1235,7 +1295,12 @@ section {
   .reveal .bug-assignment__header,
   .reveal .situa__header,
   .reveal .boss__header,
-  .reveal .collect-data__header {
+  .reveal .collect-data__header,
+  .reveal .nodejs-robot__header,
+  .reveal .formal-verification__header,
+  .reveal .sertifying-algorithm__header,
+  .reveal .quantum-verification__header,
+  .reveal .twenty-years-ago__header {
     font-size: 1em;
     margin-bottom: 0; }
   .reveal .push-button__header,
@@ -1340,7 +1405,28 @@ section {
     transform: translateX(-50%);
     width: 50%; }
   .reveal .make-a-spike__image {
-    max-width: 40%; } }
+    max-width: 40%; }
+  .reveal .diving__header {
+    font-size: 2em;
+    margin-top: 50px; }
+  .reveal .diving__text {
+    font-size: 20px; }
+  .reveal .diving__digit {
+    top: -40%; }
+  .reveal .banch-of-links__header {
+    font-size: 0.6em; }
+  .reveal .banch-of-links__link {
+    font-size: 20px; }
+  .reveal .banch-of-links__text {
+    font-size: 18px; }
+  .reveal .twenty-years-ago__header {
+    font-size: 0.8em; }
+  .reveal .twenty-years-ago__image {
+    float: left;
+    margin-top: 30px;
+    max-width: 45%; }
+    .reveal .twenty-years-ago__image--xhr {
+      float: right; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {
@@ -1451,7 +1537,9 @@ section {
   .reveal .code-example br {
     display: none; }
   .reveal .make-a-spike__image {
-    max-width: 25%; } }
+    max-width: 25%; }
+  .reveal .nodejs-robot__image {
+    max-width: 40%; } }
 
 @media only screen and (max-width: 850px) and (max-height: 420px) and (orientation: landscape) {
   .trace__header {

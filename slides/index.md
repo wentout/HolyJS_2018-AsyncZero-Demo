@@ -420,81 +420,88 @@ on same 500 stacktrace : fn.bind(state)
 
 ---
 
---- <!-- .slide: class="diving" -->
+--- <!-- .slide: class="slide diving" -->
 
 
 <h1 class="diving__header">diving</h1>
 
 <br>
-an approach  
-hopless though...
-
-<h1 class="side-digit side-digit__1">2</h1>
-
----
-
----
+an approach <!-- .element: class="diving__text" --> 
 <br>
-# nodejs is a robot
+hopless though...<!-- .element: class="diving__text" -->
 
-<img src="/img/terminator.jpg" alt="terminator" title="terminator" class="fragment image  image--border">
+<h1 class="side-digit side-digit__1 diving__digit">2</h1>
+
+---
+
+---
+<!-- .slide: class="slide nodejs-robot" -->
+<br>
+# nodejs is a robot <!-- .element: class="nodejs-robot__header" -->
+
+<img src="/img/terminator.jpg" alt="terminator" title="terminator" class="fragment image  image--border nodejs-robot__image">
 
 --- <!-- .slide: class="statefull" -->
 
 <h1 class="statefull__header">Statefull</h1>
-# Context Machine
+# Context Machine <!-- .element: class="statefull__subheader" -->
 
 ---
 <img class="image image--border" src="/img/fun/google.jpg" alt="google" title="google" width="80%">
 
 ---
+<!-- .slide: class="formal-verificatin" -->
 ## Formal verification - [wiki](https://en.wikipedia.org/wiki/Formal_verification)
+<!-- .element: class="formal-verification__header" -->
 
-<img  class="image image--border" src="/img/notes/formal_verification.jpg" alt="formal_verification" title="formal_verification" width="75%">
+<img  class="image image--border formal-verification__image" src="/img/notes/formal_verification.jpg" alt="formal_verification" title="formal_verification" width="75%">
 
 ---
+<!-- .slide: class="sertifying-algorithm" -->
 
 ## Certifying algorithm - [wiki](https://en.wikipedia.org/wiki/Certifying_algorithm)
-<img  class="image image--border" src="/img/notes/certifying_algorithm.jpg" alt="certifying_algorithm" title="certifying_algorithm" width="75%">
+<!-- .element: class="sertifying-algorithm__header" -->
+<img  class="image image--border sertifying-algorithm__image" src="/img/notes/certifying_algorithm.jpg" alt="certifying_algorithm" title="certifying_algorithm" width="75%">
 
 ---
-
+<!-- .slide: class="quantum-verification"  -->
 [<img  class="image image--border" src="/img/notes/quantum_verification.jpg" alt="quantum_verification" title="quantum_verification" width="75%">](https://www.quantamagazine.org/graduate-student-solves-quantum-verification-problem-20181008/)
+<!-- .element: class="quantum-verification__image" -->
 
+---
+<!-- .slide: class="slide banch-of-links" -->
+<br>
+... so... <!-- .element: class="banch-of-links__text" -->
+
+### NP-completeness <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/NP-completeness <!-- .element: class="banch-of-links__link" -->
+
+### Set theory <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/Set_theory <!-- .element: class="banch-of-links__link" -->
+
+### Theory of constraints <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/Theory_of_constraints <!-- .element: class="banch-of-links__link" -->
 
 ---
 <br>
-... so...
+### Self-clocking signal <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/Self-clocking_signal <!-- .element: class="banch-of-links__link" -->
 
-### NP-completeness
-https://en.wikipedia.org/wiki/NP-completeness
+### Self-synchronizing code <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/Self-synchronizing_code <!-- .element: class="banch-of-links__link" -->
 
-### Set theory
-https://en.wikipedia.org/wiki/Set_theory
-
-### Theory of constraints
-https://en.wikipedia.org/wiki/Theory_of_constraints
-
----
-<br>
-### Self-clocking signal
-https://en.wikipedia.org/wiki/Self-clocking_signal
-
-### Self-synchronizing code
-https://en.wikipedia.org/wiki/Self-synchronizing_code
-
-## what it is about ?
+## what it is about ? <!-- .element: class="banch-of-links__header banch-of-links__header--2" -->
 	
-Networking? Microcontrollers?
+Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 
 ---
-<!-- .slide: data-transition="none" -->
+<!-- .slide: class="slide twenty-years-ago" data-transition="none" -->
 <br>
-### How Simple it was 20 years ago
+### How Simple it was 20 years ago <!-- .element: class="twenty-years-ago__header" -->
 
-<img src="/img/ie.png" alt="winter" title="winter" width="45%" class="fragment image--noborder">
+<img src="/img/ie.png" alt="winter" title="winter" width="45%" class="fragment image--noborder twenty-years-ago__image">
 
-<img src="/img/notes/syn_xhr.png" alt="syn_xhr" title="syn_xhr" width="41%" class="fragment image--noborder">
+<img src="/img/notes/syn_xhr.png" alt="syn_xhr" title="syn_xhr" width="41%" class="fragment image--noborder twenty-years-ago__image twenty-years-ago__image--xhr">
 
 ---
 <!-- .slide: data-transition="none" -->
