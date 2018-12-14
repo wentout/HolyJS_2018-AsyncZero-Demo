@@ -1111,6 +1111,19 @@ section {
 				&--context { font-size: 1em; }
 			}
 		}
+
+		.tracking {
+			br { display: none; }
+
+			&__header {
+				&--0 { font-size: 3em; }
+				&--1 { font-size: 1em; }
+				&--2 { font-size: 0.8em; }
+				&--3 { font-size: 0.6em; }
+			}
+
+			&__digit {}
+		}
 	}
 }
 
@@ -1179,6 +1192,19 @@ section {
 				min-height: auto;
 
 				&-wrap { line-height: 1.3; }
+			}
+		}
+
+		.entrypoint {
+			&__header { font-size:  1em;}
+			&__subheader { font-size: 0.7em; }
+
+			&__code {
+				font-size: 20px;
+				padding: 0 !important;
+				min-height: auto;
+
+				&-wrap { line-height: 1.1; }
 			}
 		}
 
@@ -1646,6 +1672,10 @@ section {
 			font-size: 5em;
 			line-height: 0.2;
 		}
+
+		.tracking {
+			&__digit {}
+		}
 	}
 }
 
@@ -1797,6 +1827,27 @@ section {
 		.scope {
 			&__header { font-size: 0.8em; }
 		}
+
+		.tracking {
+			&__header {
+				z-index: 10;
+
+				&--0 { font-size: 2em; }
+			}
+
+			&__digit { z-index: -1; }
+		}
+
+		.entrypoint {
+			&__header { font-size:  0.6em;}
+			&__subheader { font-size: 0.4em; }
+
+			&__code {
+				font-size: 14px;
+
+				&-wrap { line-height: 1.1; }
+			}
+		}
 	}
 }
 
@@ -1825,6 +1876,12 @@ section {
 			&__descriptor {
 				top: 38%; right: 20px;
 				font-size: 20px;
+			}
+		}
+
+		.tracking {
+			&__header {
+				&--0 { font-size: 1.3em; }
 			}
 		}
 		
@@ -2164,6 +2221,33 @@ section {
 				.dots {
 					font-size: 5em;
 					line-height: 0.2;
+				}
+
+				.tracking {
+					&__header {
+						&--0 { font-size: 1.3em; }
+					}
+				}
+
+				.entrypoint {
+					&__header {
+						font-size:  0.6em;
+					}
+					&__subheader {
+						font-size: 0.4em;
+					}
+
+					&__header,
+					&__subheader { margin: 0; }
+		
+					&__code {
+						font-size: 14px;
+		
+						&-wrap {
+							line-height: 1.1; 
+							margin: 0 auto;
+						}
+					}
 				}
 			}
 }

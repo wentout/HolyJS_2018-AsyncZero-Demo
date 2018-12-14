@@ -599,24 +599,24 @@ https://en.wikipedia.org/wiki/Smalltalk
 
 ---
 
---- <!-- .slide: class="tracking" -->
+--- <!-- .slide: class="slide tracking" -->
 
 <br>
-<h1 class="tracking__header">Trackig</h1>
+<h1 class="tracking__header tracking__header--0">Trackig</h1>
 
-### Events!<!-- .element: class="fragment" -->
-## Events!<!-- .element: class="fragment" -->
-# Events!<!-- .element: class="fragment" -->
+### Events!<!-- .element: class="fragment tracking__header--3" -->
+## Events!<!-- .element: class="fragment tracking__header--2" -->
+# Events!<!-- .element: class="fragment tracking__header--1" -->
 
 
-<h1 class="side-digit side-digit__1">3</h1>
+<h1 class="side-digit side-digit__1 tracking__digit">3</h1>
 
 ---
 
---- <!-- .slide: class="entrypoint" -->
+--- <!-- .slide: class="slide entrypoint" -->
 ## an entrypoint is any op <!-- .element: class="entrypoint__header" -->
-### for example request <!-- .element: class="fragment" -->
-<pre class="entrypoint__code-wrap"><code class="lang-javascript hljs fragment entrypoint__code">
+### for example request <!-- .element: class="fragment entrypoint__subheader entrypoint__subheader--1" -->
+<pre class="entrypoint__code-wrap entrypoint__code-wrap--1"><code class="lang-javascript hljs fragment entrypoint__code">
 
 						const express = require('express');
 						const app = express();
@@ -627,9 +627,9 @@ https://en.wikipedia.org/wiki/Smalltalk
 		
 </code></pre>
 
-### or file read <!-- .element: class="fragment" -->
+### or file read <!-- .element: class="fragment entrypoint__subheader entrypoint__subheader--2" -->
 
-<pre class="entrypoint__code-wrap"><code class="lang-javascript hljs fragment entrypoint__code">
+<pre class="entrypoint__code-wrap entrypoint__code-wrap--2"><code class="lang-javascript hljs fragment entrypoint__code">
 						
 						require('fs').readFile(name, (err, data) => {
 							// THIS is ENTRYPOINT TOO

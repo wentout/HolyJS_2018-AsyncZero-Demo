@@ -789,7 +789,17 @@ section {
   .reveal .proto-chain__text--state {
     font-size: 2em; }
   .reveal .proto-chain__text--context {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .reveal .tracking br {
+    display: none; }
+  .reveal .tracking__header--0 {
+    font-size: 3em; }
+  .reveal .tracking__header--1 {
+    font-size: 1em; }
+  .reveal .tracking__header--2 {
+    font-size: 0.8em; }
+  .reveal .tracking__header--3 {
+    font-size: 0.6em; } }
 
 @media (max-width: 1024px) {
   .reveal .present {
@@ -848,7 +858,17 @@ section {
     font-size: 30px;
     min-height: auto; }
     .reveal .cache__code-wrap {
-      line-height: 1.3; } }
+      line-height: 1.3; }
+  .reveal .entrypoint__header {
+    font-size: 1em; }
+  .reveal .entrypoint__subheader {
+    font-size: 0.7em; }
+  .reveal .entrypoint__code {
+    font-size: 20px;
+    min-height: auto;
+    padding: 0 !important; }
+    .reveal .entrypoint__code-wrap {
+      line-height: 1.1; } }
 
 @media (max-width: 980px) {
   .reveal .header--h1 {
@@ -1283,7 +1303,21 @@ section {
   .reveal .graphana__header {
     font-size: 0.8em; }
   .reveal .scope__header {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+  .reveal .tracking__header {
+    z-index: 10; }
+    .reveal .tracking__header--0 {
+      font-size: 2em; }
+  .reveal .tracking__digit {
+    z-index: -1; }
+  .reveal .entrypoint__header {
+    font-size: 0.6em; }
+  .reveal .entrypoint__subheader {
+    font-size: 0.4em; }
+  .reveal .entrypoint__code {
+    font-size: 14px; }
+    .reveal .entrypoint__code-wrap {
+      line-height: 1.1; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1305,7 +1339,9 @@ section {
   .reveal .dump__descriptor {
     font-size: 20px;
     right: 20px;
-    top: 38%; } }
+    top: 38%; }
+  .reveal .tracking__header--0 {
+    font-size: 1.3em; } }
 
 @media (max-width: 340px) {
   .reveal .metaphor__header {
@@ -1563,7 +1599,20 @@ section {
       width: 55%; }
   .reveal .dots {
     font-size: 5em;
-    line-height: 0.2; } }
+    line-height: 0.2; }
+  .reveal .tracking__header--0 {
+    font-size: 1.3em; }
+  .reveal .entrypoint__header {
+    font-size: 0.6em; }
+  .reveal .entrypoint__subheader {
+    font-size: 0.4em; }
+  .reveal .entrypoint__header, .reveal .entrypoint__subheader {
+    margin: 0; }
+  .reveal .entrypoint__code {
+    font-size: 14px; }
+    .reveal .entrypoint__code-wrap {
+      line-height: 1.1;
+      margin: 0 auto; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {
