@@ -707,6 +707,10 @@ section {
   body.print-pdf #chalkboard {
     display: none; } }
 
+@media (max-width: 1500px) {
+  .reveal .graphana__subtitle {
+    font-size: 18vw; } }
+
 @media (max-width: 1450px) {
   .reveal .introduction {
     padding-top: 100px !important; }
@@ -737,18 +741,37 @@ section {
   .reveal .schrodinger__image--cat {
     width: 30%; }
   .reveal .schrodinger__image--heisenbug {
-    width: 60%; } }
+    width: 60%; }
+  .reveal .threads__subtitle--alarm {
+    font-size: 11vw;
+    top: 30%; }
+  .reveal .threads__subtitle--state {
+    font-size: 5vw;
+    top: 60%; }
+  .reveal .threads__subtitle--alarm, .reveal .threads__subtitle--state {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); } }
 
 @media (max-width: 1370px) {
   .reveal .oops__image {
-    max-width: 350px; } }
+    max-width: 350px; }
+  .reveal .node-fibers__subtitle {
+    font-size: 11vw;
+    left: 1%;
+    top: 40%;
+    z-index: 1000; } }
 
 @media (max-width: 1200px) {
   .reveal .oops__code {
     font-size: 30px; }
   .reveal .oops__image {
     left: 20px;
-    right: auto; } }
+    right: auto; }
+  .reveal .dump__descriptor {
+    font-size: 30px;
+    top: 30%; } }
 
 @media (max-width: 1124px) {
   .reveal .and-word-was__subtitle {
@@ -804,7 +827,28 @@ section {
   .reveal .statefull__header {
     font-size: 3em; }
   .reveal .statefull__subheader {
-    font-size: 1.8em; } }
+    font-size: 1.8em; }
+  .reveal .dtrace__header {
+    margin-top: 0; }
+  .reveal .dtrace p {
+    text-align: left; }
+  .reveal .dtrace__image--dtrace {
+    margin-left: 10px; }
+  .reveal .dtrace__image--flamegraph {
+    left: auto;
+    right: 10px; }
+  .reveal .dtrace__text {
+    font-size: 27vw;
+    top: 50%; }
+  .reveal .cache br {
+    display: none; }
+  .reveal .cache__header {
+    font-size: 1em; }
+  .reveal .cache__code {
+    font-size: 30px;
+    min-height: auto; }
+    .reveal .cache__code-wrap {
+      line-height: 1.3; } }
 
 @media (max-width: 980px) {
   .reveal .header--h1 {
@@ -826,12 +870,15 @@ section {
     font-size: 36px; }
   .reveal .they-invented__subheader {
     font-size: 20px; }
-  .reveal .all-complicated__header {
+  .reveal .all-complicated__header,
+  .reveal .cache__header {
     font-size: 1.6em; }
-  .reveal .all-complicated__subheader {
+  .reveal .all-complicated__subheader,
+  .reveal .cache__subheader {
     font-size: 1.1em; }
   .reveal .all-complicated__code,
-  .reveal .they-invented__code {
+  .reveal .they-invented__code,
+  .reveal .cache__code {
     font-size: 14px;
     padding: 10px 5px !important; }
   .reveal .relations__subheader {
@@ -851,7 +898,13 @@ section {
   .reveal .formal-verification__image,
   .reveal .sertifying-algorithm__image,
   .reveal .quantum-verification__image,
-  .reveal .twenty-years-ago__image {
+  .reveal .twenty-years-ago__image,
+  .reveal .winter__image,
+  .reveal .dump__image,
+  .reveal .dtrace__image,
+  .reveal .graphana__image,
+  .reveal .scope__image,
+  .reveal .threads__image {
     width: 90%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -866,14 +919,26 @@ section {
   .reveal .formal-verification__header,
   .reveal .sertifying-algorithm__header,
   .reveal .quantum-verification__header,
-  .reveal .twenty-years-ago__header {
+  .reveal .twenty-years-ago__header,
+  .reveal .winter__header,
+  .reveal .dump__header,
+  .reveal .dtrace__header,
+  .reveal .graphana__header,
+  .reveal .scope__header,
+  .reveal .threads__header {
     font-size: 1em; }
   .reveal .push-button br,
   .reveal .coding br,
   .reveal .bug-assignment br,
   .reveal .stack br,
   .reveal .nodejs-robot br,
-  .reveal .twenty-years-ago br {
+  .reveal .twenty-years-ago br,
+  .reveal .winter br,
+  .reveal .dump br,
+  .reveal .dtrace br,
+  .reveal .graphana br,
+  .reveal .scope br,
+  .reveal .threads br {
     display: none; }
   .reveal .push-button__header,
   .reveal .coding__header {
@@ -940,7 +1005,23 @@ section {
       font-size: 30px;
       word-wrap: break-word; }
     .reveal .banch-of-links__text {
-      font-size: 28px; } }
+      font-size: 28px; }
+  .reveal .dump__descriptor {
+    font-size: 20px;
+    left: auto;
+    right: 10%;
+    top: 34%; }
+  .reveal .graphana__subheader {
+    font-size: 0.8em; }
+  .reveal .graphana__image--trace {
+    left: auto;
+    right: 1%; }
+  .reveal .graphana__subtitle {
+    top: 35%; }
+  .reveal .node-fibers__header {
+    font-size: 1em; }
+  .reveal .node-fibers__image--downloads {
+    width: 55%; } }
 
 @media (max-width: 730px), (max-height: 768px) {
   .reveal .header--h1 {
@@ -1100,7 +1181,14 @@ section {
   .reveal .banch-of-links__link {
     font-size: 20px; }
   .reveal .banch-of-links__text {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .reveal .graphana__image--trace {
+    top: 50%; }
+  .reveal .cache__header {
+    font-size: 0.8em; }
+  .reveal .dots {
+    font-size: 5em;
+    line-height: 0.2; } }
 
 @media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
   .reveal .team-mascots-me br {
@@ -1187,7 +1275,15 @@ section {
     font-size: 2em;
     margin-top: 100px; }
   .reveal .diving__text {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .reveal .winter__header {
+    font-size: 0.8em; }
+  .reveal .graphana__subheader {
+    font-size: 0.5em; }
+  .reveal .graphana__header {
+    font-size: 0.8em; }
+  .reveal .scope__header {
+    font-size: 0.8em; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1205,7 +1301,11 @@ section {
   .reveal .diving__text {
     font-size: 18px; }
   .reveal .twenty-years-ago__header {
-    font-size: 0.6em; } }
+    font-size: 0.6em; }
+  .reveal .dump__descriptor {
+    font-size: 20px;
+    right: 20px;
+    top: 38%; } }
 
 @media (max-width: 340px) {
   .reveal .metaphor__header {
@@ -1285,7 +1385,13 @@ section {
   .reveal .formal-verification__image,
   .reveal .sertifying-algorithm__image,
   .reveal .quantum-verification__image,
-  .reveal .twenty-years-ago__image {
+  .reveal .twenty-years-ago__image,
+  .reveal .winter__image,
+  .reveal .dump__image,
+  .reveal .dtrace__image,
+  .reveal .graphana__image,
+  .reveal .scope__image,
+  .reveal .threads__image {
     width: 70%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1300,7 +1406,13 @@ section {
   .reveal .formal-verification__header,
   .reveal .sertifying-algorithm__header,
   .reveal .quantum-verification__header,
-  .reveal .twenty-years-ago__header {
+  .reveal .twenty-years-ago__header,
+  .reveal .winter__header,
+  .reveal .dump__header,
+  .reveal .dtrace__header,
+  .reveal .graphana__header,
+  .reveal .scope__header,
+  .reveal .threads__header {
     font-size: 1em;
     margin-bottom: 0; }
   .reveal .push-button__header,
@@ -1426,7 +1538,32 @@ section {
     margin-top: 30px;
     max-width: 45%; }
     .reveal .twenty-years-ago__image--xhr {
-      float: right; } }
+      float: right; }
+  .reveal .winter__header {
+    font-size: 0.8em; }
+  .reveal .winter__image {
+    max-width: 50%; }
+  .reveal .dump__descriptor {
+    right: 20%; }
+  .reveal .dtrace__image--flamegraph {
+    top: 18%; }
+  .reveal .graphana__image--trace {
+    top: 30%; }
+  .reveal .graphana__subheader {
+    font-size: 0.5em; }
+  .reveal .graphana__header {
+    font-size: 0.8em; }
+  .reveal .graphana__subtitle {
+    top: 35%; }
+  .reveal .node-fibers__header {
+    font-size: 1em; }
+  .reveal .node-fibers__image {
+    margin: 0; }
+    .reveal .node-fibers__image--downloads {
+      width: 55%; }
+  .reveal .dots {
+    font-size: 5em;
+    line-height: 0.2; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {
@@ -1539,7 +1676,13 @@ section {
   .reveal .make-a-spike__image {
     max-width: 25%; }
   .reveal .nodejs-robot__image {
-    max-width: 40%; } }
+    max-width: 40%; }
+  .reveal .dump__header {
+    margin-top: 0; }
+  .reveal .dump__descriptor {
+    top: 28%; }
+  .reveal .dtrace__text {
+    top: 30%; } }
 
 @media only screen and (max-width: 850px) and (max-height: 420px) and (orientation: landscape) {
   .trace__header {

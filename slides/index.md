@@ -504,20 +504,20 @@ Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 <img src="/img/notes/syn_xhr.png" alt="syn_xhr" title="syn_xhr" width="41%" class="fragment image--noborder twenty-years-ago__image twenty-years-ago__image--xhr">
 
 ---
-<!-- .slide: data-transition="none" -->
+<!-- .slide: class="winter"  data-transition="none" -->
 <br>
-### wish i'd able freeze the state
-<img src="/img/fun/winter.jpeg" alt="winter" title="winter" width="50%" class="fragment image image--border">
+### wish i'd able freeze the state <!-- .element: class="winter__header" -->
+<img src="/img/fun/winter.jpeg" alt="winter" title="winter" width="50%" class="fragment image  image--border winter__image">
 
 --- <!-- .slide: class="dump" -->
 <h1 class="dump__header">core dump ?</h1>
 
-[<img src="/img/notes/core_dump.png" class="image image--border" alt="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" title="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" width ="70%">](https://www.youtube.com/watch?v=_qzFJ2MPVWQ)
+[<img src="/img/notes/core_dump.png" class="image image--border dump__image" alt="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" title="Николай Матвиенко – Поиск и устранение неисправностей Node.js-приложений под капотом" width ="70%">](https://www.youtube.com/watch?v=_qzFJ2MPVWQ)
 
 <h3 class="fragment dump__descriptor"> **--abort-on-uncaught-exception** </h3>
 
 
---- <!-- .slide: class="dtrace" -->
+--- <!-- .slide: class="slide dtrace" -->
 
 <h1 class="dtrace__header">Profiling & DTrace ?</h1>
 
@@ -528,9 +528,9 @@ Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 <h3 class="fragment dtrace__text"> &#161; real </h3>
 
 
---- <!-- .slide: class="graphana" -->
+--- <!-- .slide: class="slide graphana" -->
 
-### we have graphana & prometseus 
+### we have graphana & prometseus  <!-- .element: class="graphana__subheader" -->
 # may be this is it ? <!-- .element: class="graphana__header" -->
 <img class="image image--border graphana__image graphana__image--api" src="/img/notes/perf_prof.png" alt="perf_prof" title="perf_prof" width="75%">
 
@@ -539,13 +539,13 @@ Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 <h3 class="fragment graphana__subtitle"> &#161; <span class="graphana__subtitle--colored">p</span>erf only ! </h3>
 
 
---- <!-- .slide: class="scope" -->
+--- <!-- .slide: class="slide scope" -->
 <br>
 <h1 class="scope__header"> [[ Scope ]] </h1>
 <br>
 <img class="scope__image image image--border" src="/img/notes/scope.png" alt="scope" title="scope" width="50%">
 
---- <!-- .slide: class="cache"-->
+--- <!-- .slide: class="slide cache"-->
 <br>
 ## delete require.cache <!-- .element: class="cache__header" -->
 
@@ -566,7 +566,7 @@ Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 
 --- <!-- .slide: class="threads" -->
 
-### threads...
+### threads... <!-- .element: class="threads__header" -->
 
 <img class="image image--border" src="/img/notes/worker_threads.png" alt="worker_threads" title="worker_threads" width="85%">
 
@@ -580,17 +580,21 @@ Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 # ... <!-- .element: class="dots" -->
 
 ---
+<!-- .slide: class="slide banch-of-links" -->
 <br>
-## Control flow
+## Control flow <!-- .element: class="banch-of-links__header" -->
 https://en.wikipedia.org/wiki/Control_flow
+<!-- .element: class="banch-of-links__link" -->
 
-## Green threads
+## Green threads <!-- .element: class="banch-of-links__header" -->
 https://en.wikipedia.org/wiki/Green_threads
+<!-- .element: class="banch-of-links__link" -->
 
-### Ruby, Go, Closure, Lisp ...
+### Ruby, Go, Closure, Lisp ... <!-- .element: class="banch-of-links__header" -->
 
-### Smalltalk
+### Smalltalk <!-- .element: class="banch-of-links__header" -->
 https://en.wikipedia.org/wiki/Smalltalk
+<!-- .element: class="banch-of-links__link" -->
 
 
 ---
