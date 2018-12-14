@@ -637,39 +637,41 @@ https://en.wikipedia.org/wiki/Smalltalk
 	
 </code></pre>
 
---- <!-- .slide: class="no-async" -->
+--- <!-- .slide: class="slide no-async" -->
 
 ## no async 4 ECMAScript® 2015 <!-- .element: class="no-async__header" -->
-<h3><a href="http://www.ecma-international.org/ecma-262/6.0/index.html#sec-jobs-and-job-queues"> 8.4 Jobs & Job Queues </a></h3>
-<img class="image image--border" src="/img/es2015jobs.png" alt="ES 2015 jobs definition" title="ES 2015 jobs definition" width="75%">
+<h3 class="no-async__header" ><a href="http://www.ecma-international.org/ecma-262/6.0/index.html#sec-jobs-and-job-queues"> 8.4 Jobs & Job Queues </a></h3>
+<img class="image image--border no-async__image" src="/img/es2015jobs.png" alt="ES 2015 jobs definition" title="ES 2015 jobs definition" width="75%">
 
-is very first note about async tasks  
-mostly made 4 promises
-
----
-<br>
-
-#### all asynchronous JS 
-### is a part of environment
-<br>
-
-* [MDN  : window.setTimeout](https://developer.mozilla.org/ro/docs/Web/API/window.setTimeout)
-* [node : global.setTimeout](https://nodejs.org/api/globals.html#globals_settimeout_callback_delay_args)
-* [node : process.nextTick ](https://nodejs.org/api/process.html#process_process_nexttick_callback_args)
+is very first note about async tasks  <!-- .element: class="no-async__text" -->
+<br />
+mostly made 4 promises <!-- .element: class="no-async__text" -->
 
 ---
-<!-- .slide: class="window-node" data-transition="fade" -->
+<!-- .slide: class="slide banch-of-links" -->
 <br>
-## window
 
-<pre><code class="lang-javascript hljs window-node__code">
+#### all asynchronous JS  <!-- .element: class="banch-of-links__header" -->
+### is a part of environment <!-- .element: class="banch-of-links__header" -->
+<br>
+
+* [MDN  : window.setTimeout](https://developer.mozilla.org/ro/docs/Web/API/window.setTimeout) <!-- .element: class="banch-of-links__link" -->
+* [node : global.setTimeout](https://nodejs.org/api/globals.html#globals_settimeout_callback_delay_args) <!-- .element: class="banch-of-links__link" -->
+* [node : process.nextTick ](https://nodejs.org/api/process.html#process_process_nexttick_callback_args) <!-- .element: class="banch-of-links__link" -->
+
+---
+<!-- .slide: class="slide window-node" data-transition="fade" -->
+<br>
+## window <!-- .element: class="window-node__header" -->
+
+<pre class="window-node__code-wrap"><code class="lang-javascript hljs window-node__code">
 window.onerror = 
 
 </code></pre>
 
-## node.js
+## node.js <!-- .element: class="window-node__header" -->
 
-<pre><code class="lang-javascript hljs window-node__code">
+<pre class="window-node__code-wrap"><code class="lang-javascript hljs window-node__code">
 
 process.on('uncaughtException' ...);
 
@@ -678,18 +680,18 @@ process.on('unhandledRejection' ...);
 </code></pre>
 
 ---
-<!-- .slide: class="event-loop" data-transition="fade" -->
+<!-- .slide: class="slide event-loop" data-transition="fade" -->
 ## Event Loop <!-- .element: class="event-loop__header" -->
 
-<img class="image image--border" src="/img/ivan.png" alt="Иван Тулуп: асинхронщина в JS под капотом / Михаил Башуров" title="Иван Тулуп: асинхронщина в JS под капотом / Михаил Башуров" width ="57%">
+<img class="image image--border event-loop__image" src="/img/ivan.png" alt="Иван Тулуп: асинхронщина в JS под капотом / Михаил Башуров" title="Иван Тулуп: асинхронщина в JS под капотом / Михаил Башуров" width ="57%">
 <br>
-[Habr](https://habr.com/company/oleg-bunin/blog/417461/)/ [YouTube](https://www.youtube.com/watch?v=bUx8wk4LdoY)
+[Habr](https://habr.com/company/oleg-bunin/blog/417461/)/ [YouTube](https://www.youtube.com/watch?v=bUx8wk4LdoY) 
 
 ---
-<!-- .slide: data-transition="fade" -->
-## Event Loop <!-- .element: class="event-loop__header" -->
+<!-- .slide: class="slide loop-anyway" data-transition="fade" -->
+## Event Loop <!-- .element: class="loop-anyway__header" -->
 
-[<img class="image image--border" src="/img/philip_roberts.png" alt="Philip Roberts: What the heck is the event loop anyway? | JSConf EU" title="Philip Roberts: What the heck is the event loop anyway? | JSConf EU" width ="57%">](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+[<img class="image image--border loop-anyway__image" src="/img/philip_roberts.png" alt="Philip Roberts: What the heck is the event loop anyway? | JSConf EU" title="Philip Roberts: What the heck is the event loop anyway? | JSConf EU" width ="57%">](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ---
 <!-- .slide: data-transition="zoom" -->

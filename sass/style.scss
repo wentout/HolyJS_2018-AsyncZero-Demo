@@ -577,15 +577,12 @@ section {
 		}
 	}
 
-	.no-async {
-		&__header { margin-top: 50px; }
-	}
-
 	.window-node {
 		&__code { text-align: center; }
 	}
 
-	.event-loop {
+	.event-loop,
+	.loop-anyway {
 		&__header {
 			margin-top: 50px;
 			color: orange;
@@ -1208,6 +1205,10 @@ section {
 			}
 		}
 
+		.window-node {
+			br { display: none; }
+		}
+
 	}
 }
 
@@ -1265,14 +1266,16 @@ section {
 		}
   
 		.all-complicated,
-		.cache {
+		.cache,
+		.window-node {
 			&__header { font-size: 1.6em; }
 			&__subheader { font-size: 1.1em; }
 		}
 
 		.all-complicated,
 		.they-invented,
-		.cache {
+		.cache,
+		.window-node {
 			&__code { font-size: 14px; padding: 10px 5px!important; }
 		}
 
@@ -1300,7 +1303,10 @@ section {
 		.dtrace,
 		.graphana,
 		.scope,
-		.threads {
+		.threads,
+		.no-async,
+		.event-loop,
+		.loop-anyway {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1316,7 +1322,10 @@ section {
 		.dtrace,
 		.graphana,
 		.scope,
-		.threads {
+		.threads,
+		.no-async,
+		.event-loop,
+		.loop-anyway {
 			br { display: none; }
 		}
 
@@ -1438,6 +1447,20 @@ section {
 					width: 55%;
 				}
 			}
+		}
+
+		.no-async {
+			padding: 0 10px!important;
+
+			&__text { font-size: 0.7em;}
+		}
+
+		.event-loop {
+			&__link { font-size: 0.9em; }
+		}
+
+		.loop-anyway {
+			&__header { margin-top: 0; }
 		}
 	}
 }
@@ -1722,6 +1745,11 @@ section {
 				&--context { font-size: 0.6em; }
 			}
 		}
+
+		.no-async {
+			&__header { font-size: 0.7em; }
+			&__text { font-size: 0.4em;}
+		}
 	}
 }
 
@@ -1838,13 +1866,14 @@ section {
 			&__digit { z-index: -1; }
 		}
 
-		.entrypoint {
+		.entrypoint,
+		.window-node {
 			&__header { font-size:  0.6em;}
 			&__subheader { font-size: 0.4em; }
 
 			&__code {
 				font-size: 14px;
-
+				
 				&-wrap { line-height: 1.1; }
 			}
 		}
@@ -2014,7 +2043,10 @@ section {
 				.dtrace,
 				.graphana,
 				.scope,
-				.threads  {
+				.threads,
+				.no-async,
+				.event-loop,
+				.loop-anyway  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -2205,7 +2237,7 @@ section {
 						top: 35%;
 					}
 				}
-
+ 
 				.node-fibers {
 					&__header { font-size: 1em; }
 		
@@ -2229,7 +2261,8 @@ section {
 					}
 				}
 
-				.entrypoint {
+				.entrypoint,
+				.window-node {
 					&__header {
 						font-size:  0.6em;
 					}
@@ -2248,6 +2281,24 @@ section {
 							margin: 0 auto;
 						}
 					}
+				}
+
+				.no-async {
+					&__header { font-size: 0.7em; }
+					&__text { font-size: 0.4em; }
+				}
+
+				.window-node {
+					&__code {
+						&-wrap { margin-bottom: 20px; }
+					}
+				}
+
+				.event-loop {
+					&__header { margin-top: 0;}
+					&__image { float: left; }
+
+					p { font-size: 0.7em; }
 				}
 			}
 }
