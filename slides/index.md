@@ -1279,51 +1279,53 @@ https://en.wikipedia.org/wiki/Alias_analysis <!-- .element: class="banch-of-link
 ---
 
 ---
-<!-- .slide: class="fixing" -->
+<!-- .slide: class="slide fixing" -->
 
 <h1 class="fixing__header">Fixing</h1>
-<h1 class="side-digit side-digit__1">6</h1>
+<h1 class="side-digit side-digit__1 fixing__digit">6</h1>
 
 ---
 
 
 ---
-<!-- .slide: class="chrome-debug" -->
+<!-- .slide: class="slide chrome-debug" -->
 
 ### chrome debug protocol : [examples](https://github.com/ak239/inspector-examples/blob/master/functions.js)
+<!-- .element: class="chrome-debug__header" -->
+[<img class="image image--border chrome-debug__image chrome-debug__image--1" src="/img/debug_protocol.png" alt="Debug Protocol" title="Debug Protocol" width ="70%">](https://chromedevtools.github.io/devtools-protocol/v8/Runtime)
 
-[<img class="image image--border" src="/img/debug_protocol.png" alt="Debug Protocol" title="Debug Protocol" width ="70%">](https://chromedevtools.github.io/devtools-protocol/v8/Runtime)
-
-<a class="link chrome-debug__link" href="https://holyjs-moscow.ru/en/talks/30t5nkghc0q0syeyqyowcg/"><img class="image image--border" src="/img/ak239.jpeg" alt="Alexey Kozyatinsky" title="Alexey Kozyatinsky"></a>
+<a class="link chrome-debug__link" href="https://holyjs-moscow.ru/en/talks/30t5nkghc0q0syeyqyowcg/"><img class="image image--border chrome-debug__image chrome-debug__image--2" src="/img/ak239.jpeg" alt="Alexey Kozyatinsky" title="Alexey Kozyatinsky"></a>
 
 ---
-<!-- .slide: class="trace-from-dtrace" -->
-# TRACE <!-- .element: class="trace-from-dtrace__header" -->  
+<!-- .slide: class="slide trace-from-dtrace" -->
+# TRACE <!-- .element: class="trace-from-dtrace__header trace-from-dtrace__header--1" -->  
 
-### from : dtrace & flamegraph <!-- .element: class="fragment trace-from-dtrace__subtitle" -->
+### from : dtrace & flamegraph <!-- .element: class="fragment trace-from-dtrace__subheader"  -->
 
-### no way [event tracing](https://nodejs.org/api/tracing.html) <!-- .element: class="fragment" --> interception <!-- .element: class="fragment" -->
-
-## LIVE DEMOS 3.2!
+### no way [event tracing](https://nodejs.org/api/tracing.html) <!-- .element: class="fragment" --> interception <!-- .element: class="fragment " -->
+<!-- .element: class=" trace-from-dtrace__subheader" -->
+## LIVE DEMOS 3.2! <!-- .element: class="trace-from-dtrace__header  trace-from-dtrace__header--2" -->
 <br>
-[node &nbsp; --trace &nbsp; demos/test.js](https://github.com/wentout/HolyJS_2018-AsyncZero-Demo/blob/master/demos/test.js)  
+[node &nbsp; --trace &nbsp; demos/test.js](https://github.com/wentout/HolyJS_2018-AsyncZero-Demo/blob/master/demos/test.js) 
+<!-- .element: class="trace-from-dtrace__link" --> 
 [node &nbsp; --allow-natives-syntax &nbsp; demos/testDT.js](https://github.com/wentout/HolyJS_2018-AsyncZero-Demo/blob/master/demos/testDT.js)
+<!-- .element: class="trace-from-dtrace__link" -->
 
 
 <br>
 
--- trace flag : test.js <!-- .element: class="fragment" -->  
+-- trace flag : test.js <!-- .element: class="fragment trace-from-dtrace__subheader" -->
 
-%DebugTrace(); : testDT.js <!-- .element: class="fragment" -->  
+%DebugTrace(); : testDT.js <!-- .element: class="fragment trace-from-dtrace__subheader" -->
 
 ---
-<!-- .slide: class="asking-help" -->
+<!-- .slide: class="slide asking-help" -->
 
-## asking any help
+## asking any help <!-- .element: class="asking-help__header "-->
 
-**Anna Henningsen**  <!-- .element: class="fragment" data-fragment-index="1" -->  
-**Andreas Madsen**  <!-- .element: class="fragment" data-fragment-index="3" -->  
-**Tomas Watson**  <!-- .element: class="fragment" data-fragment-index="5" -->  
+**Anna Henningsen**  <!-- .element: class="asking-help__text fragment" data-fragment-index="1" -->  
+**Andreas Madsen**  <!-- .element: class="asking-help__text fragment" data-fragment-index="3" -->  
+**Tomas Watson**  <!-- .element: class="asking-help__text fragment" data-fragment-index="5" -->  
 
 <img src="/img/addaleax.png" alt="addaleax" title="addaleax" data-fragment-index="2" class="fragment image image--border asking-help__image asking-help__image--1" >
 
@@ -1339,13 +1341,13 @@ https://en.wikipedia.org/wiki/Alias_analysis <!-- .element: class="banch-of-link
 ---
 
 ---
-<!-- .slide: class="solution" -->
+<!-- .slide: class="slide solution" -->
 <h1 class="solution__header" >Solution</h1>
-<h1 class="side-digit side-digit__1">7</h1>
+<h1 class="side-digit side-digit__1 solution__digit">7</h1>
 ---
 
 ---
-<!-- .slide: class="working-concept" -->
+<!-- .slide: class="slide working-concept" -->
 ### working concept impl  <!-- .element: class="working-concept__header" -->  
 
 <pre class="working-concept__code-wrap"><code class="lang-javascript hljs working-concept__code">
@@ -1369,87 +1371,95 @@ https://en.wikipedia.org/wiki/Alias_analysis <!-- .element: class="banch-of-link
 </code></pre>
 
 ---
-<!-- .slide: class="cloud-trace" data-transition="fade" -->
+<!-- .slide: class="slide cloud-trace" data-transition="fade" -->
 ### Cloud Trace <!-- .element: class="cloud-trace__header" -->  
 <img class="image image--border cloud-trace__image" src="/img/cloud_trace_q.png" alt="Issue 249" title="Issue 249" width ="70%">
 
 ---
-<!-- .slide: data-transition="zoom" -->
+<!-- .slide: class="slide  cloud-trace" data-transition="zoom" -->
 ### Cloud Trace <!-- .element: class="cloud-trace__header" -->  
 [https://github.com/googleapis/cloud-trace-nodejs/<br>blob/master/src/plugins/plugin-mongodb-core.ts](https://github.com/googleapis/cloud-trace-nodejs/blob/master/src/plugins/plugin-mongodb-core.ts)
+
+<!-- .element: class=" cloud-trace__link" -->
 
 <img class="image image--border cloud-trace__image" src="/img/cloud_trace2.png" alt="Issue 249" title="Issue 249" width ="70%">
 
 
 ---
+<!-- .slide: class="slide live-demo" -->
 
-### LIVE DEMO : final one : 1 !
+### LIVE DEMO : final one : 1 ! <!-- .element: class="live-demo__subheader" -->
 
 <br>
-## mongoose polling jump 
+## mongoose polling jump  <!-- .element: class="live-demo__header" -->
 
-##### use youtube below
+##### use youtube below <!-- .element: class="live-demo__text" -->
 
-<hr width="50%">
+<hr class="separator final-video__separator" />
 
 <iframe width="560"
     height="315"
     src="https://www.youtube.com/embed/2g34LNLxpIY?start=541"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+    allowfullscreen
+	class="live-demo__video"></iframe>
 
 ---
-### LIVE DEMO : final one : 2 !
+<!-- .slide: class="slide live-demo" -->
+### LIVE DEMO : final one : 2 !<!-- .element: class="live-demo__subheader" -->
 
 <br>
-## async code branch jump ! 
+## async code branch jump ! <!-- .element: class="live-demo__header" -->
 
-##### use youtube below
+##### use youtube below <!-- .element: class="live-demo__text" -->
 
-<hr width="50%">
+<hr class="separator final-video__separator"  />
 
 <iframe width="560"
     height="315"
     src="https://www.youtube.com/embed/2g34LNLxpIY?start=932"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+    allowfullscreen
+	class="live-demo__video"></iframe>
 
 ---
 
 ---
-<!-- .slide: class="resume" data-state="nocontrols" -->
+<!-- .slide: class="slide resume" data-state="nocontrols" -->
 <br>
 <h1 class="resume__header">Resume</h1>
-<h1 class="side-digit side-digit__2" >±</h1>
+<h1 class="side-digit side-digit__2 resume__digit" >±</h1>
 
 ---
+
+---
+<!-- .slide: class="slide prosNcons" -->
+<br>
+### pros <!-- .element:  class="prosNcons__header" -->
+* LTS works <!-- .element: class="prosNcons__text fragment" -->
+* tracking <!-- .element: class="prosNcons__text fragment" -->
+* async () <!-- .element: class="prosNcons__text fragment" -->
+
 
 ---
 
 <br>
-### pros
-* LTS works <!-- .element: class="fragment" -->
-* tracking <!-- .element: class="fragment" -->
-* async () <!-- .element: class="fragment" -->
-
-
----
-
-<br>
-### cons
-* ! prod ready yet <!-- .element: class="fragment" -->
-* perfomance -/-  <!-- .element: class="fragment" -->
-* cls stops gc  <!-- .element: class="fragment" -->
+### cons <!-- .element:  class="prosNcons__header" -->
+* ! prod ready yet <!-- .element: class="prosNcons__text fragment" -->
+* perfomance -/-  <!-- .element: class="prosNcons__text fragment" -->
+* cls stops gc  <!-- .element: class="prosNcons__text fragment" -->
 
 ---
+<!-- .slide: class="slide cls-npm" -->
 
-### cls npm
+### cls npm  <!-- .element:  class="cls-npm__header" -->
 <p class="fragment">
 <br>[cls-hooked](https://www.npmjs.com/package/cls-hooked) <br>[continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage)</p>
+<!-- .element: class="cls-npm__text fragment" -->
 
-and &mdash; many &mdash; many &mdash; other packages <!-- .element: class="fragment" -->
+and &mdash; many &mdash; many &mdash; other packages <!-- .element: class="fragment cls-npm__text" -->
 
 ---
 

@@ -1098,6 +1098,18 @@ section {
 				max-width: 100%; min-width: auto;
 			}
 		}
+
+		.chrome-debug {
+			&__link {
+				width: 20%;
+				left: auto; right: 10%;
+			}
+			&__image {
+				&--2 {
+					min-width: auto; max-width: 100%;
+				}
+			}
+		}
 	}
 }
 
@@ -1371,6 +1383,11 @@ section {
 				}
 			}
 		}
+
+		.prosNcons,
+		.cls-npm  {
+			br { display: none; }
+		}
 	}
 }
 
@@ -1438,7 +1455,8 @@ section {
 		.window-node,
 		.continuation,
 		.uncaughtException,
-		.cls-from-npm {
+		.cls-from-npm,
+		.working-concept {
 			&__code,
 			code { font-size: 14px; padding: 10px 5px!important; }
 		}
@@ -1489,7 +1507,10 @@ section {
 		.issue-248,
 		.problem,
 		.issue-249,
-		.continuation {
+		.continuation,
+		.chrome-debug,
+		.working-concept,
+		.cloud-trace {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1518,7 +1539,9 @@ section {
 		.further-dev,
 		.issue-248,
 		.issue-249,
-		.continuation {
+		.continuation,
+		.chrome-debug,
+		.cloud-trace {
 			br { display: none; }
 		}
 
@@ -1800,7 +1823,8 @@ section {
 		.how-it-is-made,
 		.what-we-can,
 		.func-explanation,
-		.problem {
+		.problem,
+		.working-concept {
 			br { display: none; }
 
 			&__header { font-size: 30px; margin-bottom: 0;}
@@ -1833,6 +1857,67 @@ section {
 			&__header { font-size: 40px; }
 		}
 
+		.chrome-debug {
+			&__header { font-size: 30px; }
+			&__link {
+				width: 40%;
+				bottom: 0;
+			}
+
+			&__image {
+				&--2 { max-height: none; }
+			}
+		}
+
+		.trace-from-dtrace {
+			br { display: none; }
+
+			&__header {
+				&--1 { font-size: 1.5em; }
+				&--2 { font-size: 1.2em; }
+			}
+
+			&__subheader { font-size: 1em; }
+			&__link { font-size: 0.7em; }
+		}
+
+		.asking-help {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+			&__image {
+				width: 40%;
+				top: 50%; 
+
+				&--3 {
+					top: calc(80% + 50px);
+				}
+				&--4 {
+					width: 80%;
+					top: auto; bottom: 20%;
+				}
+			}
+		}
+
+		.solution,
+		.resume {
+			&__header { font-size: 100px; }
+		}
+
+		.working-concept {
+			&__header { margin-top: 0;}
+			&__code {
+				&-wrap { margin: 0 auto 5px; }
+			}
+		}
+
+		.cloud-trace {
+			&__header { margin-top: 0; }
+			&__link { font-size: 18px; }
+		}
+
+		.resume {
+			&__header { margin-top: 0; }
+		}
 	}
 }
 
@@ -1978,7 +2063,8 @@ section {
 			}
 		}
 
-		.live-demo {
+		.live-demo,
+		.final-video {
 			&__separator { width: 90%; }
 			&__video { width: 90%; }
 
@@ -2134,6 +2220,33 @@ section {
 		.limitations {
 			&__header { font-size: 70px; }
 		}
+
+		.fixing {
+			&__header { font-size: 100px; }
+		}
+
+		.trace-from-dtrace {
+			&__header {
+				&--1 { font-size: 1.1em; }
+				&--2 { font-size: 1em; }
+			}
+
+			&__subheader { font-size: 0.8em; }
+			&__link { font-size: 0.5em; }
+		}
+
+		.solution,
+		.resume {
+			&__header { font-size: 70px; }
+		}
+
+		.prosNcons,
+		.cls-npm  {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+		}
+
+		
 	}
 }
 
@@ -2169,6 +2282,7 @@ section {
 		}
 
 		.live-demo {
+			br { display: none; }
 			&__header,
 			&__subheader { font-size: 1.1em; }
 			&__text { font-size: 0.8em; }
@@ -2210,6 +2324,28 @@ section {
 
 		.limitations {
 			&__header { font-size: 40px; }
+		}
+
+		.asking-help {
+			br { display: none; }
+			&__header,
+			&__text { margin-bottom: 5px; display: block; }
+			&__image {
+				width: 40%;
+				top: 50%; 
+
+				&--3 {
+					top: calc(50% + 50px);
+				}
+				&--4 {
+					width: 80%;
+					top: auto; bottom: 20%;
+				}
+			}
+		}
+
+		.resume {
+			&__digit { font-size: 240px; }
 		}
 	}
 }
@@ -2376,6 +2512,16 @@ section {
 				width: 80%;
 			}
 		}
+
+		.trace-from-dtrace {
+			&__header {
+				&--1 { font-size: 30px; }
+				&--2 { font-size: 25px; }
+			}
+
+			&__subheader { font-size: 20px; }
+			&__link { font-size: 16px; }
+		}
 	}
 }
 
@@ -2458,6 +2604,15 @@ section {
 
 		.problem {
 			&__link { font-size: 20px; }
+		}
+
+		.fixing {
+			&__header { font-size: 50px; }
+		}
+
+		.solution,
+		.resume {
+			&__header { font-size: 50px; }
 		}
 	}
 }
@@ -2621,7 +2776,10 @@ section {
 				.how-it-is-made,
 				.issue-248,
 				.issue-249,
-				.continuation  {
+				.continuation,
+				.chrome-debug,
+				.working-concept,
+				.cloud-trace  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -2689,6 +2847,8 @@ section {
 				}
 
 				.live-demo {
+					br { display: none; }
+
 					&__header,
 					&__subheader { font-size: 0.7em; }
 					&__text { font-size: 0.4em; }
@@ -3081,7 +3241,8 @@ section {
 				.how-it-is-made,
 				.what-we-can,
 				.func-explanation,
-				.problem  {
+				.problem,
+				.working-concept  {
 					br { display: none; }
 
 					&__header { font-size: 30px; }
@@ -3111,6 +3272,59 @@ section {
 							}
 						}
 					}
+				}
+
+				.fixing {
+					&__header { font-size: 50px; }
+				}
+
+				.chrome-debug {
+					&__header { font-size: 30px; }
+					&__link {
+						width: 40%;
+						bottom: auto;
+						top: 20%; right: 1%;
+					}
+				}
+
+				.trace-from-dtrace {
+					&__header {
+						margin-bottom: 0;
+
+						&--1 { font-size: 30px; }
+						&--2 { font-size: 25px; }
+					}
+		
+					&__subheader { font-size: 20px; }
+					&__link { font-size: 16px; }
+				}
+
+				.asking-help {
+					br { display: none; }
+					&__header,
+					&__text { margin-bottom: 5px; display: block; }
+					&__image {
+						width: 40%;
+						top: 40%; 
+		
+						&--3 {
+							top: calc(45% + 50px);
+						}
+						&--4 {
+							width: 50%;
+							top: auto; bottom: 20%;
+						}
+					}
+				}
+
+				.solution,
+				.resume {
+					&__header { font-size: 40px; }
+				}
+
+				.resume {
+					&__header { margin-top: 0; }
+					&__digit { font-size: 240px; }
 				}
 			}
 }

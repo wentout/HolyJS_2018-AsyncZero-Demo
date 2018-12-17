@@ -782,7 +782,14 @@ section {
     height: auto;
     max-width: 100%;
     min-width: auto;
-    width: 60%; } }
+    width: 60%; }
+  .reveal .chrome-debug__link {
+    left: auto;
+    right: 10%;
+    width: 20%; }
+  .reveal .chrome-debug__image--2 {
+    max-width: 100%;
+    min-width: auto; } }
 
 @media (max-width: 1370px) {
   .reveal .oops__image {
@@ -971,7 +978,10 @@ section {
     top: 60%; }
   .reveal .git-dive__text--4 {
     font-size: 1.1em;
-    top: 20%; } }
+    top: 20%; }
+  .reveal .prosNcons br,
+  .reveal .cls-npm br {
+    display: none; } }
 
 @media (max-width: 980px) {
   .reveal .header--h1 {
@@ -1014,7 +1024,9 @@ section {
   .reveal .uncaughtException__code,
   .reveal .uncaughtException code,
   .reveal .cls-from-npm__code,
-  .reveal .cls-from-npm code {
+  .reveal .cls-from-npm code,
+  .reveal .working-concept__code,
+  .reveal .working-concept code {
     font-size: 14px;
     padding: 10px 5px !important; }
   .reveal .relations__subheader {
@@ -1062,7 +1074,10 @@ section {
   .reveal .issue-248__image,
   .reveal .problem__image,
   .reveal .issue-249__image,
-  .reveal .continuation__image {
+  .reveal .continuation__image,
+  .reveal .chrome-debug__image,
+  .reveal .working-concept__image,
+  .reveal .cloud-trace__image {
     width: 90%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1105,7 +1120,10 @@ section {
   .reveal .issue-248__header,
   .reveal .problem__header,
   .reveal .issue-249__header,
-  .reveal .continuation__header {
+  .reveal .continuation__header,
+  .reveal .chrome-debug__header,
+  .reveal .working-concept__header,
+  .reveal .cloud-trace__header {
     font-size: 1em; }
   .reveal .push-button br,
   .reveal .coding br,
@@ -1131,7 +1149,9 @@ section {
   .reveal .further-dev br,
   .reveal .issue-248 br,
   .reveal .issue-249 br,
-  .reveal .continuation br {
+  .reveal .continuation br,
+  .reveal .chrome-debug br,
+  .reveal .cloud-trace br {
     display: none; }
   .reveal .push-button__header,
   .reveal .coding__header {
@@ -1336,12 +1356,14 @@ section {
   .reveal .how-it-is-made br,
   .reveal .what-we-can br,
   .reveal .func-explanation br,
-  .reveal .problem br {
+  .reveal .problem br,
+  .reveal .working-concept br {
     display: none; }
   .reveal .how-it-is-made__header,
   .reveal .what-we-can__header,
   .reveal .func-explanation__header,
-  .reveal .problem__header {
+  .reveal .problem__header,
+  .reveal .working-concept__header {
     font-size: 30px;
     margin-bottom: 0; }
   .reveal .how-it-is-made__code,
@@ -1351,7 +1373,9 @@ section {
   .reveal .func-explanation__code,
   .reveal .func-explanation code,
   .reveal .problem__code,
-  .reveal .problem code {
+  .reveal .problem code,
+  .reveal .working-concept__code,
+  .reveal .working-concept code {
     font-size: 14px;
     padding: 5px !important; }
     .reveal .how-it-is-made__code-wrap,
@@ -1361,7 +1385,9 @@ section {
     .reveal .func-explanation__code-wrap,
     .reveal .func-explanation code-wrap,
     .reveal .problem__code-wrap,
-    .reveal .problem code-wrap {
+    .reveal .problem code-wrap,
+    .reveal .working-concept__code-wrap,
+    .reveal .working-concept code-wrap {
       line-height: 1; }
   .reveal .func-explanation__subheader {
     font-size: 20px; }
@@ -1374,7 +1400,50 @@ section {
   .reveal .problem__link {
     font-size: 30px; }
   .reveal .kantor__header {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .reveal .chrome-debug__header {
+    font-size: 30px; }
+  .reveal .chrome-debug__link {
+    bottom: 0;
+    width: 40%; }
+  .reveal .chrome-debug__image--2 {
+    max-height: none; }
+  .reveal .trace-from-dtrace br {
+    display: none; }
+  .reveal .trace-from-dtrace__header--1 {
+    font-size: 1.5em; }
+  .reveal .trace-from-dtrace__header--2 {
+    font-size: 1.2em; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 1em; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 0.7em; }
+  .reveal .asking-help__header {
+    font-size: 30px; }
+  .reveal .asking-help__text {
+    font-size: 20px; }
+  .reveal .asking-help__image {
+    top: 50%;
+    width: 40%; }
+    .reveal .asking-help__image--3 {
+      top: calc(80% + 50px); }
+    .reveal .asking-help__image--4 {
+      bottom: 20%;
+      top: auto;
+      width: 80%; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 100px; }
+  .reveal .working-concept__header {
+    margin-top: 0; }
+  .reveal .working-concept__code-wrap {
+    margin: 0 auto 5px; }
+  .reveal .cloud-trace__header {
+    margin-top: 0; }
+  .reveal .cloud-trace__link {
+    font-size: 18px; }
+  .reveal .resume__header {
+    margin-top: 0; } }
 
 @media (max-width: 730px), (max-height: 768px) {
   .reveal .header--h1 {
@@ -1482,11 +1551,14 @@ section {
     font-size: 0.7em; }
   .reveal .schrodinger__subheader {
     font-size: 1.2em; }
-  .reveal .live-demo__separator {
+  .reveal .live-demo__separator,
+  .reveal .final-video__separator {
     width: 90%; }
-  .reveal .live-demo__video {
+  .reveal .live-demo__video,
+  .reveal .final-video__video {
     width: 90%; }
-  .reveal .live-demo--3 .live-demo--3__link {
+  .reveal .live-demo--3 .live-demo--3__link,
+  .reveal .final-video--3 .live-demo--3__link {
     line-height: 0.8;
     margin-top: 25px; }
   .reveal .trace__header {
@@ -1582,7 +1654,26 @@ section {
   .reveal .git-dive__text--4 {
     font-size: 0.55em; }
   .reveal .limitations__header {
-    font-size: 70px; } }
+    font-size: 70px; }
+  .reveal .fixing__header {
+    font-size: 100px; }
+  .reveal .trace-from-dtrace__header--1 {
+    font-size: 1.1em; }
+  .reveal .trace-from-dtrace__header--2 {
+    font-size: 1em; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 0.8em; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 0.5em; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 70px; }
+  .reveal .prosNcons__header,
+  .reveal .cls-npm__header {
+    font-size: 30px; }
+  .reveal .prosNcons__text,
+  .reveal .cls-npm__text {
+    font-size: 20px; } }
 
 @media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
   .reveal .team-mascots-me br {
@@ -1598,6 +1689,8 @@ section {
   .reveal .team-mascots-me__header {
     font-size: 45px; }
   .reveal .what-we-have br:first-child {
+    display: none; }
+  .reveal .live-demo br {
     display: none; }
   .reveal .live-demo__header, .reveal .live-demo__subheader {
     font-size: 1.1em; }
@@ -1626,7 +1719,23 @@ section {
     .reveal .cls__subheader {
       font-size: 0.7em; }
   .reveal .limitations__header {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .reveal .asking-help br {
+    display: none; }
+  .reveal .asking-help__header, .reveal .asking-help__text {
+    display: block;
+    margin-bottom: 5px; }
+  .reveal .asking-help__image {
+    top: 50%;
+    width: 40%; }
+    .reveal .asking-help__image--3 {
+      top: calc(50% + 50px); }
+    .reveal .asking-help__image--4 {
+      bottom: 20%;
+      top: auto;
+      width: 80%; }
+  .reveal .resume__digit {
+    font-size: 240px; } }
 
 @media (max-width: 550px) {
   .reveal .image--logo-holyjs {
@@ -1736,7 +1845,15 @@ section {
   .reveal .zonejs__subheader {
     font-size: 0.5em; }
   .reveal .kantor__image {
-    width: 80%; } }
+    width: 80%; }
+  .reveal .trace-from-dtrace__header--1 {
+    font-size: 30px; }
+  .reveal .trace-from-dtrace__header--2 {
+    font-size: 25px; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 20px; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 16px; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1791,7 +1908,12 @@ section {
     .reveal .articles__text {
       font-size: 0.7em; }
   .reveal .problem__link {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .reveal .fixing__header {
+    font-size: 50px; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 50px; } }
 
 @media (max-width: 340px) {
   .reveal .metaphor__header {
@@ -1909,7 +2031,10 @@ section {
   .reveal .how-it-is-made__image,
   .reveal .issue-248__image,
   .reveal .issue-249__image,
-  .reveal .continuation__image {
+  .reveal .continuation__image,
+  .reveal .chrome-debug__image,
+  .reveal .working-concept__image,
+  .reveal .cloud-trace__image {
     width: 70%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1950,7 +2075,10 @@ section {
   .reveal .how-it-is-made__header,
   .reveal .issue-248__header,
   .reveal .issue-249__header,
-  .reveal .continuation__header {
+  .reveal .continuation__header,
+  .reveal .chrome-debug__header,
+  .reveal .working-concept__header,
+  .reveal .cloud-trace__header {
     font-size: 1em;
     margin-bottom: 0; }
   .reveal .push-button__header,
@@ -1997,6 +2125,8 @@ section {
     font-size: 0.4em; }
   .reveal .schrodinger__subheader {
     font-size: 0.8em; }
+  .reveal .live-demo br {
+    display: none; }
   .reveal .live-demo__header, .reveal .live-demo__subheader {
     font-size: 0.7em; }
   .reveal .live-demo__text {
@@ -2297,12 +2427,14 @@ section {
   .reveal .how-it-is-made br,
   .reveal .what-we-can br,
   .reveal .func-explanation br,
-  .reveal .problem br {
+  .reveal .problem br,
+  .reveal .working-concept br {
     display: none; }
   .reveal .how-it-is-made__header,
   .reveal .what-we-can__header,
   .reveal .func-explanation__header,
-  .reveal .problem__header {
+  .reveal .problem__header,
+  .reveal .working-concept__header {
     font-size: 30px; }
   .reveal .how-it-is-made__code,
   .reveal .how-it-is-made code,
@@ -2311,7 +2443,9 @@ section {
   .reveal .func-explanation__code,
   .reveal .func-explanation code,
   .reveal .problem__code,
-  .reveal .problem code {
+  .reveal .problem code,
+  .reveal .working-concept__code,
+  .reveal .working-concept code {
     font-size: 14px;
     padding: 5px !important; }
     .reveal .how-it-is-made__code-wrap,
@@ -2321,7 +2455,9 @@ section {
     .reveal .func-explanation__code-wrap,
     .reveal .func-explanation code-wrap,
     .reveal .problem__code-wrap,
-    .reveal .problem code-wrap {
+    .reveal .problem code-wrap,
+    .reveal .working-concept__code-wrap,
+    .reveal .working-concept code-wrap {
       line-height: 1; }
   .reveal .func-explanation__subheader {
     font-size: 20px; }
@@ -2331,7 +2467,47 @@ section {
       float: left;
       width: 45%; }
       .reveal .problem__code-wrap--2 {
-        float: right; } }
+        float: right; }
+  .reveal .fixing__header {
+    font-size: 50px; }
+  .reveal .chrome-debug__header {
+    font-size: 30px; }
+  .reveal .chrome-debug__link {
+    bottom: auto;
+    right: 1%;
+    top: 20%;
+    width: 40%; }
+  .reveal .trace-from-dtrace__header {
+    margin-bottom: 0; }
+    .reveal .trace-from-dtrace__header--1 {
+      font-size: 30px; }
+    .reveal .trace-from-dtrace__header--2 {
+      font-size: 25px; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 20px; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 16px; }
+  .reveal .asking-help br {
+    display: none; }
+  .reveal .asking-help__header, .reveal .asking-help__text {
+    display: block;
+    margin-bottom: 5px; }
+  .reveal .asking-help__image {
+    top: 40%;
+    width: 40%; }
+    .reveal .asking-help__image--3 {
+      top: calc(45% + 50px); }
+    .reveal .asking-help__image--4 {
+      bottom: 20%;
+      top: auto;
+      width: 50%; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 40px; }
+  .reveal .resume__header {
+    margin-top: 0; }
+  .reveal .resume__digit {
+    font-size: 240px; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {
