@@ -1079,6 +1079,25 @@ section {
 			&__header { font-size: 250px; }
 
 		}
+
+		.kantor {
+			br { display: none; }
+
+			&__link {
+				width: 100%;
+				height: auto;
+				text-align: left;
+				top: 100%;
+
+				&--2 { top: 150%; }
+
+			}
+			&__image {
+				height: auto;
+				width: 60%;
+				max-width: 100%; min-width: auto;
+			}
+		}
 	}
 }
 
@@ -1177,6 +1196,10 @@ section {
 				&--2 { font-size: 1em; }
 				&--important { font-size: 1.7em;}
 			}
+		}
+
+		.limitations {
+			&__header { font-size: 100px; }
 		}
 	}
 }
@@ -1457,7 +1480,16 @@ section {
 		.bubleprof,
 		.google-cloud,
 		.andreas-madsen,
-		.git-dive {
+		.git-dive,
+		.async-listener,
+		.further-dev,
+		.how-it-is-made,
+		.what-we-can,
+		.func-explanation,
+		.issue-248,
+		.problem,
+		.issue-249,
+		.continuation {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1482,7 +1514,11 @@ section {
 		.problems-jim,
 		.bubleprof,
 		.google-cloud,
-		.andreas-madsen {
+		.andreas-madsen,
+		.further-dev,
+		.issue-248,
+		.issue-249,
+		.continuation {
 			br { display: none; }
 		}
 
@@ -1750,6 +1786,51 @@ section {
 					width: 70%;
 				}
 			}
+		}
+
+		.async-listener {
+			&__image {
+				&--norris {
+					width: 30%;
+					right: 10px; top: auto; bottom: 30%;
+				}
+			}
+		}
+
+		.how-it-is-made,
+		.what-we-can,
+		.func-explanation,
+		.problem {
+			br { display: none; }
+
+			&__header { font-size: 30px; margin-bottom: 0;}
+
+			&__code,
+			code {
+				font-size: 14px;
+				padding: 5px !important;
+
+				&-wrap { line-height: 1; }
+			}
+		}
+
+		.func-explanation {
+			&__subheader { font-size: 20px; }
+		}
+
+		.issue-248 {
+			br { display: none; }
+			
+			&__subheader {  font-size: 30px; }
+		}
+
+		.problem {
+			&__header { margin-top: 0; }
+			&__link { font-size: 30px; }
+		}
+
+		.kantor {
+			&__header { font-size: 40px; }
 		}
 
 	}
@@ -2049,6 +2130,10 @@ section {
 				&--4 { font-size: 0.55em; }
 			}
 		}
+
+		.limitations {
+			&__header { font-size: 70px; }
+		}
 	}
 }
 
@@ -2121,6 +2206,10 @@ section {
 
 			&__header { font-size: 0.7em; }
 			&__subheader { font-size: 0.7em; }
+		}
+
+		.limitations {
+			&__header { font-size: 40px; }
 		}
 	}
 }
@@ -2281,6 +2370,12 @@ section {
 			&__header { font-size: 0.6em; }
 			&__subheader { font-size: 0.5em; }
 		}
+
+		.kantor {
+			&__image {
+				width: 80%;
+			}
+		}
 	}
 }
 
@@ -2360,6 +2455,10 @@ section {
 
 			&__text { font-size: 0.7em; }
 		}
+
+		.problem {
+			&__link { font-size: 20px; }
+		}
 	}
 }
 
@@ -2370,7 +2469,6 @@ section {
 			&__subheader { font-size: 0.9em; }
 		}
 
-
 		.git-dive {
 			&__text {
 				&--1 { font-size: 0.5em; }
@@ -2378,6 +2476,10 @@ section {
 				&--3 { font-size: 0.8em; top: 40%; }
 				&--4 { font-size: 0.55em; }
 			}
+		}
+
+		.limitations {
+			&__header { font-size: 30px; }
 		}
 	}
 }
@@ -2513,7 +2615,13 @@ section {
 				.bubleprof,
 				.google-cloud,
 				.andreas-madsen,
-				.git-dive  {
+				.git-dive,
+				.async-listener,
+				.further-dev,
+				.how-it-is-made,
+				.issue-248,
+				.issue-249,
+				.continuation  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -2953,6 +3061,55 @@ section {
 						&--2 { font-size: 1em; }
 						&--3 { font-size: 0.8em; }
 						&--4 { font-size: 0.55em; }
+					}
+				}
+
+				.limitations {
+					&__header { font-size: 40px; }
+				}
+
+				.async-listener {
+					&__header { font-size: 30px; }
+					&__image {
+						&--norris {
+							width: 30%;
+							right: 10px; top: auto; bottom: 30%;
+						}
+					}
+				}
+
+				.how-it-is-made,
+				.what-we-can,
+				.func-explanation,
+				.problem  {
+					br { display: none; }
+
+					&__header { font-size: 30px; }
+		
+					&__code,
+					code {
+						font-size: 14px;
+						padding: 5px !important;
+		
+						&-wrap { line-height: 1; }
+					}
+				}
+
+				.func-explanation {
+					&__subheader { font-size: 20px; }
+				}
+
+				.problem {
+					&__code {
+						min-height: 150px;
+						&-wrap {
+							float: left;
+							width: 45%;
+
+							&--2 {
+								float: right;
+							}
+						}
 					}
 				}
 			}

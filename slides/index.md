@@ -1077,32 +1077,33 @@ Let search for this idea at npm : I'm not the only one ! <!-- .element: class="c
 ---
 
 ---
-<!-- .slide: class="limitations" -->
+<!-- .slide: class="slide limitations" -->
 
 <h1 class="limitations__header">Limitations</h1>
-<h1 class="side-digit side-digit__1">5</h1>
+<h1 class="side-digit side-digit__1 limitations__digit">5</h1>
 
 ---
 
 ---
-<!-- .slide: class="async-listener" -->
+<!-- .slide: class="slide async-listener" -->
 ### how it started : [async-listener](https://github.com/othiym23/)
+<!-- .element: class="async-listener__header" -->
 
-[<img class="image image--border" src="/img/trev1.png" alt="The Birth and Evolution of AsyncHooks - Trevor Norris" title="The Birth and Evolution of AsyncHooks - Trevor Norris" width ="70%">](https://www.youtube.com/watch?v=wlEopv4p6d4)
+[<img class="image image--border async-listener__image" src="/img/trev1.png" alt="The Birth and Evolution of AsyncHooks - Trevor Norris" title="The Birth and Evolution of AsyncHooks - Trevor Norris" width ="70%">](https://www.youtube.com/watch?v=wlEopv4p6d4)
 
 <img class="image image--border async-listener__image async-listener__image--norris" src="/img/trev2.png" alt="Trevor Norris" title="Trevor Norris" width ="15%" >
 
 
 ---
-<!-- .slide: class="further-dev" -->
-### Further Development
+<!-- .slide: class="slide further-dev" -->
+### Further Development  <!-- .element: class="further-dev__header" -->
 
 <img class="image image--border further-dev__image" src="/img/andreas.png" alt="Andreas Madsen github" title="Andreas Madsen github" width ="70%">
 
 
 ---
-<!-- .slide: class="how-it-is-made"-->
-## How It's Made
+<!-- .slide: class="slide how-it-is-made"-->
+## How It's Made <!-- .element: class="how-it-is-made__header" -->
 
 <pre class="how-it-is-made__code-wrap">
 <code  class="lang-javascript hljs fragment how-it-is-made__code">
@@ -1131,8 +1132,8 @@ Let search for this idea at npm : I'm not the only one ! <!-- .element: class="c
 </code></pre>
 
 ---
-<!-- .slide: class="what-we-can" -->
-### What we can & what not
+<!-- .slide: class="slide what-we-can" -->
+### What we can & what not <!-- .element: class="what-we-can__header" -->
 
 
 <pre class="what-we-can__code-wrap"><code class="lang-javascript hljs fragment what-we-can__code">
@@ -1163,9 +1164,9 @@ Let search for this idea at npm : I'm not the only one ! <!-- .element: class="c
 
 
 ---
-<!-- .slide: class="func-explanation" data-transition="none" -->
-### one function explanation 
-##### same number of async op 4 parallel sync code
+<!-- .slide: class="slide func-explanation" data-transition="none" -->
+### one function explanation  <!-- .element: class="func-explanation__header" -->
+##### same number of async op 4 parallel sync code <!-- .element: class="func-explanation__subheader"-->
 
 <pre class="func-explanation__code-wrap"><code class="lang-javascript hljs fragment func-explanation__code">
 			fn = () => {				// context mess :
@@ -1192,30 +1193,34 @@ Let search for this idea at npm : I'm not the only one ! <!-- .element: class="c
 </code></pre>
 
 ---
-### one function explanation 
+<!-- .slide: class="slide banch-of-links"-->
+### one function explanation  <!-- .element: class="banch-of-links__header" -->
 <br>
-## Escape analysis
-https://en.wikipedia.org/wiki/Escape_analysis
+## Escape analysis <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/Escape_analysis <!-- .element: class="banch-of-links__link"-->
 
-### Shape analysis (program analysis)
+### Shape analysis (program analysis) <!-- .element: class="banch-of-links__header" -->
 https://en.wikipedia.org/wiki/Shape_analysis_(program_analysis)
 
-### Alias analysis
-https://en.wikipedia.org/wiki/Alias_analysis
+<!-- .element: class="banch-of-links__link"-->
+
+### Alias analysis <!-- .element: class="banch-of-links__header" -->
+https://en.wikipedia.org/wiki/Alias_analysis <!-- .element: class="banch-of-links__link"-->
 
 ---
-
+<!-- .slide: class="slide issue-248" -->
 ##### Promises : [Issue # 248](https://github.com/nodejs/diagnostics/issues/248)
-### perfomance is not so good <!-- .element: class="fragment" -->  
-### but they are fixing <!-- .element: class="fragment" -->  
+<!-- .slide: class="issue-248__subheader" -->
+### perfomance is not so good <!-- .element: class="fragment issue-248__header" -->  
+### but they are fixing <!-- .element: class="fragment issue-248__header" -->  
 
-[<img src="/img/me_on_tv.png" alt="Issue 248" title="Issue 248" width ="40%" class="fragment image image--border">](https://www.youtube.com/watch?v=2SCNsozMkF8)
+[<img src="/img/me_on_tv.png" alt="Issue 248" title="Issue 248" width ="40%" class="fragment image image--border issue-248__image">](https://www.youtube.com/watch?v=2SCNsozMkF8)
 
 ---
-<!-- .slide: class="problem"-->
+<!-- .slide: class="slide problem"-->
 ## the problem <!-- .element:  class="problem__header" -->
 
-<pre class="problem__code-wrap"><code class="lang-javascript hljs problem__code">
+<pre class="problem__code-wrap problem__code-wrap--1"><code class="lang-javascript hljs problem__code">
 							const queueArray = [];
 
 							setInterval(() => {
@@ -1225,7 +1230,7 @@ https://en.wikipedia.org/wiki/Alias_analysis
 							}, 1000);
 </code></pre>
 
-<pre class="problem__code-wrap"><code class="lang-javascript hljs fragment problem__code">
+<pre class="problem__code-wrap problem__code-wrap--2"><code class="lang-javascript hljs fragment problem__code">
 							const FunctionWhereTrackingStarts = () => {
 								// Here we are still in the same context
 								queueArray.push(() => {
@@ -1237,34 +1242,38 @@ https://en.wikipedia.org/wiki/Alias_analysis
 </code></pre>
 
 [https://jsfiddle.net/evq7ht05/7/](https://jsfiddle.net/evq7ht05/7/)
+<!-- .slide: class="problem__link"-->
 
 
 ---
+<!-- .slide: class="slide issue-249"-->
+
 <br>
-### my Issue 249 Story
+### my Issue 249 Story <!-- .element: class="issue-249__header" -->
 
-[<img class="image image--border" src="/img/249.png" alt="Issue 249" title="Issue 249" width ="70%">](https://github.com/nodejs/diagnostics/issues/249)
-
----
-<!-- .slide: class="kantor" -->
-
-## Issue 59 : ilya kantor
-
-<a class="link kantor__link kantor__link--1" href="https://github.com/othiym23/node-continuation-local-storage/issues/59"><img class="image image--border" src="/img/iliakan.png" alt="iliakan" title="iliakan" height="300px"></a>
-
-<a class="link kantor__link kantor__link--2" href="https://github.com/othiym23/node-continuation-local-storage/issues/59#issuecomment-210144103"><img class="image image--border" src="/img/59.png" alt="59" title="59" height="400px"></a>
+[<img class="image image--border issue-249__image" src="/img/249.png" alt="Issue 249" title="Issue 249" width ="70%">](https://github.com/nodejs/diagnostics/issues/249)
 
 ---
-### async continuation : 2015
+<!-- .slide: class="slide kantor" -->
 
-[<img class="image image--border" src="/img/async_eco.png" alt="async_eco" title="async_eco" width ="70%">](https://docs.google.com/document/d/1tlQ0R6wQFGqCS5KeIw0ddoLbaSYx6aU7vyXOkv-wvlM/edit)
+## Issue 59 : ilya kantor <!-- .element : class="kantor__header" -->
+
+<a class="link kantor__link kantor__link--1" href="https://github.com/othiym23/node-continuation-local-storage/issues/59"><img class="image image--border kantor__image kantor__image--1" src="/img/iliakan.png" alt="iliakan" title="iliakan" height="300px"></a>
+
+<a class="link kantor__link kantor__link--2" href="https://github.com/othiym23/node-continuation-local-storage/issues/59#issuecomment-210144103"><img class="image image--border kantor__image kantor__image--2" src="/img/59.png" alt="59" title="59" height="400px"></a>
+
+---
+<!-- .slide: class="slide continuation" -->
+### async continuation : 2015 <!-- .element: class="continuation__header" -->
+
+[<img class="continuation__image image image--border" src="/img/async_eco.png" alt="async_eco" title="async_eco" width ="70%">](https://docs.google.com/document/d/1tlQ0R6wQFGqCS5KeIw0ddoLbaSYx6aU7vyXOkv-wvlM/edit)
 
 
 ---
+<!-- .slide: class="slide continuation" -->
+### async continuation : 2017 <!-- .element: class="continuation__header" -->
 
-### async continuation : 2017
-
-[<img class="image image--border" src="/img/asyn_js_semantic.png" alt="asyn_js_semantic" title="asyn_js_semantic" width ="70%">](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/08/NodeAsyncContext.pdf)
+[<img class="continuation__image image image--border" src="/img/asyn_js_semantic.png" alt="asyn_js_semantic" title="asyn_js_semantic" width ="70%">](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/08/NodeAsyncContext.pdf)
 
 
 ---
