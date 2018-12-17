@@ -942,75 +942,80 @@ fn.bind(context, ...args) => { /* ... */ };
 <!-- .element: class="example-work__code-wrap" -->
 
 ---
-<!-- .slide: class="articles" data-transition="none" -->
+<!-- .slide: class="slide articles" data-transition="none" -->
 <br>
-# ... seems very nice ...
-## let read some articles
+# ... seems very nice ...  <!-- .element: class="articles__header articles__header--1" -->
+## let read some articles <!-- .element: class="articles__header articles__header--2" -->
 <br>
-### srsly, who and where cares of boring docs<!-- .element: class="fragment" -->
+### srsly, who and where cares of boring docs<!-- .element: class="fragment articles__text" -->
 
-<h1 class="fragment articles__text">my error # 1</h1>
+<h1 class="fragment articles__header--important">my error # 1</h1>
 
 
 ---
-<!-- .slide: data-transition="zoom" data-background="white"  -->
+<!-- .slide: class="slide" data-transition="zoom" data-background="white"  -->
 [<img class="articles__image image image--noborder" src="/img/notes/irina.png" alt="irina async_hooks" title="irina async_hooks" width="85%">](https://medium.com/the-node-js-collection/async-hooks-in-node-js-illustrated-b7ce1344111f)
 
 ---
-<!-- .slide: data-transition="none" data-background="white"  -->
-[<img class="articles__image image image--noborder" src="/img/thorsten.png" alt="Grokking Asynchronous Work in Node.js - Thorsten Lorenz" title="Grokking Asynchronous Work in Node.js - Thorsten Lorenz" width="85%">](https://medium.com/the-node-js-collection/async-hooks-in-node-js-illustrated-b7ce1344111f)
+<!-- .slide: class="slide" data-transition="none" data-background="white"  -->
+[<img class="articles__image  image image--noborder" src="/img/thorsten.png" alt="Grokking Asynchronous Work in Node.js - Thorsten Lorenz" title="Grokking Asynchronous Work in Node.js - Thorsten Lorenz" width="85%">](https://medium.com/the-node-js-collection/async-hooks-in-node-js-illustrated-b7ce1344111f)
 
 
-<a href="http://thlorenz.com/talks/async-hooks/book/" class="articles__link fragment" class="fragment"><img class="articles__image articles__image--lorenz image image--border" src="/img/thorsten2.png" alt="Thorsten Lorenz : Introduction | Async Hooks" title="Thorsten Lorenz : Introduction | Async Hooks"></a>
+<a href="http://thlorenz.com/talks/async-hooks/book/" class="articles__link articles__link--lorenz fragment"><img class="articles__image articles__image--lorenz image image--border" src="/img/thorsten2.png" alt="Thorsten Lorenz : Introduction | Async Hooks" title="Thorsten Lorenz : Introduction | Async Hooks"></a>
 
 
 ---
 
 ---
+<!-- .slide: class="slide problems-jim" -->
 <br>
-# problems...
+# problems... <!-- .element: class="problems-jim__header " -->
 
-<img src="/img/fun/jim.gif" alt="jim codes" title="jim codes" width ="45%" class="fragment image image--border">
-
----
-
-<br>
-## why this talk title ?
-
-<img class="image image--border" src="/img/zero_one.png" alt="async zero" title="NDB example async 2 sync" width ="75%">
-
+<img src="/img/fun/jim.gif" alt="jim codes" title="jim codes" width ="45%" class="fragment problems-jim__image image image--border">
 
 ---
-<!-- .slide: class="cls" data-transition="zoom" data-background="black"-->
+<!-- .slide: class="slide talk-title" -->
 
 <br>
-## search again ...
+## why this talk title ? <!-- .element: class="talk-title__header" -->
 
-### &nbsp;&mdash;&nbsp; Execution Context is : CLS &nbsp;&mdash;&nbsp;  
+<img class="talk-title__image image image--border" src="/img/zero_one.png" alt="async zero" title="NDB example async 2 sync" width ="75%">
 
-Continuation or Thread Local Storage (CLS)  
+
+---
+<!-- .slide: class="slide cls" data-transition="zoom" data-background="black"-->
+
+<br>
+## search again ... <!-- .element: class="cls__subheader" -->
+
+### &nbsp;&mdash;&nbsp; Execution Context is : CLS &nbsp;&mdash;&nbsp;  <!-- .element: class="cls__header "--> 
+
+Continuation or Thread Local Storage (CLS)   <!-- .element: class="cls__text" -->
 <br> 
 [ [ C || T ]LS - wikipedia quote](https://en.wikipedia.org/wiki/Thread-local_storage) summary for JS :
-
+<!-- .element: class="cls__text" -->
 > method that binds some data<br>to a logical execution thread
+<!-- .element: class="cls__blockquote" -->
 
 
 ---
-# What CLS gives
+<!-- .slide: class="slide cls" -->
+# What CLS gives <!-- .element: class="cls__subheader" -->
 <br>
-* meaningfull uncaughtException notes <!-- .element: class="fragment" -->
-* long stack traces <!-- .element: class="fragment" --> <span class="fragment">[longjohn](https://www.npmjs.com/package/longjohn)</span> <!-- .element: class="fragment" -->
-* async events marks <!-- .element: class="fragment" -->
-* tracing pub~sub <!-- .element: class="fragment" -->
-* simultaneous <br> &nbsp; &nbsp; shared memory <br> &nbsp; &nbsp; &nbsp; calculations <!-- .element: class="fragment" -->
+* meaningfull uncaughtException notes <!-- .element: class="fragment cls__text" -->
+* long stack traces <!-- .element: class="fragment cls__text" --> <span class="fragment">[longjohn](https://www.npmjs.com/package/longjohn)</span> <!-- .element: class="fragment cls__text" -->
+* async events marks <!-- .element: class="fragment cls__text" -->
+* tracing pub~sub <!-- .element: class="fragment cls__text" -->
+* simultaneous <br> &nbsp; &nbsp; shared memory <br> &nbsp; &nbsp; &nbsp; calculations <!-- .element: class="fragment cls__text" -->
 
 
 ---
+<!-- .slide: class="slide cls-from-npm" -->
 <br>
-### &nbsp;&mdash;&nbsp; CLS : from npm &nbsp;&mdash;&nbsp;
+### &nbsp;&mdash;&nbsp; CLS : from npm &nbsp;&mdash;&nbsp; <!-- .element: class="cls-from-npm__header" -->
 
 <br>
-Let search for this idea at npm : I'm not the only one !
+Let search for this idea at npm : I'm not the only one ! <!-- .element: class="cls-from-npm__text" -->
 <br>
 <br>
 ```bash
@@ -1026,40 +1031,41 @@ Let search for this idea at npm : I'm not the only one !
 							$ npm search continuation  | wc -l 
 							25
 ```
-<!-- .element: class="cls__code-wrap"-->
+<!-- .element: class="cls-from-npm__code-wrap"-->
 ---
-<!-- .slide: class="zonejs" -->
+<!-- .slide: class="slide zonejs" -->
 
-### Browser Tools : zone.js
+### Browser Tools : zone.js <!-- .element: class="zonejs__header" -->
 
-##### removed from Angular<!-- .element: class="fragment" -->
+##### removed from Angular<!-- .element: class="fragment zonejs__subheader" -->
 
-<a href="https://www.npmjs.com/package/zone" class="link zonejs__link zonejs__link--sl"><img src="/img/zone_sl.png" alt="zone_sl" title="zone_sl" class="image image--border"></a>
+<a href="https://www.npmjs.com/package/zone" class="link zonejs__link zonejs__link--sl"><img src="/img/zone_sl.png" alt="zone_sl" title="zone_sl" class="image image--border zonejs__image--sl"></a>
 
-<a href="https://github.com/angular/zone.js" class="link zonejs__link zonejs__link--angular"><img src="/img/zone_angular.png" alt="zone_angular" title="zone_angular" class="image image--border"></a>
+<a href="https://github.com/angular/zone.js" class="link zonejs__link zonejs__link--angular"><img src="/img/zone_angular.png" alt="zone_angular" title="zone_angular" class="image image--border zonejs__image zonejs__image--angular"></a>
 
 
----
+--- <!-- .slide: class="slide google-cloud"-->
 
-### google cloud tracing CLS
+### google cloud tracing CLS <!-- .element: class="google-cloud__header" -->
 
-<a class="link" href="https://github.com/googleapis/cloud-trace-nodejs"><img class="image image--border" src="img/cloud-trace-overview-page.png" alt="cloud-trace-overview" title="cloud-trace-overview" width="70%" ></a>
+<a class="link google-cloud__link " href="https://github.com/googleapis/cloud-trace-nodejs"><img class="image image--border google-cloud__image" src="img/cloud-trace-overview-page.png" alt="cloud-trace-overview" title="cloud-trace-overview" width="70%" ></a>
 
----
+--- <!-- .slide: class="slide andreas-madsen"-->
 ### Andreas Madsen [dprof](https://github.com/AndreasMadsen/dprof/blob/master/dprof.js)
+<!-- .element: class="andreas-madsen__header" -->
 
-<a class="link" href="https://github.com/AndreasMadsen/dprof/blob/master/dprof.js">
-<img class="image image--border" src="img/visualizer.png" alt="dprof" title="dprof" width="45%"></a>
+<a class="link andreas-madsen__link" href="https://github.com/AndreasMadsen/dprof/blob/master/dprof.js">
+<img class="image image--border andreas-madsen__image" src="img/visualizer.png" alt="dprof" title="dprof" width="45%"></a>
 
----
+--- <!-- .slide: class="slide bubleprof "-->
 ## [Clinc + Bubbleprof](https://clinicjs.org/blog/introducing-bubbleprof/)
-
-<a class="link" href="https://clinicjs.org/blog/introducing-bubbleprof/">
-<img class="image image--border" src="img/clinic-plus-bubbleprof.gif" alt="Clinc + Bubbleprof" title="Clinc + Bubbleprof" width="61%"></a>
+<!-- .element: class="bubleprof__header" -->
+<a class="link bubleprof__link" href="https://clinicjs.org/blog/introducing-bubbleprof/">
+<img class="image image--border bubleprof__image" src="img/clinic-plus-bubbleprof.gif" alt="Clinc + Bubbleprof" title="Clinc + Bubbleprof" width="61%"></a>
 
 
 ---
-<!-- .slide: class="git-dive" data-transition="zoom" data-background="white"  -->
+<!-- .slide: class="slide git-dive" data-transition="zoom" data-background="white"  -->
 <img class="image image--noborder git-dive__image" src="/img/notes/i_did.png" alt="context-dive" title="context-dive" width="85%">
 
 <h3 class="git-dive__text git-dive__text--1"> released </h3>

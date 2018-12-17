@@ -526,7 +526,7 @@ section {
   .reveal .hooks-list__descriptor {
     font-size: 0.5em; }
 
-.reveal .articles__text {
+.reveal .articles__header--important {
   color: orange;
   font-size: 3.5em; }
 
@@ -708,6 +708,19 @@ section {
   body.print-pdf #chalkboard {
     display: none; } }
 
+@media (max-width: 1700px) {
+  .reveal .git-dive__text--1 {
+    font-size: 1.3em; }
+  .reveal .git-dive__text--2 {
+    font-size: 2em;
+    top: 76%; }
+  .reveal .git-dive__text--3 {
+    font-size: 1.5em;
+    top: 60%; }
+  .reveal .git-dive__text--4 {
+    font-size: 1.5em;
+    top: 20%; } }
+
 @media (max-width: 1500px) {
   .reveal .graphana__subtitle {
     font-size: 18vw; } }
@@ -813,7 +826,13 @@ section {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 100%; } }
+    width: 100%; }
+  .reveal .article__header--1 {
+    font-size: 1.5em; }
+  .reveal .article__header--2 {
+    font-size: 1em; }
+  .reveal .article__header--important {
+    font-size: 1.7em; } }
 
 @media (max-width: 1024px) {
   .reveal .present {
@@ -905,7 +924,38 @@ section {
     .reveal .doc-example code-wrap,
     .reveal .example-work__code-wrap,
     .reveal .example-work code-wrap {
-      line-height: 1; } }
+      line-height: 1; }
+  .reveal .articles {
+    padding: 0 10px !important; }
+    .reveal .articles br {
+      display: none; }
+    .reveal .articles__header--1 {
+      font-size: 1.1em; }
+    .reveal .articles__header--2 {
+      font-size: 0.8em; }
+    .reveal .articles__header--important {
+      font-size: 1.5em; }
+    .reveal .articles__text {
+      font-size: 1em; }
+    .reveal .articles__link--lorenz {
+      left: auto;
+      right: 10%;
+      top: 20%;
+      width: 30%; }
+    .reveal .articles__image--lorenz {
+      max-width: 100%;
+      min-width: auto; }
+  .reveal .git-dive__text--1 {
+    font-size: 1em; }
+  .reveal .git-dive__text--2 {
+    font-size: 1.4em;
+    top: 76%; }
+  .reveal .git-dive__text--3 {
+    font-size: 1.2em;
+    top: 60%; }
+  .reveal .git-dive__text--4 {
+    font-size: 1.1em;
+    top: 20%; } }
 
 @media (max-width: 980px) {
   .reveal .header--h1 {
@@ -936,11 +986,19 @@ section {
   .reveal .window-node__subheader {
     font-size: 1.1em; }
   .reveal .all-complicated__code,
+  .reveal .all-complicated code,
   .reveal .they-invented__code,
+  .reveal .they-invented code,
   .reveal .cache__code,
+  .reveal .cache code,
   .reveal .window-node__code,
+  .reveal .window-node code,
   .reveal .continuation__code,
-  .reveal .uncaughtException__code {
+  .reveal .continuation code,
+  .reveal .uncaughtException__code,
+  .reveal .uncaughtException code,
+  .reveal .cls-from-npm__code,
+  .reveal .cls-from-npm code {
     font-size: 14px;
     padding: 10px 5px !important; }
   .reveal .relations__subheader {
@@ -973,7 +1031,13 @@ section {
   .reveal .see-js__image,
   .reveal .logical-context__image,
   .reveal .async_hooks__image,
-  .reveal .doc-example__image {
+  .reveal .doc-example__image,
+  .reveal .talk-title__image,
+  .reveal .problems-jim__image,
+  .reveal .bubleprof__image,
+  .reveal .google-cloud__image,
+  .reveal .andreas-madsen__image,
+  .reveal .git-dive__image {
     width: 90%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1001,7 +1065,13 @@ section {
   .reveal .see-js__header,
   .reveal .logical-context__header,
   .reveal .async_hooks__header,
-  .reveal .doc-example__header {
+  .reveal .doc-example__header,
+  .reveal .talk-title__header,
+  .reveal .problems-jim__header,
+  .reveal .bubleprof__header,
+  .reveal .google-cloud__header,
+  .reveal .andreas-madsen__header,
+  .reveal .git-dive__header {
     font-size: 1em; }
   .reveal .push-button br,
   .reveal .coding br,
@@ -1018,7 +1088,12 @@ section {
   .reveal .no-async br,
   .reveal .event-loop br,
   .reveal .loop-anyway br,
-  .reveal .async_hooks br {
+  .reveal .async_hooks br,
+  .reveal .talk-title br,
+  .reveal .problems-jim br,
+  .reveal .bubleprof br,
+  .reveal .google-cloud br,
+  .reveal .andreas-madsen br {
     display: none; }
   .reveal .push-button__header,
   .reveal .coding__header {
@@ -1173,7 +1248,48 @@ section {
   .reveal .example-work br {
     display: none; }
   .reveal .example-work__header {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .reveal .cls br {
+    display: none; }
+  .reveal .cls__text {
+    font-size: 0.8em; }
+  .reveal .cls__header {
+    font-size: 1.1em; }
+  .reveal .cls__subheader {
+    font-size: 1em; }
+  .reveal .cls__blockquote {
+    font-size: 0.8em; }
+  .reveal .cls blockquote {
+    width: 90%; }
+  .reveal .cls-from-npm br {
+    display: none; }
+  .reveal .cls-from-npm__header {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  .reveal .cls-from-npm__text {
+    font-size: 0.6em; }
+  .reveal .cls-from-npm__code {
+    padding: 0; }
+    .reveal .cls-from-npm__code-wrap {
+      line-height: 1; }
+  .reveal .zonejs br {
+    display: none; }
+  .reveal .zonejs__header {
+    font-size: 1em; }
+  .reveal .zonejs__subheader {
+    font-size: 0.9em; }
+  .reveal .zonejs__link--sl {
+    height: auto;
+    left: 10px;
+    top: 160%; }
+  .reveal .zonejs__link--angular {
+    left: auto;
+    right: 10px;
+    text-align: right;
+    top: 220%; }
+  .reveal .zonejs__image--angular {
+    min-width: auto;
+    width: 70%; } }
 
 @media (max-width: 730px), (max-height: 768px) {
   .reveal .header--h1 {
@@ -1359,7 +1475,27 @@ section {
   .reveal .async-operation__text--alarm {
     font-size: 40px; }
   .reveal .example-work__header {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .reveal .articles__link--lorenz {
+    bottom: 0;
+    top: auto;
+    width: 30%; }
+  .reveal .cls__text {
+    font-size: 0.7em; }
+  .reveal .cls__header {
+    font-size: 1em; }
+  .reveal .cls__subheader {
+    font-size: 0.9em; }
+  .reveal .cls__blockquote {
+    font-size: 0.6em; }
+  .reveal .git-dive__text--1 {
+    font-size: 0.5em; }
+  .reveal .git-dive__text--2 {
+    font-size: 1em; }
+  .reveal .git-dive__text--3 {
+    font-size: 0.8em; }
+  .reveal .git-dive__text--4 {
+    font-size: 0.55em; } }
 
 @media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
   .reveal .team-mascots-me br {
@@ -1395,7 +1531,13 @@ section {
   .reveal .hooks-list__hook {
     font-size: 30px; }
   .reveal .doc-example__header {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .reveal .cls {
+    padding: 0 10px !important; }
+    .reveal .cls__header {
+      font-size: 0.7em; }
+    .reveal .cls__subheader {
+      font-size: 0.7em; } }
 
 @media (max-width: 550px) {
   .reveal .image--logo-holyjs {
@@ -1499,7 +1641,11 @@ section {
   .reveal .no-limits__header {
     font-size: 1.5em; }
   .reveal .no-limits__text {
-    font-size: 0.6em; } }
+    font-size: 0.6em; }
+  .reveal .zonejs__header {
+    font-size: 0.6em; }
+  .reveal .zonejs__subheader {
+    font-size: 0.5em; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1540,13 +1686,35 @@ section {
     bottom: 0;
     font-size: 0.5em; }
   .reveal .hooks-list__hook {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .reveal .articles {
+    padding: 0 10px !important; }
+    .reveal .articles br {
+      display: none; }
+    .reveal .articles__header--1 {
+      font-size: 0.7em; }
+    .reveal .articles__header--2 {
+      font-size: 0.5em; }
+    .reveal .articles__header--important {
+      font-size: 1em; }
+    .reveal .articles__text {
+      font-size: 0.7em; } }
 
 @media (max-width: 340px) {
   .reveal .metaphor__header {
     font-size: 1.5em; }
   .reveal .metaphor__subheader {
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+  .reveal .git-dive__text--1 {
+    font-size: 0.5em; }
+  .reveal .git-dive__text--2 {
+    font-size: 0.7em;
+    left: 0; }
+  .reveal .git-dive__text--3 {
+    font-size: 0.8em;
+    top: 40%; }
+  .reveal .git-dive__text--4 {
+    font-size: 0.55em; } }
 
 @media (max-width: 320px) {
   .reveal .this-talk__header {
@@ -1634,7 +1802,13 @@ section {
   .reveal .logical-context__image,
   .reveal .async_hooks__image,
   .reveal .doc-example__image,
-  .reveal .example-work__image {
+  .reveal .example-work__image,
+  .reveal .talk-title__image,
+  .reveal .problems-jim__image,
+  .reveal .bubleprof__image,
+  .reveal .google-cloud__image,
+  .reveal .andreas-madsen__image,
+  .reveal .git-dive__image {
     width: 70%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1663,7 +1837,13 @@ section {
   .reveal .logical-context__header,
   .reveal .async_hooks__header,
   .reveal .doc-example__header,
-  .reveal .example-work__header {
+  .reveal .example-work__header,
+  .reveal .talk-title__header,
+  .reveal .problems-jim__header,
+  .reveal .bubleprof__header,
+  .reveal .google-cloud__header,
+  .reveal .andreas-madsen__header,
+  .reveal .git-dive__header {
     font-size: 1em;
     margin-bottom: 0; }
   .reveal .push-button__header,
@@ -1935,7 +2115,69 @@ section {
       .reveal .doc-example__code-wrap--2,
       .reveal .example-work__code-wrap--2 {
         float: right;
-        margin-top: 10%; } }
+        margin-top: 10%; }
+  .reveal .articles {
+    padding: 0 10px !important; }
+    .reveal .articles br {
+      display: none; }
+    .reveal .articles__header--1 {
+      font-size: 0.7em; }
+    .reveal .articles__header--2 {
+      font-size: 0.5em; }
+    .reveal .articles__header--important {
+      font-size: 1em; }
+    .reveal .articles__text {
+      font-size: 0.7em; }
+    .reveal .articles__link--lorenz {
+      bottom: 0;
+      top: auto;
+      width: 30%; }
+  .reveal .cls br {
+    display: none; }
+  .reveal .cls__text {
+    font-size: 0.54em; }
+  .reveal .cls__header {
+    font-size: 0.8em; }
+  .reveal .cls__subheader {
+    font-size: 0.5em; }
+  .reveal .cls__blockquote {
+    font-size: 0.6em; }
+  .reveal .cls-from-npm br {
+    display: none; }
+  .reveal .cls-from-npm__header {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  .reveal .cls-from-npm__text {
+    font-size: 0.6em; }
+  .reveal .cls-from-npm__code {
+    padding: 0; }
+    .reveal .cls-from-npm__code-wrap {
+      line-height: 1; }
+  .reveal .zonejs__header {
+    font-size: 0.6em; }
+  .reveal .zonejs__subheader {
+    font-size: 0.5em; }
+  .reveal .zonejs__link--sl {
+    left: 10px;
+    top: 100%; }
+  .reveal .zonejs__link--angular {
+    left: auto;
+    right: 10px;
+    text-align: right;
+    top: 120%; }
+  .reveal .zonejs__image--sl {
+    width: 50%; }
+  .reveal .zonejs__image--angular {
+    min-width: auto;
+    width: 50%; }
+  .reveal .git-dive__text--1 {
+    font-size: 0.5em; }
+  .reveal .git-dive__text--2 {
+    font-size: 1em; }
+  .reveal .git-dive__text--3 {
+    font-size: 0.8em; }
+  .reveal .git-dive__text--4 {
+    font-size: 0.55em; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {

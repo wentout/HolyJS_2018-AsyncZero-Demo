@@ -713,9 +713,11 @@ section {
 	}
 
 	.articles {
-		&__text {
-			font-size: 3.5em;
-			color: orange;
+		&__header {
+			&--important {
+				font-size: 3.5em;
+				color: orange;
+			}
 		}
 
 		&__image {
@@ -974,6 +976,33 @@ section {
 	}
 }
 
+@media ( max-width: 1700px ) {
+	.reveal {
+		.git-dive {
+			&__text {
+				&--1 {
+					font-size: 1.3em;
+				}
+
+				&--2 {
+					font-size: 2em;
+					top: 76%;
+				}
+
+				&--3 {
+					font-size: 1.5em;
+					top: 60%;
+				}
+
+				&--4 {
+					font-size: 1.5em;
+					top: 20%;
+				}
+			}
+		}
+	}
+}
+
 @media ( max-width: 1500px ) {
 	.reveal {
 		.graphana {
@@ -1141,6 +1170,14 @@ section {
 				width: 100%;
 			}
 		}
+
+		.article {
+			&__header {
+				&--1 { font-size: 1.5em; }
+				&--2 { font-size: 1em; }
+				&--important { font-size: 1.7em;}
+			}
+		}
 	}
 }
 
@@ -1260,6 +1297,57 @@ section {
 				}
 			}
 		}
+
+		.articles {
+			padding: 0 10px !important;
+
+			br { display: none; }
+
+			&__header {
+				&--1 { font-size: 1.1em; }
+				&--2 { font-size: 0.8em; }
+				&--important { font-size: 1.5em;}
+			}
+
+			&__text { font-size: 1em; }
+
+			&__link {
+				&--lorenz {
+					width: 30%;
+					top: 20%; left: auto; right: 10%;
+				}
+			}
+
+			&__image {
+				&--lorenz {
+					min-width: auto;
+					max-width: 100%;
+				}
+			}
+		}
+
+		.git-dive {
+			&__text {
+				&--1 {
+					font-size: 1em;
+				}
+
+				&--2 {
+					font-size: 1.4em;
+					top: 76%;
+				}
+
+				&--3 {
+					font-size: 1.2em;
+					top: 60%;
+				}
+
+				&--4 {
+					font-size: 1.1em;
+					top: 20%;
+				}
+			}
+		}
 	}
 }
 
@@ -1326,8 +1414,10 @@ section {
 		.cache,
 		.window-node,
 		.continuation,
-		.uncaughtException {
-			&__code { font-size: 14px; padding: 10px 5px!important; }
+		.uncaughtException,
+		.cls-from-npm {
+			&__code,
+			code { font-size: 14px; padding: 10px 5px!important; }
 		}
 
 		.relations {
@@ -1361,7 +1451,13 @@ section {
 		.see-js,
 		.logical-context,
 		.async_hooks,
-		.doc-example {
+		.doc-example,
+		.talk-title,
+		.problems-jim,
+		.bubleprof,
+		.google-cloud,
+		.andreas-madsen,
+		.git-dive {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1381,7 +1477,12 @@ section {
 		.no-async,
 		.event-loop,
 		.loop-anyway,
-		.async_hooks {
+		.async_hooks,
+		.talk-title,
+		.problems-jim,
+		.bubleprof,
+		.google-cloud,
+		.andreas-madsen {
 			br { display: none; }
 		}
 
@@ -1599,6 +1700,58 @@ section {
 			br { display: none; }
 			&__header { font-size: 50px; }
 		}
+
+		.cls {
+			br { display: none; }
+			&__text { font-size: 0.8em; }
+			&__header { font-size: 1.1em; }
+			&__subheader { font-size: 1em; }
+			&__blockquote { font-size: 0.8em; }
+			blockquote { width: 90%; }
+		}
+
+		.cls-from-npm {
+			br { display: none; }
+
+			&__header {
+				font-size: 0.8em;
+				margin-bottom: 0;
+			}
+
+			&__text { font-size: 0.6em; }
+
+			&__code {
+				padding: 0;
+
+				&-wrap { line-height: 1;}
+			}
+		}
+
+		.zonejs {
+			br { display: none; }
+
+			&__header { font-size: 1em; }
+			&__subheader { font-size: 0.9em; }
+
+			&__link {
+				&--sl {
+					left: 10px; top: 160%;
+					height: auto;
+				}
+				&--angular {
+					left: auto; right: 10px; top: 220%;
+					text-align: right;
+				}
+			}
+
+			&__image {
+				&--angular {
+					min-width: auto;
+					width: 70%;
+				}
+			}
+		}
+
 	}
 }
 
@@ -1871,6 +2024,31 @@ section {
 		.example-work {
 			&__header { font-size: 30px; }
 		}
+
+		.articles {
+			&__link {
+				&--lorenz {
+					width: 30%;
+					bottom: 0; top: auto;
+				}
+			}
+		}
+
+		.cls {
+			&__text { font-size: 0.7em; }
+			&__header { font-size: 1em; }
+			&__subheader { font-size: 0.9em; }
+			&__blockquote { font-size: 0.6em; }
+		}
+
+		.git-dive {
+			&__text {
+				&--1 { font-size: 0.5em; }
+				&--2 { font-size: 1em; }
+				&--3 { font-size: 0.8em; }
+				&--4 { font-size: 0.55em; }
+			}
+		}
 	}
 }
 
@@ -1936,6 +2114,13 @@ section {
 
 		.doc-example {
 			&__header { font-size: 30px; }
+		}
+
+		.cls {
+			padding: 0 10px!important;
+
+			&__header { font-size: 0.7em; }
+			&__subheader { font-size: 0.7em; }
 		}
 	}
 }
@@ -2091,6 +2276,11 @@ section {
 			&__header { font-size: 1.5em; }
 			&__text { font-size: 0.6em; }
 		}
+
+		.zonejs {
+			&__header { font-size: 0.6em; }
+			&__subheader { font-size: 0.5em; }
+		}
 	}
 }
 
@@ -2156,6 +2346,20 @@ section {
 				font-size: 20px;
 			}
 		}
+
+		.articles {
+			padding: 0 10px !important;
+
+			br { display: none; }
+
+			&__header {
+				&--1 { font-size: 0.7em; }
+				&--2 { font-size: 0.5em; }
+				&--important { font-size: 1em;}
+			}
+
+			&__text { font-size: 0.7em; }
+		}
 	}
 }
 
@@ -2164,6 +2368,16 @@ section {
 		.metaphor {
 			&__header { font-size: 1.5em; }
 			&__subheader { font-size: 0.9em; }
+		}
+
+
+		.git-dive {
+			&__text {
+				&--1 { font-size: 0.5em; }
+				&--2 { font-size: 0.7em; left: 0; }
+				&--3 { font-size: 0.8em; top: 40%; }
+				&--4 { font-size: 0.55em; }
+			}
 		}
 	}
 }
@@ -2293,7 +2507,13 @@ section {
 				.logical-context,
 				.async_hooks,
 				.doc-example,
-				.example-work  {
+				.example-work,
+				.talk-title,
+				.problems-jim,
+				.bubleprof,
+				.google-cloud,
+				.andreas-madsen,
+				.git-dive  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -2656,6 +2876,83 @@ section {
 							&--1 { float: left; margin-top: 1%; }
 							&--2 { float: right; margin-top: 10%; }
 						}
+					}
+				}
+
+				.articles {
+					padding: 0 10px !important;
+		
+					br { display: none; }
+		
+					&__header {
+						&--1 { font-size: 0.7em; }
+						&--2 { font-size: 0.5em; }
+						&--important { font-size: 1em;}
+					}
+		
+					&__text { font-size: 0.7em; }
+
+					&__link {
+						&--lorenz {
+							width: 30%;
+							bottom: 0; top: auto;
+						}
+					}
+				}
+
+				.cls {
+					br { display: none; }
+
+					&__text { font-size: 0.54em; }
+					&__header { font-size: 0.8em; }
+					&__subheader { font-size: 0.5em; }
+					&__blockquote { font-size: 0.6em; }
+				}
+
+				.cls-from-npm {
+					br { display: none; }
+		
+					&__header {
+						font-size: 0.8em;
+						margin-bottom: 0;
+					}
+		
+					&__text { font-size: 0.6em; }
+		
+					&__code {
+						padding: 0;
+		
+						&-wrap { line-height: 1;}
+					}
+				}
+
+				.zonejs {
+					&__header { font-size: 0.6em; }
+					&__subheader { font-size: 0.5em; }
+					
+					&__link {
+						&--sl { left: 10px; top: 100%; }
+						&--angular {
+							left: auto; right: 10px; top: 120%;
+							text-align: right;
+						}
+					}
+		
+					&__image {
+						&--sl { width: 50%; }
+						&--angular {
+							min-width: auto;
+							width: 50%;
+						}
+					}
+				}
+
+				.git-dive {
+					&__text {
+						&--1 { font-size: 0.5em; }
+						&--2 { font-size: 1em; }
+						&--3 { font-size: 0.8em; }
+						&--4 { font-size: 0.55em; }
 					}
 				}
 			}
