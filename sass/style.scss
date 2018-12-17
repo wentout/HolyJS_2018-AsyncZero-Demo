@@ -1209,6 +1209,9 @@ section {
 			br { display: none; }
 		}
 
+		.async-operation {
+			br { display: none; }
+		}
 	}
 }
 
@@ -1257,8 +1260,6 @@ section {
 			&__subtitle { font-size: 3.5em; }
 		}
 
-
-
 		.they-invented {
 			br { display: none; }
 			&__header { font-size: 36px; }
@@ -1275,7 +1276,9 @@ section {
 		.all-complicated,
 		.they-invented,
 		.cache,
-		.window-node {
+		.window-node,
+		.continuation,
+		.uncaughtException {
 			&__code { font-size: 14px; padding: 10px 5px!important; }
 		}
 
@@ -1306,7 +1309,9 @@ section {
 		.threads,
 		.no-async,
 		.event-loop,
-		.loop-anyway {
+		.loop-anyway,
+		.see-js,
+		.logical-context {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1462,6 +1467,63 @@ section {
 		.loop-anyway {
 			&__header { margin-top: 0; }
 		}
+
+		.event-loop-node {
+			&__image {
+				&--1 { width: 90%; }
+			}
+
+			&__link {
+				&--2, &--3 { width: 50%; }
+				&--2 { top: auto;  bottom: 10%; left: auto; right: 10px;}
+				&--3 { top: auto; bottom: 0; left: 10px; }
+			}
+		}
+
+		.indeed {
+			&__header {
+				&--top {
+					margin-top: 0;
+					font-size: 50px;
+				}
+				&--principal {
+					font-size: 65px;
+				}
+			}
+
+			&__text {
+				&--1 { font-size: 50px; }
+				&--2 { font-size: 45px; }
+			}
+		}
+
+		.neumann-arch {
+			br { display: none; }
+		}
+
+		.async-operation {
+			&__header { font-size: 55px; }
+			&__subheader { font-size: 40px; }
+			&__text {
+				&--danger { font-size: 30px; }
+				&--neutral { font-size: 35px; }
+				&--alarm { font-size: 60px; }
+			}
+		}
+
+		.continuation,
+		.uncaughtException {
+			br { display: none; }
+
+			&__header { font-size: 40px; }
+			&__text { font-size: 25px; }
+			&__code {
+				padding: 0;
+				min-height: auto;
+
+				&-wrap { line-height: 1; }
+			}
+		}
 	}
 }
 
@@ -1610,6 +1672,15 @@ section {
 		.live-demo {
 			&__separator { width: 90%; }
 			&__video { width: 90%; }
+
+			&--3 {
+				.live-demo--3 {
+					&__link {
+						line-height: 0.8;
+						margin-top: 25px;
+					}
+				}
+			}
 		}
 
 		.trace {
@@ -1698,6 +1769,28 @@ section {
 
 		.tracking {
 			&__digit {}
+		}
+
+		.see-js {
+			&__text,
+			&__link { font-size: 36px ;}
+		}
+
+		.neumann-arch {
+			&__image {
+				&--1 { width: 90%; }
+
+			}
+		}
+
+		.async-operation {
+			&__header { font-size: 35px; }
+			&__subheader { font-size: 20px; }
+			&__text {
+				&--danger { font-size: 20px; }
+				&--neutral { font-size: 25px; }
+				&--alarm { font-size: 40px; }
+			}
 		}
 	}
 }
@@ -1877,6 +1970,28 @@ section {
 				&-wrap { line-height: 1.1; }
 			}
 		}
+
+		.see-js {
+			&__text,
+			&__link { font-size: 22px ;}
+		}
+
+		.indeed {
+			&__header {
+				&--top {
+					margin-top: 0;
+					font-size: 25px;
+				}
+				&--principal {
+					font-size: 30px;
+				}
+			}
+
+			&__text {
+				&--1 { font-size: 28px; }
+				&--2 { font-size: 26px; }
+			}
+		}
 	}
 }
 
@@ -1914,6 +2029,11 @@ section {
 			}
 		}
 		
+		.continuation,
+		.uncaughtException {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+		}
 	}
 }
 
@@ -2046,7 +2166,9 @@ section {
 				.threads,
 				.no-async,
 				.event-loop,
-				.loop-anyway  {
+				.loop-anyway,
+				.see-js,
+				.logical-context  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -2119,6 +2241,15 @@ section {
 					&__text { font-size: 0.4em; }
 					&__video { max-width: 50%; max-height: 120px;  }
 					&__separator { margin: 5px auto; }
+
+					&--3 {
+						.live-demo--3 {
+							&__link {
+								line-height: 0.8;
+								margin-top: 25px;
+							}
+						}
+					}
 				}
 
 
@@ -2299,6 +2430,54 @@ section {
 					&__image { float: left; }
 
 					p { font-size: 0.7em; }
+				}
+
+				.event-loop-node {
+					&__image {
+						&--1 { width: 50%; }
+					}
+		
+					&__link {
+						&--2, &--3 { width: 30%; }
+						&--2 { top: auto;  bottom: 10%; left: auto; right: 10px;}
+						&--3 { top: auto; bottom: 0; left: 10px; }
+					}
+				}
+
+				.see-js {
+					&__text,
+					&__link { font-size: 22px ;}
+				}
+
+				.indeed {
+					&__header {
+						&--top {
+							margin-top: 0;
+							font-size: 25px;
+						}
+						&--principal {
+							font-size: 30px;
+						}
+					}
+		
+					&__text {
+						&--1 { font-size: 28px; }
+						&--2 { font-size: 26px; }
+					}
+				}
+
+				.continuation,
+				.uncaughtException {
+					br { display: none; }
+		
+					&__header { font-size: 40px; margin: 0; }
+					&__text { font-size: 25px; }
+					&__code {
+						min-height: auto;
+						font-size: 14px; padding: 10px 5px!important;
+		
+						&-wrap { line-height: 1; }
+					}
 				}
 			}
 }

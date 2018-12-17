@@ -871,6 +871,8 @@ section {
     .reveal .entrypoint__code-wrap {
       line-height: 1.1; }
   .reveal .window-node br {
+    display: none; }
+  .reveal .async-operation br {
     display: none; } }
 
 @media (max-width: 980px) {
@@ -904,7 +906,9 @@ section {
   .reveal .all-complicated__code,
   .reveal .they-invented__code,
   .reveal .cache__code,
-  .reveal .window-node__code {
+  .reveal .window-node__code,
+  .reveal .continuation__code,
+  .reveal .uncaughtException__code {
     font-size: 14px;
     padding: 10px 5px !important; }
   .reveal .relations__subheader {
@@ -933,7 +937,9 @@ section {
   .reveal .threads__image,
   .reveal .no-async__image,
   .reveal .event-loop__image,
-  .reveal .loop-anyway__image {
+  .reveal .loop-anyway__image,
+  .reveal .see-js__image,
+  .reveal .logical-context__image {
     width: 90%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -957,7 +963,9 @@ section {
   .reveal .threads__header,
   .reveal .no-async__header,
   .reveal .event-loop__header,
-  .reveal .loop-anyway__header {
+  .reveal .loop-anyway__header,
+  .reveal .see-js__header,
+  .reveal .logical-context__header {
     font-size: 1em; }
   .reveal .push-button br,
   .reveal .coding br,
@@ -1064,7 +1072,57 @@ section {
   .reveal .event-loop__link {
     font-size: 0.9em; }
   .reveal .loop-anyway__header {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .reveal .event-loop-node__image--1 {
+    width: 90%; }
+  .reveal .event-loop-node__link--2, .reveal .event-loop-node__link--3 {
+    width: 50%; }
+  .reveal .event-loop-node__link--2 {
+    bottom: 10%;
+    left: auto;
+    right: 10px;
+    top: auto; }
+  .reveal .event-loop-node__link--3 {
+    bottom: 0;
+    left: 10px;
+    top: auto; }
+  .reveal .indeed__header--top {
+    font-size: 50px;
+    margin-top: 0; }
+  .reveal .indeed__header--principal {
+    font-size: 65px; }
+  .reveal .indeed__text--1 {
+    font-size: 50px; }
+  .reveal .indeed__text--2 {
+    font-size: 45px; }
+  .reveal .neumann-arch br {
+    display: none; }
+  .reveal .async-operation__header {
+    font-size: 55px; }
+  .reveal .async-operation__subheader {
+    font-size: 40px; }
+  .reveal .async-operation__text--danger {
+    font-size: 30px; }
+  .reveal .async-operation__text--neutral {
+    font-size: 35px; }
+  .reveal .async-operation__text--alarm {
+    font-size: 60px; }
+  .reveal .continuation br,
+  .reveal .uncaughtException br {
+    display: none; }
+  .reveal .continuation__header,
+  .reveal .uncaughtException__header {
+    font-size: 40px; }
+  .reveal .continuation__text,
+  .reveal .uncaughtException__text {
+    font-size: 25px; }
+  .reveal .continuation__code,
+  .reveal .uncaughtException__code {
+    min-height: auto;
+    padding: 0; }
+    .reveal .continuation__code-wrap,
+    .reveal .uncaughtException__code-wrap {
+      line-height: 1; } }
 
 @media (max-width: 730px), (max-height: 768px) {
   .reveal .header--h1 {
@@ -1176,6 +1234,9 @@ section {
     width: 90%; }
   .reveal .live-demo__video {
     width: 90%; }
+  .reveal .live-demo--3 .live-demo--3__link {
+    line-height: 0.8;
+    margin-top: 25px; }
   .reveal .trace__header {
     font-size: 1.7em;
     margin-top: 0; }
@@ -1231,7 +1292,21 @@ section {
     font-size: 0.8em; }
   .reveal .dots {
     font-size: 5em;
-    line-height: 0.2; } }
+    line-height: 0.2; }
+  .reveal .see-js__text, .reveal .see-js__link {
+    font-size: 36px; }
+  .reveal .neumann-arch__image--1 {
+    width: 90%; }
+  .reveal .async-operation__header {
+    font-size: 35px; }
+  .reveal .async-operation__subheader {
+    font-size: 20px; }
+  .reveal .async-operation__text--danger {
+    font-size: 20px; }
+  .reveal .async-operation__text--neutral {
+    font-size: 25px; }
+  .reveal .async-operation__text--alarm {
+    font-size: 40px; } }
 
 @media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
   .reveal .team-mascots-me br {
@@ -1348,7 +1423,18 @@ section {
     font-size: 14px; }
     .reveal .entrypoint__code-wrap,
     .reveal .window-node__code-wrap {
-      line-height: 1.1; } }
+      line-height: 1.1; }
+  .reveal .see-js__text, .reveal .see-js__link {
+    font-size: 22px; }
+  .reveal .indeed__header--top {
+    font-size: 25px;
+    margin-top: 0; }
+  .reveal .indeed__header--principal {
+    font-size: 30px; }
+  .reveal .indeed__text--1 {
+    font-size: 28px; }
+  .reveal .indeed__text--2 {
+    font-size: 26px; } }
 
 @media (max-width: 450px) {
   .reveal .this-talk__header {
@@ -1372,7 +1458,13 @@ section {
     right: 20px;
     top: 38%; }
   .reveal .tracking__header--0 {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+  .reveal .continuation__header,
+  .reveal .uncaughtException__header {
+    font-size: 30px; }
+  .reveal .continuation__text,
+  .reveal .uncaughtException__text {
+    font-size: 20px; } }
 
 @media (max-width: 340px) {
   .reveal .metaphor__header {
@@ -1461,7 +1553,9 @@ section {
   .reveal .threads__image,
   .reveal .no-async__image,
   .reveal .event-loop__image,
-  .reveal .loop-anyway__image {
+  .reveal .loop-anyway__image,
+  .reveal .see-js__image,
+  .reveal .logical-context__image {
     width: 70%; }
   .reveal .debug--in-progress__header,
   .reveal .debug--in-production__header,
@@ -1485,7 +1579,9 @@ section {
   .reveal .threads__header,
   .reveal .no-async__header,
   .reveal .event-loop__header,
-  .reveal .loop-anyway__header {
+  .reveal .loop-anyway__header,
+  .reveal .see-js__header,
+  .reveal .logical-context__header {
     font-size: 1em;
     margin-bottom: 0; }
   .reveal .push-button__header,
@@ -1541,6 +1637,9 @@ section {
     max-width: 50%; }
   .reveal .live-demo__separator {
     margin: 5px auto; }
+  .reveal .live-demo--3 .live-demo--3__link {
+    line-height: 0.8;
+    margin-top: 25px; }
   .reveal .sti__header,
   .reveal .polymorph__header {
     font-size: 1em; }
@@ -1667,7 +1766,49 @@ section {
   .reveal .event-loop__image {
     float: left; }
   .reveal .event-loop p {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  .reveal .event-loop-node__image--1 {
+    width: 50%; }
+  .reveal .event-loop-node__link--2, .reveal .event-loop-node__link--3 {
+    width: 30%; }
+  .reveal .event-loop-node__link--2 {
+    bottom: 10%;
+    left: auto;
+    right: 10px;
+    top: auto; }
+  .reveal .event-loop-node__link--3 {
+    bottom: 0;
+    left: 10px;
+    top: auto; }
+  .reveal .see-js__text, .reveal .see-js__link {
+    font-size: 22px; }
+  .reveal .indeed__header--top {
+    font-size: 25px;
+    margin-top: 0; }
+  .reveal .indeed__header--principal {
+    font-size: 30px; }
+  .reveal .indeed__text--1 {
+    font-size: 28px; }
+  .reveal .indeed__text--2 {
+    font-size: 26px; }
+  .reveal .continuation br,
+  .reveal .uncaughtException br {
+    display: none; }
+  .reveal .continuation__header,
+  .reveal .uncaughtException__header {
+    font-size: 40px;
+    margin: 0; }
+  .reveal .continuation__text,
+  .reveal .uncaughtException__text {
+    font-size: 25px; }
+  .reveal .continuation__code,
+  .reveal .uncaughtException__code {
+    font-size: 14px;
+    min-height: auto;
+    padding: 10px 5px !important; }
+    .reveal .continuation__code-wrap,
+    .reveal .uncaughtException__code-wrap {
+      line-height: 1; } }
 
 @media (max-height: 700px) {
   .reveal .introduction__header {

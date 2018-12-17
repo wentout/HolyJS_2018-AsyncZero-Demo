@@ -694,50 +694,57 @@ process.on('unhandledRejection' ...);
 [<img class="image image--border loop-anyway__image" src="/img/philip_roberts.png" alt="Philip Roberts: What the heck is the event loop anyway? | JSConf EU" title="Philip Roberts: What the heck is the event loop anyway? | JSConf EU" width ="57%">](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ---
-<!-- .slide: data-transition="zoom" -->
+<!-- .slide: class="slide event-loop-node" data-transition="zoom" -->
 ## Event Loop : Node <!-- .element: class="event-loop__header" -->
 
-<a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/"><img class="image image--border" src="/img/notes/event_loop1.png" alt="event loop node" title="event loop node" width ="57%">
+<a class="event-loop-node__link event-loop-node__link--1" href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/"><img class="image image--border event-loop-node__image event-loop-node__image--1" src="/img/notes/event_loop1.png" alt="event loop node" title="event loop node" width ="57%">
 
-<a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/" class="fragment event-loop__link event-loop__link--1">
-<img class="image image--border" src="/img/notes/event_loop2.png" alt="event loop node" title="event loop node">
+<a class="fragment event-loop__link event-loop__link--1 event-loop-node__link--2" href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/">
+<img class="image image--border event-loop-node__image event-loop-node__image--2" src="/img/notes/event_loop2.png" alt="event loop node" title="event loop node">
 </a>
 
-<a href="https://medium.com/devschacht/event-loop-timers-and-nexttick-18579cd122e0" class="fragment event-loop__link event-loop__link--2">
-<img class="image image--border" src="/img/notes/event_loop3.png" alt="event loop node" title="event loop node">
+<a class="fragment event-loop__link event-loop__link--2 event-loop-node__link--3" href="https://medium.com/devschacht/event-loop-timers-and-nexttick-18579cd122e0">
+<img class="image image--border event-loop-node__image event-loop-node__image--3" src="/img/notes/event_loop3.png" alt="event loop node" title="event loop node">
 </a>
 
 
 ---
-
-## LIVE DEMO 3.1 !
+<!-- .slide: class="slide live-demo live-demo--3" -->
+## LIVE DEMO 3.1 ! <!-- .element: class="live-demo__header" -->
 
 <br>
-setTimeout + fs.readFile: test.js
+setTimeout + fs.readFile: test.js <!-- .element: class="live-demo__text" -->
 
-unpredictable behaviour of EventLoop 
+unpredictable behaviour of EventLoop  <!-- .element: class="live-demo__text" -->
 
-https://github.com/wentout/HolyJS_2018-AsyncZero-Demo/blob/master/demos/test.js
+https://github.com/wentout/HolyJS_2018-AsyncZero-Demo/blob/master/demos/test.js  
+
+<!-- .element: class="live-demo__text live-demo--3__link" -->
 
 ---
 
 ---
+<!-- .slide: class="slide see-js" -->
+
 how we see js <span class="fragment">&nbsp;&mdash;&nbsp; and everything asynchronous</span>
 
-<img class="image image--border" src="/img/tips.gif" alt="js tips" title="js tips" width ="80%">
+<!-- .element: class="see-js__text" -->
+
+<img class="image image--border see-js__image" src="/img/tips.gif" alt="js tips" title="js tips" width ="80%">
 
 [(c) original img article link](https://hackernoon.com/12-amazing-javascript-shorthand-techniques-fef16cdbc7fe)
-
---- <!-- .slide: class="indeed" -->
+<!-- .element: class="see-js__link" -->
+--- 
+<!-- .slide: class="slide indeed" -->
 # but indeed <!-- .element: class="indeed__header indeed__header--top" -->
 
 <h1 class="indeed__header indeed__header--principal" class="fragment">there is no <br>async at all</h1>
 
-## just sequental flow<!-- .element: class="fragment" -->
-### very fast one, though<!-- .element: class="fragment" -->
+## just sequental flow<!-- .element: class="fragment indeed__text indeed__text--1" -->
+### very fast one, though<!-- .element: class="fragment indeed__text indeed__text--2" -->
 
 ---
-<!-- .slide: class="neumann-arch" data-state="nocontrols" -->
+<!-- .slide: class="slide neumann-arch" data-state="nocontrols" -->
 <br>
 <img class="image image--border neumann-arch__image neumann-arch__image--1 " src="/img/notes/von_newmann.png" alt="von_newmann" title="von_newmann" width="75%">
 
@@ -747,8 +754,8 @@ how we see js <span class="fragment">&nbsp;&mdash;&nbsp; and everything asynchro
 
 
 ---
-<br> <!-- .slide: class="async-operation" -->
-## every async operation
+<br> <!-- .slide: class="slide async-operation" -->
+## every async operation <!-- .element: class="async-operation__subheader" -->
 
 <h1 class="fragment async-operation__header">just triggers</h1>
 
@@ -757,23 +764,23 @@ how we see js <span class="fragment">&nbsp;&mdash;&nbsp; and everything asynchro
 # as a continuation code<!-- .element: class="fragment async-operation__text async-operation__text--alarm"-->
 
 ---
-<!-- .slide: class="logical-context" data-transition="fade" -->
-### logical context explanation
+<!-- .slide: class="slide logical-context" data-transition="fade" -->
+### logical context explanation <!-- .element: class="logical-context__header" -->
 
 <div class="logical-context__image" data-external="svg/LogicFlow.svg"></div>
 
 ---
-<!-- .slide: class="logical-context" data-transition="zoom" -->
-### logical context failure
+<!-- .slide: class="slide logical-context" data-transition="zoom" -->
+### logical context failure <!-- .element: class="logical-context__header" -->
 
 <div class="logical-context__image" data-external="svg/LogicFlowFailure.svg"></div>
 
 ---
-<!--slide: class="continuation"-->
+<!--slide: class="slide continuation"-->
 <br> 
-## and we usually use
+## and we usually use <!-- .element: class="continuation__header" -->
 
-something like this 2 contextify the continuation
+something like this 2 contextify the continuation <!-- .element: class="continuation__text" -->
 
 <pre class="continuation__code-wrap">
 <code class="lang-javascript hljs fragment continuation__code">
@@ -788,7 +795,7 @@ fn.bind(context, ...args) => { /* ... */ };
 
 
 ---
-<!-- .slide: class="uncaughtException" -->
+<!-- .slide: class="slide uncaughtException" -->
 <br>
 ##### & no way 4 .uncaughtException<br><br> <!-- .element: class="uncaughtException__header" -->
 
