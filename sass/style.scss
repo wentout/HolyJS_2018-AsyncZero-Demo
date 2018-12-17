@@ -1045,6 +1045,11 @@ section {
 				}
 			}
 		}
+
+		.CODE {
+			&__header { font-size: 250px; }
+
+		}
 	}
 }
 
@@ -1120,6 +1125,21 @@ section {
 			}
 
 			&__digit {}
+		}
+
+		.no-limits {
+			&__header {
+				font-size: 5em;
+				margin-top: 0;
+			}
+		}
+
+		.async-hooks {
+			&__text {
+				left: 50%; top: auto; bottom: -10%;
+				transform: translateX(-50%);
+				width: 100%;
+			}
 		}
 	}
 }
@@ -1211,6 +1231,34 @@ section {
 
 		.async-operation {
 			br { display: none; }
+		}
+
+		.CODE {
+			&__header {
+				font-size: 150px;
+				margin-top: 0;
+			}
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 65px;
+			}
+		}
+
+		.doc-example,
+		.example-work {
+			br { display: none; }
+
+			&__code,
+			code {
+				font-size: 16px;
+				padding: 0!important;
+				
+				&-wrap {
+					line-height: 1;
+				}
+			}
 		}
 	}
 }
@@ -1311,7 +1359,9 @@ section {
 		.event-loop,
 		.loop-anyway,
 		.see-js,
-		.logical-context {
+		.logical-context,
+		.async_hooks,
+		.doc-example {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1330,7 +1380,8 @@ section {
 		.threads,
 		.no-async,
 		.event-loop,
-		.loop-anyway {
+		.loop-anyway,
+		.async_hooks {
 			br { display: none; }
 		}
 
@@ -1523,6 +1574,30 @@ section {
 
 				&-wrap { line-height: 1; }
 			}
+		}
+
+		.no-limits {
+			&__header { font-size: 3em; }
+			&__text { font-size: 1em; }
+		}
+
+		.async-hooks {
+			&__text {
+				font-size: 1em;
+			}
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 45px;
+				
+				&:first-child { margin-top: 0;  }
+			}
+		}
+
+		.example-work {
+			br { display: none; }
+			&__header { font-size: 50px; }
 		}
 	}
 }
@@ -1792,6 +1867,10 @@ section {
 				&--alarm { font-size: 40px; }
 			}
 		}
+
+		.example-work {
+			&__header { font-size: 30px; }
+		}
 	}
 }
 
@@ -1842,6 +1921,21 @@ section {
 		.no-async {
 			&__header { font-size: 0.7em; }
 			&__text { font-size: 0.4em;}
+		}
+
+		.CODE {
+			&__header { font-size: 100px; }
+			&__image { width: 50%; }
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 30px;
+			}
+		}
+
+		.doc-example {
+			&__header { font-size: 30px; }
 		}
 	}
 }
@@ -1992,6 +2086,11 @@ section {
 				&--2 { font-size: 26px; }
 			}
 		}
+
+		.no-limits {
+			&__header { font-size: 1.5em; }
+			&__text { font-size: 0.6em; }
+		}
 	}
 }
 
@@ -2033,6 +2132,29 @@ section {
 		.uncaughtException {
 			&__header { font-size: 30px; }
 			&__text { font-size: 20px; }
+		}
+
+		.CODE {
+			&__header { font-size: 70px; }
+
+			&__image {
+				width: 80%;
+				z-index: -1;
+				position: relative;
+			}
+		}
+
+		.async-hooks {
+			&__text {
+				font-size: 0.5em;
+				bottom: 0;
+			}
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 20px;
+			}
 		}
 	}
 }
@@ -2168,7 +2290,10 @@ section {
 				.event-loop,
 				.loop-anyway,
 				.see-js,
-				.logical-context  {
+				.logical-context,
+				.async_hooks,
+				.doc-example,
+				.example-work  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -2479,6 +2604,60 @@ section {
 						&-wrap { line-height: 1; }
 					}
 				}
+
+				.CODE {
+					&__header { font-size: 70px; }
+
+					&__digit {
+						transform: translateY(50%);
+					}
+		
+					&__image {
+						width: 50%;
+						z-index: -1;
+						position: relative;
+					}
+				}
+
+				.no-limits {
+					&__header { font-size: 1.5em; margin-top: 0; }
+					&__text { font-size: 0.6em; }
+				}
+
+				.async-hooks {
+					br { display: none;}
+
+					&__text {
+						font-size: 0.5em;
+						bottom: 0;
+					}
+				}
+
+				.hooks-list {
+					&__hook {
+						font-size: 20px;
+					}
+				}
+
+				.doc-example,
+				.example-work { 
+					&__header {
+						font-size: 30px;
+						margin: 0;
+					}
+
+					&__code {
+						padding: 0!important;
+
+						&-wrap {
+							line-height: 1; margin: 0 auto;
+
+							&--1, &--2 { width: 45%; }
+							&--1 { float: left; margin-top: 1%; }
+							&--2 { float: right; margin-top: 10%; }
+						}
+					}
+				}
 			}
 }
 
@@ -2571,6 +2750,28 @@ section {
 			&__header { font-size: 2.8em; margin-bottom: 30px; }
 			&__subheader { font-size: 1.3px; }
 			&__code { font-size: 25px; }
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 40px;
+			}
+		}
+
+		.doc-example {
+			&__code {
+				padding: 0!important;
+
+				&-wrap {
+					line-height: 1; margin: 0 auto;
+
+					&--1, &--2 {
+						float: none;
+						width: 90%;
+						margin-top: 1%;
+					}
+				}
+			}
 		}
 	}
 }

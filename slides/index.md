@@ -814,32 +814,33 @@ fn.bind(context, ...args) => { /* ... */ };
 ---
 
 ---
-<!-- .slide: class="CODE"-->
+<!-- .slide: class="slide CODE"-->
 
 <h1 class="CODE__header">C.0.D.E.</h1>
 
-<h1 class="side-digit side-digit__1">4</h1>
+<h1 class="side-digit side-digit__1 CODE__digit">4</h1>
 
-[<img class="image image--border" src="/img/code.jpg" alt="c.o.d.e." title="Code: The Hidden Language of Computer Hardware and Software - Wikipedia">](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software)
+[<img class="image image--border CODE__image" src="/img/code.jpg" alt="c.o.d.e." title="Code: The Hidden Language of Computer Hardware and Software - Wikipedia">](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software)<!-- .element: class="CODE__link" -->
+
 
 ---
 
 ---
-<!-- .slide: class="no-limits" data-transition="zoom" -->
+<!-- .slide: class="slide no-limits" data-transition="zoom" -->
 <h1 class="no-limits__header">Imagine</h1>
-### code with no limits
+### code with no limits <!-- .element: class="no-limits__text" -->
 
 
 ---
-<!-- .slide: class="async-hooks" data-transition="zoom" data-background="white" -->
+<!-- .slide: class="slide async-hooks" data-transition="zoom" data-background="white" -->
 <br>
-<img src="/img/notes/async_hooks.png" alt="async_hooks" title="async_hooks" width="75%" class="image image--noborder">
+<img src="/img/notes/async_hooks.png" alt="async_hooks" title="async_hooks" width="75%" class="image image--noborder async_hooks__image">
 
 <h3 class="fragment async-hooks__text"> no more flag : lets try em </h3>
 
 
 ---
-<!-- .slide: class="hooks-list" data-transition="zoom" data-background="white" -->
+<!-- .slide: class=" slide hooks-list" data-transition="zoom" data-background="white" -->
 
 <h1 class="hooks-list__hook">.init ( asyncId, type, <br>
 <span class="hooks-list__descriptor">triggerId, resource</span> )</h1>
@@ -850,7 +851,7 @@ fn.bind(context, ...args) => { /* ... */ };
 <h1 class="fragment hooks-list__hook hooks-list__hook--resolve">.promiseResolve ( asyncId )</h1>
 
 ---
-<!-- .slide: class="hooks-list" data-transition="zoom" data-background="white" -->
+<!-- .slide: class=" slide hooks-list" data-transition="zoom" data-background="white" -->
 
 <h1 class="hooks-list__hook" >asyncId</h1>
 <h1 class="fragment hooks-list__hook">triggerId</h1>
@@ -859,13 +860,13 @@ fn.bind(context, ...args) => { /* ... */ };
 <h1 class="fragment hooks-list__hook">type & resource</h1>
 
 ---
-<!-- .slide: class="doc-example" data-transition="none" -->
-### documentation exapmle
+<!-- .slide: class="slide doc-example" data-transition="none" -->
+### documentation exapmle <!-- .element: class="doc-example__header" -->
 <pre class="doc-example__code-wrap" ><code class="lang-javascript hljs doc-example__code">
 					const async_hooks = require('async_hooks');
 					
 </code></pre>
-<pre class="doc-example__code-wrap" ><code class="lang-javascript hljs fragment doc-example__code">
+<pre class="doc-example__code-wrap doc-example__code-wrap--1" ><code class="lang-javascript hljs fragment doc-example__code">
 					const hooks = async_hooks.createHook({
 						init(asyncId, type, triggerAsyncId, resource) {
 							 /* some code */
@@ -880,15 +881,15 @@ fn.bind(context, ...args) => { /* ... */ };
 					
 </code></pre>
 
-<pre class="doc-example__code-wrap" ><code class="lang-javascript hljs fragment doc-example__code">
+<pre class="doc-example__code-wrap doc-example__code-wrap--2" ><code class="lang-javascript hljs fragment doc-example__code">
 					hooks.enable();
 					
 </code></pre>
 
 
 ---
-<!-- .slide:  data-transition="none" -->
-### documentation exapmle
+<!-- .slide: class="slide doc-example"  data-transition="none" -->
+### documentation exapmle <!-- .element: class="doc-example__header" -->
 
 
 ```text
@@ -917,9 +918,9 @@ fn.bind(context, ...args) => { /* ... */ };
 </code>
 </pre>
 ---
-<!-- .slide: data-transition="zoom" -->
+<!-- .slide: class="slide example-work" data-transition="zoom" -->
 <br>
-## so this example should work
+## so this example should work <!-- .element: class="example-work__header" -->
 <br>
 
 ```js
@@ -938,7 +939,7 @@ fn.bind(context, ...args) => { /* ... */ };
 					 
 					const cb = () => { /* some code */ };
 ```
-<!-- .element: class="doc-example__code-wrap" -->
+<!-- .element: class="example-work__code-wrap" -->
 
 ---
 <!-- .slide: class="articles" data-transition="none" -->
