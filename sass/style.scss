@@ -931,7 +931,7 @@ section {
 			&--martin {
 				z-index:2;
 				position: absolute;
-				top: 620px;
+				top: 560px;
 				right: 32%;
 			}
 		}
@@ -953,7 +953,8 @@ section {
 	}
 
 	.conclusion {
-		&__reveal { font-size: 25pt; }
+		&__reveal,
+		&__adaptive { font-size: 25pt; }
 	}
 
 	.live-demo {
@@ -1128,6 +1129,11 @@ section {
 				z-index: 1000;
 			}
 		}
+
+		.i-know-how {
+			&__header { font-size: 2.2em; margin-bottom: 0; }
+			&__digit { font-size: 11em; }
+		}
 	}
 }
 
@@ -1145,6 +1151,23 @@ section {
 			&__descriptor {
 				font-size: 30px;
 				top: 30%;
+			}
+		}
+
+		.discussions {
+			&__image {
+				height: auto;
+
+				&--1, &--2 {
+					width: 45%;
+				}
+
+				&--3 { width: 60%; }
+
+				&--martin {
+					left: auto; right: 10%;
+					width: 230px;
+				}
 			}
 		}
 	}
@@ -1419,19 +1442,6 @@ section {
 
 		.present { margin: 0 !important; }
 
-		// .who-am-i {
-		// 	padding: 0 10px;
-
-		// 	br { display: none; }
-
-		// 	&__header { font-size: 30px; }
-		// 	&__text {
-		// 		font-size: 25px;
-
-		// 		&--nowdays { font-size: 30px; }
-		// 		&--finally { font-size: 30px; }
-		// 	}
-		// }
 		.and-word-was {
 			&__subtitle { font-size: 3.5em; }
 		}
@@ -1510,7 +1520,9 @@ section {
 		.continuation,
 		.chrome-debug,
 		.working-concept,
-		.cloud-trace {
+		.cloud-trace,
+		.team-thank,
+		.all-in-good-times {
 			&__image { width: 90%; }
 			&__header { font-size: 1em; }
 		}
@@ -1541,7 +1553,8 @@ section {
 		.issue-249,
 		.continuation,
 		.chrome-debug,
-		.cloud-trace {
+		.cloud-trace,
+		.team-thank {
 			br { display: none; }
 		}
 
@@ -1918,6 +1931,46 @@ section {
 		.resume {
 			&__header { margin-top: 0; }
 		}
+
+		.discussions {
+			&__image {
+				&--martin {
+					top: 60%;
+					width: 170px;
+				}
+			}
+		}
+
+		.main-idea {
+			&__subtitle {
+				&--1 { font-size: 1em; }
+				&--2 { font-size: 1.2em; }
+			}
+
+			&__text { font-size: 1.8em;}
+		}
+
+		.i-know-how {
+			br { display: none; }
+			&__header { font-size: 1.2em; }
+			&__digit { font-size: 3em; }
+		}
+
+		.uCircus {
+			&__header { font-size :40px; }
+			br { display: none; }
+		}
+
+		.conclusion {
+			br { display: none; }
+			&__header { font-size: 30px; }
+
+			&__link,
+			&__reveal,
+			&__adaptive  {
+				font-size: 22px;
+			}
+		}
 	}
 }
 
@@ -2246,6 +2299,41 @@ section {
 			&__text { font-size: 20px; }
 		}
 
+		.discussions {
+			&__header { font-size: 30px; }
+			&__image {
+				&--3 {
+					top: 40%;
+				}
+			}
+		}
+
+		.main-idea {
+			&__subtitle {
+				&--1 { font-size: 30px; }
+				&--2 { font-size: 35px; }
+			}
+
+			&__text { font-size: 60px;}
+		}
+
+		.i-know-how {
+			br { display: none; }
+			&__header { font-size: 30px; margin-top: 0;  }
+			&__digit { font-size: 4em; }
+			&__text { font-size: 20px; }
+		}
+
+		.node-crew,
+		.special-thanks {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+		}
+
+		.special-thanks {
+			br { display: none; }
+			&__list { font-size: 20px; }
+		}
 		
 	}
 }
@@ -2522,6 +2610,15 @@ section {
 			&__subheader { font-size: 20px; }
 			&__link { font-size: 16px; }
 		}
+
+		.main-idea {
+			&__subtitle {
+				&--1 { font-size: 20px; }
+				&--2 { font-size: 25px; }
+			}
+
+			&__text { font-size: 40px;}
+		}
 	}
 }
 
@@ -2614,6 +2711,19 @@ section {
 		.resume {
 			&__header { font-size: 50px; }
 		}
+
+		.discussions {
+			&__image {
+				&--martin {
+					width: 100px;
+					top: 70%;
+				}
+			}
+		}
+
+		.uCircus {
+			&__header { font-size :30px; }
+		}
 	}
 }
 
@@ -2635,6 +2745,11 @@ section {
 
 		.limitations {
 			&__header { font-size: 30px; }
+		}
+
+		.special-thanks {
+			&__header { font-size: 20px; }
+			&__list { font-size: 16px; }
 		}
 	}
 }
@@ -2779,7 +2894,9 @@ section {
 				.continuation,
 				.chrome-debug,
 				.working-concept,
-				.cloud-trace  {
+				.cloud-trace,
+				.team-thank,
+				.all-in-good-times  {
 					&__image { width: 70%; }
 					&__header { font-size: 1em; margin-bottom: 0; }
 				}
@@ -3325,6 +3442,50 @@ section {
 				.resume {
 					&__header { margin-top: 0; }
 					&__digit { font-size: 240px; }
+				}
+
+				.discussions {
+					br { display: none; }
+					a { height: 0; }
+					&__header { font-size: 30px; margin-bottom: 0; }
+					&__image {
+						margin: 0;
+						max-height: 100px;
+						width: auto;
+
+						&--martin {
+							top: 50%; right: 30%;
+							width: 70px;
+						}
+					}
+				}
+
+				.main-idea {
+					br { display: none; }
+
+					&__subtitle {
+						&--1 { font-size: 20px; }
+						&--2 { font-size: 25px; }
+					}
+		
+					&__text { font-size: 40px;}
+				}
+
+				.i-know-how {
+					br { display: none; }
+					&__header { font-size: 30px; margin-top: 0;  }
+					&__digit { font-size: 4em; }
+					&__text { font-size: 20px; }
+				}
+
+				.node-crew,
+				.special-thanks {
+					&__header { font-size: 30px; }
+					&__text { font-size: 20px; }
+				}
+
+				.special-thanks {
+					&__list { font-size: 20px; }
 				}
 			}
 }

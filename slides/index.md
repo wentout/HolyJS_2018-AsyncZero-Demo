@@ -1465,21 +1465,21 @@ and &mdash; many &mdash; many &mdash; other packages <!-- .element: class="fragm
 
 ---
 <br>
-<!-- .slide: class="discussions"-->
-### context discussions
+<!-- .slide: class="slide discussions"-->
+### context discussions <!-- .element: class="discussions__header" -->
 
-[<img class="image image--border discussions__image" src="/img/solovyov.png" alt="Александр Соловьев Functional Reactive Programming & ClojureScript" title="Александр Соловьев Functional Reactive Programming & ClojureScript" height="300px">](https://www.youtube.com/watch?v=R4sTvHXkToQ) [<img class="image image--border discussions__image" src="/img/rich_hickey.png" alt="The Value of Values with Rich Hickey" title="The Value of Values with Rich Hickey" height="300px">](https://www.youtube.com/watch?v=-6BsiVyC1kM)
+[<img class="image image--border discussions__image discussions__image--1" src="/img/solovyov.png" alt="Александр Соловьев Functional Reactive Programming & ClojureScript" title="Александр Соловьев Functional Reactive Programming & ClojureScript" height="300px">](https://www.youtube.com/watch?v=R4sTvHXkToQ) [<img class="image image--border discussions__image discussions__image--2" src="/img/rich_hickey.png" alt="The Value of Values with Rich Hickey" title="The Value of Values with Rich Hickey" height="300px">](https://www.youtube.com/watch?v=-6BsiVyC1kM)
 
 
-[<img class="image image--border discussions__image" src="/img/martin.png" alt="Robert C Martin :<br> Functional Programming; What? Why? When?" title="Robert C Martin :<br> Functional Programming; What? Why? When?" height="300px">](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
+[<img class="image image--border discussions__image discussions__image--3" src="/img/martin.png" alt="Robert C Martin :<br> Functional Programming; What? Why? When?" title="Robert C Martin :<br> Functional Programming; What? Why? When?" height="300px">](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
 
 <img class="image image--border discussions__image discussions__image--martin" src="/img/Robert_Cecil_Martin.png" alt="Robert_Cecil_Martin" title="Robert_Cecil_Martin" height="200px">
 	
 ---
-<!-- .slide: class="main-idea" -->
-### and main Idea
+<!-- .slide: class="slide main-idea" -->
+### and main Idea <!-- .element: class="main-idea__subtitle main-idea__subtitle--1" -->
 
-## !== being shy to ask
+## !== being shy to ask  <!-- .element: class="main-idea__subtitle main-idea__subtitle--2" -->
 
 # and communicate<!-- .element: class="fragment main-idea__text" -->
 
@@ -1487,58 +1487,63 @@ and &mdash; many &mdash; many &mdash; other packages <!-- .element: class="fragm
 ---
 
 ---
-<!-- .slide: class="i-know-how"-->
+<!-- .slide: class="slide i-know-how"-->
 <br>
 <h1 class="i-know-how__header">The End</h1>
 <br>
-I know how to make it faster  
-... but it would be slower ...
+<p> I know how to make it faster </p>
+<!-- .element: class="i-know-how__text" -->
+<p> ... but it would be slower ...</p>
+<!-- .element: class="i-know-how__text" -->
 
-<h1 class="side-digit side-digit__2" >...</h1>
-
----
-
-### node crew thank you !
-
-for giving and who works with  
-[async_hooks](https://nodejs.org/api/async_hooks.html)
+<h1 class="side-digit side-digit__2 i-know-how__digit" >...</h1>
 
 ---
+<!-- .element: class="slide node-crew" -->
+### node crew thank you ! <!-- .element: class="node-crew__header" -->
+
+for giving and who works with   <!-- .element: class="node-crew__text" -->
+[async_hooks](https://nodejs.org/api/async_hooks.html) <!-- .element: class="node-crew__text" -->
+
+---
+<!-- .slide: class="slide special-thanks" -->
 <br>
-### and special thanks to
+### and special thanks to <!-- .element: class="special-thanks__header"-->
 
-* [Aleksey Kozyatinskiy](https://twitter.com/ak_239) for giving a way
-* [Thomas Watson](https://twitter.com/wa7son) for patient explanations
-* [Andreas Madsen](https://twitter.com/andreas_madsen) for willing to help
-* [Anna Henningsen](https://twitter.com/addaleax) for answering at all
-* [Trevor Norris](https://twitter.com/trevnorris) for the begining
-* [Thorsten Lorenz](https://twitter.com/thlorenz) for docs & exampes
+* [Aleksey Kozyatinskiy](https://twitter.com/ak_239) for giving a way 
+* [Thomas Watson](https://twitter.com/wa7son) for patient explanations 
+* [Andreas Madsen](https://twitter.com/andreas_madsen) for willing to help 
+* [Anna Henningsen](https://twitter.com/addaleax) for answering at all 
+* [Trevor Norris](https://twitter.com/trevnorris) for the begining 
+* [Thorsten Lorenz](https://twitter.com/thlorenz) for docs & exampes 
 * [Ilya Kantor](https://twitter.com/iliakan) for issue [#59](https://github.com/othiym23/node-continuation-local-storage/issues/59)
 
----
-
-## team thank you !
-<img class="image image--border" src="/img/team.jpg" alt="ukit team" title="ukit team" width="59%">
+<!-- .element: class="special-thanks__list" -->
 
 ---
-<!-- .slide: class="uCircus" -->
+<!-- .element: class="slide team-thank" -->
+## team thank you ! <!-- .element: class="team-thank__header" -->
+<img class="image image--border team-thank__image " src="/img/team.jpg" alt="ukit team" title="ukit team" width="59%">
+
+---
+<!-- .slide: class="slide uCircus" -->
 <br>
 <br>
 <div class="uCircus">
 	<h3 class="uCircus__header">Stickers Pack : uCircus</h3>
-	<img class="image image--border" src="/img/ucircus/ban.jpeg" alt="ban sticker" title="ukit team" width="14%">
-	<img class="image image--border" src="/img/ucircus/500.jpeg" alt="500 sticker" title="ukit team" width="14%">
-	<img class="image image--border" src="/img/ucircus/raisins.jpeg" alt="ban sticker" title="ukit team" width="15%">
-	<img class="image image--border" src="/img/ucircus/permissions.jpeg" alt="permissions sticker" title="ukit team" width="14%">
-	<img class="image image--border" src="/img/ucircus/bug.jpeg" alt="bug sticker" title="ukit team" width="14%">
+	<img class="image image--border uCircus__image" src="/img/ucircus/ban.jpeg" alt="ban sticker" title="ukit team" width="14%">
+	<img class="image image--border uCircus__image" src="/img/ucircus/500.jpeg" alt="500 sticker" title="ukit team" width="14%">
+	<img class="image image--border uCircus__image" src="/img/ucircus/raisins.jpeg" alt="ban sticker" title="ukit team" width="15%">
+	<img class="image image--border uCircus__image" src="/img/ucircus/permissions.jpeg" alt="permissions sticker" title="ukit team" width="14%">
+	<img class="image image--border uCircus__image" src="/img/ucircus/bug.jpeg" alt="bug sticker" title="ukit team" width="14%">
 <div>
 
 ---
-
-## all in good times
+<!-- .slide: class="sldie all-in-good-times" -->
+## all in good times <!-- .element: class="all-in-good-times__header" -->
 
 ---
-<!-- .slide: class="conclusion" -->
+<!-- .slide: class="slide conclusion" -->
 
 <br>
 <br>
@@ -1546,13 +1551,17 @@ for giving and who works with
 <br>
 
 ### [my git](https://github.com/wentout) &nbsp; ~ &nbsp; [@wentout](https://twitter.com/wentout)
+<!-- .element: class="conclusion__header" -->
 
 <br>
-**<a class="link reveal__link" target="_blank" href="https://github.com/wentout/HolyJS_2018-AsyncZero-Demo">[ Demo Github ]</a>**
+**<a class="link reveal__link conclusion__link" target="_blank" href="https://github.com/wentout/HolyJS_2018-AsyncZero-Demo">[ Demo Github ]</a>**
 <br>
-**<a class="link reveal__link" href="http://context-dive.com/holy">http://context-dive.com/holy</a>**
+**<a class="link reveal__link conclusion__link" href="http://context-dive.com/holy">http://context-dive.com/holy</a>**
 <br>
 <br>
 <br>
+
 
 <span class="conclusion__reveal">made using [reveal.js](https://revealjs.com/#/) & plugins, thanks!</span>
+<p class="conclusion__adaptive">
+Device Adaptation by Anatoly Volgin<a href="https://github.com/zeroWheel" > [GIT]</a></p>
