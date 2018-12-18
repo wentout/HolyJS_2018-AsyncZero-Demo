@@ -25,7 +25,7 @@ programmer's lullaby
 <h3 class="fragment header header__h3 who-am-i__text--finally"> And finally NodeJS.</h3>
 
 <p class="fragment text who-am-i__text who-am-i__text--meanwhile">
-meanwile former researcher of IT Economy <br> ... and still very interested</p>
+meanwhile former researcher of IT Economy <br> ... and still very interested</p>
 </div>
 
 ---
@@ -530,7 +530,7 @@ Networking? Microcontrollers? <!-- .element: class="banch-of-links__text" -->
 
 --- <!-- .slide: class="slide graphana" -->
 
-### we have graphana & prometseus  <!-- .element: class="graphana__subheader" -->
+### we have graphana & promethseus  <!-- .element: class="graphana__subheader" -->
 # may be this is it ? <!-- .element: class="graphana__header" -->
 <img class="image image--border graphana__image graphana__image--api" src="/img/notes/perf_prof.png" alt="perf_prof" title="perf_prof" width="75%">
 
