@@ -62,10 +62,12 @@ section {
 	}
 
 	.slide { 
+		box-sizing: border-box;
+
 		&--dark { background-color: $color000; }
 		&--meanwhile {
 			font-size: 0.85em;
-			margin-top: 3%
+			margin-top: 3%;
 		}
 	}
 
@@ -124,8 +126,12 @@ section {
 		font-size: 9em;
 	}
 
-	.team-mascots {
-		&__image { margin-top: 2% }
+	.introduction {
+		&__logo { background: transparent; }
+	}
+
+	.team-mascots-me {
+		&__image { margin-top: 2%; }
 	}
 
 	.doc-example {
@@ -143,6 +149,9 @@ section {
 		}
 	}
 	 
+	.present {
+		p { margin: 0; }
+	}
 
 	.who-am-i {
 		font-size: 0.7em;
@@ -154,6 +163,7 @@ section {
 				margin-top: 3%;
 			}
 		}
+
 	}
 
 	.dream {
@@ -203,7 +213,7 @@ section {
 		}
 	}
 
-	.metophor {
+	.metaphor {
 		&__header {
 			font-size: 5em;
 			margin-top: 25px;
@@ -274,7 +284,7 @@ section {
 			&__header {
 				z-index: 5;
 				color:red;
-				font-size: 7.1em;
+				font-size: 16vw; // 7.1em
 				position: absolute;
 				top: 145px; left: 80px
 			}
@@ -293,29 +303,34 @@ section {
 			&--note {
 				width: 59%;
 			}
+
+			&--root {
+				max-width: 270px;
+
+			}
 		}
 	}
 
 	.available-data {
 			&__image {
-				&-root,
-				&-test,
-				&-team {
+				&--root,
+				&--test,
+				&--team {
 					z-index:2;
 					position: absolute;
 				}
 
-				&-root,
-				&-test {
+				&--root,
+				&--test {
 					width: 270px;
 					top: 125px;
 				}
 
-				&-root { left: 30px; }
-				&-aaa { width: 25%; }
-				&-test { right: 30px; }
+				&--root { left: 30px; }
+				&--aaa { width: 25%; }
+				&--test { right: 30px; }
 
-				&-team {
+				&--team {
 					left: 42%; top: 400px;
 					width: 350px;
 				}
@@ -327,9 +342,9 @@ section {
 			z-index:2;
 			position: absolute;
 
-			&--1 {left: 2%; top: 59%; }
+			&--cat {left: 2%; top: 59%; }
 
-			&--2 {
+			&--heisenbug {
 				right: 2%; top: 69%;
 				width: 70%;
 			}
@@ -401,12 +416,13 @@ section {
 			font-size: 5em;
 			margin-top: 225px
 		}
+
+		&__text { display: block; }
 	}
 
 	.statefull {
 		&__header {
 			font-size: 5em;
-			margin-top: 125px;
 			color: orange;
 		}
 	}
@@ -561,15 +577,12 @@ section {
 		}
 	}
 
-	.no-async {
-		&__header { margin-top: 50px; }
-	}
-
 	.window-node {
 		&__code { text-align: center; }
 	}
 
-	.event-loop {
+	.event-loop,
+	.loop-anyway {
 		&__header {
 			margin-top: 50px;
 			color: orange;
@@ -700,9 +713,11 @@ section {
 	}
 
 	.articles {
-		&__text {
-			font-size: 3.5em;
-			color: orange;
+		&__header {
+			&--important {
+				font-size: 3.5em;
+				color: orange;
+			}
 		}
 
 		&__image {
@@ -916,7 +931,7 @@ section {
 			&--martin {
 				z-index:2;
 				position: absolute;
-				top: 620px;
+				top: 560px;
 				right: 32%;
 			}
 		}
@@ -938,7 +953,12 @@ section {
 	}
 
 	.conclusion {
-		&__reveal { font-size: 25pt; }
+		&__reveal,
+		&__adaptive { font-size: 25pt; }
+	}
+
+	.live-demo {
+		&__separator { width: 50%; }
 	}
 }
 
@@ -956,3 +976,2781 @@ section {
 		display: none;
 	}
 }
+
+@media ( max-width: 1700px ) {
+	.reveal {
+		.git-dive {
+			&__text {
+				&--1 {
+					font-size: 1.3em;
+				}
+
+				&--2 {
+					font-size: 2em;
+					top: 76%;
+				}
+
+				&--3 {
+					font-size: 1.5em;
+					top: 60%;
+				}
+
+				&--4 {
+					font-size: 1.5em;
+					top: 20%;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 1500px ) {
+	.reveal {
+		.graphana {
+			&__subtitle { font-size: 18vw; }
+		}
+	}
+}
+
+@media ( max-width: 1450px ) {
+	.reveal {
+		.introduction {
+			padding-top: 100px !important;
+
+			&__logo {
+				max-width: 100px;
+
+				&--ukit-group { right: 50px; }
+			}
+		}
+
+		.collect-data,
+		.available-data {
+			&__image {
+				&--root { width: 18.7%; }
+			}
+		}
+
+		.available-data {
+			&__image {
+				&--test { width: 18.7%; }
+				
+				&--team {
+					left: 50%; top: 30%;
+					transform: translateX(-50%);
+					width: 35%; 
+				}
+			}
+
+			&__header { font-size: 1.1em; }
+			&__subheader { font-size: 1.3em; }
+		}
+
+		.schrodinger {
+			&__header { font-size: 1.2em; }
+			&__subheader { font-size: 1.8em; }
+
+			&__image {
+				&--cat { width: 30%; }
+				&--heisenbug { width: 60%; }
+			}
+		}
+
+		.threads {
+			&__subtitle {
+				&--alarm {
+					top: 30%;
+					font-size: 11vw;
+				}
+
+				&--state {
+					font-size: 5vw;
+					top: 60%;
+				}
+
+				&--alarm,
+				&--state {
+					transform: translateX(-50%);
+					left: 50%;
+				}
+			}
+		}
+
+		.CODE {
+			&__header { font-size: 250px; }
+
+		}
+
+		.kantor {
+			br { display: none; }
+
+			&__link {
+				width: 100%;
+				height: auto;
+				text-align: left;
+				top: 100%;
+
+				&--2 { top: 150%; }
+
+			}
+			&__image {
+				height: auto;
+				width: 60%;
+				max-width: 100%; min-width: auto;
+			}
+		}
+
+		.chrome-debug {
+			&__link {
+				width: 20%;
+				left: auto; right: 10%;
+			}
+			&__image {
+				&--2 {
+					min-width: auto; max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 1370px ) {
+	.reveal {
+		.oops {
+			&__image {
+				max-width: 350px;
+			}
+		}
+
+		.node-fibers {
+			&__subtitle {
+				font-size: 11vw;
+				left: 1%; top: 40%;
+				z-index: 1000;
+			}
+		}
+
+		.i-know-how {
+			&__header { font-size: 2.2em; margin-bottom: 0; }
+			&__digit { font-size: 11em; }
+		}
+	}
+}
+
+@media ( max-width: 1200px ) {
+	.reveal {
+		.oops {
+			&__code {
+				font-size: 30px;
+			}
+
+			&__image { left: 20px; right: auto; }
+		}
+
+		.dump {
+			&__descriptor {
+				font-size: 30px;
+				top: 30%;
+			}
+		}
+
+		.discussions {
+			&__image {
+				height: auto;
+
+				&--1, &--2 {
+					width: 45%;
+				}
+
+				&--3 { width: 60%; }
+
+				&--martin {
+					left: auto; right: 10%;
+					width: 230px;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 1124px ) {
+	.reveal {
+		.and-word-was {
+			&__subtitle { font-size: 4.5em; }
+		}
+
+		.relations {
+			&__subheader { font-size: 1.8em; }
+			&__header { font-size: 3em; }
+		}
+
+		.proto-chain {
+			&__header {
+				&--4 { font-size:  0.7em; }
+				&--3 { font-size: 0.8em; }
+				&--2 { font-size: 1em; }
+			}
+
+			&__text {
+				&--state { font-size: 2em; }
+				&--context { font-size: 1em; }
+			}
+		}
+
+		.tracking {
+			br { display: none; }
+
+			&__header {
+				&--0 { font-size: 3em; }
+				&--1 { font-size: 1em; }
+				&--2 { font-size: 0.8em; }
+				&--3 { font-size: 0.6em; }
+			}
+
+			&__digit {}
+		}
+
+		.no-limits {
+			&__header {
+				font-size: 5em;
+				margin-top: 0;
+			}
+		}
+
+		.async-hooks {
+			&__text {
+				left: 50%; top: auto; bottom: -10%;
+				transform: translateX(-50%);
+				width: 100%;
+			}
+		}
+
+		.article {
+			&__header {
+				&--1 { font-size: 1.5em; }
+				&--2 { font-size: 1em; }
+				&--important { font-size: 1.7em;}
+			}
+		}
+
+		.limitations {
+			&__header { font-size: 100px; }
+		}
+	}
+}
+
+@media ( max-width: 1024px ) {
+	.reveal {
+		.present {
+			padding-top: 0 !important; 
+		}
+
+		.dream {
+			&__header { font-size: 70px; }
+			&__text { font-size: 28px; }
+			&__blockquote { font-size: 26px; }
+		}
+
+		.significant {
+			&__image { width: 90%; }
+			br { display: none; }
+			&__text { font-size: 30px;}
+		}
+
+		.driven-errors,
+		.oops {
+			br { display: none; }
+			&__header { font-size: 1em; }
+			&__code {
+				font-size: 0.6em;
+				padding: 0 !important;
+
+				&-wrap { min-height:  auto; }
+			}
+		}
+
+		.oops {
+			padding: 0 10px !important;
+
+			&__image { left: auto; right: 20px; }
+		}
+
+		.statefull {
+			&__header { font-size: 3em; }
+			&__subheader { font-size: 1.8em; }
+		}
+
+		.dtrace {
+			&__header { margin-top: 0; }
+			p { text-align:  left;}
+
+			&__image {
+				&--dtrace { margin-left: 10px; }
+				&--flamegraph { left: auto; right: 10px; }
+			}
+
+			&__text {
+				font-size: 27vw;
+				top: 50%;
+			}
+		}
+
+		.cache {
+			br { display: none; }
+			&__header { font-size: 1em; }
+
+			&__code {
+				font-size: 30px;
+				min-height: auto;
+
+				&-wrap { line-height: 1.3; }
+			}
+		}
+
+		.entrypoint {
+			&__header { font-size:  1em;}
+			&__subheader { font-size: 0.7em; }
+
+			&__code {
+				font-size: 20px;
+				padding: 0 !important;
+				min-height: auto;
+
+				&-wrap { line-height: 1.1; }
+			}
+		}
+
+		.window-node {
+			br { display: none; }
+		}
+
+		.async-operation {
+			br { display: none; }
+		}
+
+		.CODE {
+			&__header {
+				font-size: 150px;
+				margin-top: 0;
+			}
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 65px;
+			}
+		}
+
+		.doc-example,
+		.example-work {
+			br { display: none; }
+
+			&__code,
+			code {
+				font-size: 16px;
+				padding: 0!important;
+				
+				&-wrap {
+					line-height: 1;
+				}
+			}
+		}
+
+		.articles {
+			padding: 0 10px !important;
+
+			br { display: none; }
+
+			&__header {
+				&--1 { font-size: 1.1em; }
+				&--2 { font-size: 0.8em; }
+				&--important { font-size: 1.5em;}
+			}
+
+			&__text { font-size: 1em; }
+
+			&__link {
+				&--lorenz {
+					width: 30%;
+					top: 20%; left: auto; right: 10%;
+				}
+			}
+
+			&__image {
+				&--lorenz {
+					min-width: auto;
+					max-width: 100%;
+				}
+			}
+		}
+
+		.git-dive {
+			&__text {
+				&--1 {
+					font-size: 1em;
+				}
+
+				&--2 {
+					font-size: 1.4em;
+					top: 76%;
+				}
+
+				&--3 {
+					font-size: 1.2em;
+					top: 60%;
+				}
+
+				&--4 {
+					font-size: 1.1em;
+					top: 20%;
+				}
+			}
+		}
+
+		.prosNcons,
+		.cls-npm  {
+			br { display: none; }
+		}
+	}
+}
+
+@media ( max-width: 980px ) {
+	.reveal {
+		.header {
+			&--h1 {
+				font-size: 40px;
+				margin-bottom: 70px;
+			}
+		}
+
+		.image {
+			&--logo {
+				&-holyjs {
+					height: 120px;
+					max-width: 140px;
+					top: -80px;
+				}
+			}
+		}
+
+		.introduction {
+			&__video,
+			&__separator {
+				width: 90%;
+			}
+		}
+
+		.present { margin: 0 !important; }
+
+		.and-word-was {
+			&__subtitle { font-size: 3.5em; }
+		}
+
+		.they-invented {
+			br { display: none; }
+			&__header { font-size: 36px; }
+			&__subheader { font-size: 20px; }	
+		}
+  
+		.all-complicated,
+		.cache,
+		.window-node {
+			&__header { font-size: 1.6em; }
+			&__subheader { font-size: 1.1em; }
+		}
+
+		.all-complicated,
+		.they-invented,
+		.cache,
+		.window-node,
+		.continuation,
+		.uncaughtException,
+		.cls-from-npm,
+		.working-concept {
+			&__code,
+			code { font-size: 14px; padding: 10px 5px!important; }
+		}
+
+		.relations {
+			&__subheader { font-size: 1.3em; }
+			&__header { font-size: 2.2em; }
+		}
+
+		.debug--in-progress,
+		.debug--in-production,
+		.node-fatal,
+		.push-button,
+		.coding,
+		.bug-assignment,
+		.situa,
+		.boss,
+		.collect-data,
+		.nodejs-robot,
+		.formal-verification,
+		.sertifying-algorithm,
+		.quantum-verification,
+		.twenty-years-ago,
+		.winter,
+		.dump,
+		.dtrace,
+		.graphana,
+		.scope,
+		.threads,
+		.no-async,
+		.event-loop,
+		.loop-anyway,
+		.see-js,
+		.logical-context,
+		.async_hooks,
+		.doc-example,
+		.talk-title,
+		.problems-jim,
+		.bubleprof,
+		.google-cloud,
+		.andreas-madsen,
+		.git-dive,
+		.async-listener,
+		.further-dev,
+		.how-it-is-made,
+		.what-we-can,
+		.func-explanation,
+		.issue-248,
+		.problem,
+		.issue-249,
+		.continuation,
+		.chrome-debug,
+		.working-concept,
+		.cloud-trace,
+		.team-thank,
+		.all-in-good-times {
+			&__image { width: 90%; }
+			&__header { font-size: 1em; }
+		}
+
+		.push-button,
+		.coding,
+		.bug-assignment,
+		.stack,
+		.nodejs-robot,
+		.twenty-years-ago,
+		.winter,
+		.dump,
+		.dtrace,
+		.graphana,
+		.scope,
+		.threads,
+		.no-async,
+		.event-loop,
+		.loop-anyway,
+		.async_hooks,
+		.talk-title,
+		.problems-jim,
+		.bubleprof,
+		.google-cloud,
+		.andreas-madsen,
+		.further-dev,
+		.issue-248,
+		.issue-249,
+		.continuation,
+		.chrome-debug,
+		.cloud-trace,
+		.team-thank {
+			br { display: none; }
+		}
+
+		.push-button,
+		.coding {
+			&__header { font-size: 0.8em; }
+		}
+
+		.what-we-have {
+			&__header {  font-size: 1.5em; }
+			&__text { font-size: 1em; }
+		}
+
+		.metaphor {
+			&__header { font-size: 3em; }
+			&__subheader { font-size: 1.4em; }
+		}
+		
+		.bug-assignment {
+			padding: 0 10px !important;
+
+			&__image {
+				&--fun {
+					width: 30%;
+					top: auto; bottom: 0; 
+				}
+			}
+		}
+
+		.stack {
+			padding: 0 10px!important;
+
+			&--1 {
+				&__header { font-size: 0.8em; margin-bottom: 0; }
+			}
+
+			&--2 {
+				&__header { top: 50%; left: 0; }
+			}
+
+			&__image {
+				top: 50%;
+
+				&--4 { top: 60%; }
+			}
+		}
+
+		.schrodinger {
+			&__subheader {
+				&--heisenbug { padding-left: 10%;  }
+			}
+		}
+
+		.trace {
+			&__header { margin-top: 0; }
+		}
+
+		.sti,
+		.polymorph {
+			&__header { font-size: 1em; }
+		}
+
+		.proto-chain {
+			&__header {
+				&--4 { font-size:  0.3em; }
+				&--3 { font-size: 0.4em; }
+				&--2 { font-size: 0.6em; }
+			}
+
+			&__text {
+				&--state { font-size: 1.5em; }
+				&--context { font-size: 0.7em; }
+			}
+		}
+
+		.make-a-spike {
+			&__header { margin-bottom: 0; }
+			br { display: none; }
+		}
+
+		.diving {
+			&__header { font-size: 3em; }
+			&__text { font-size: 30px; }
+		}
+
+		.banch-of-links {
+			padding: 0 10px !important;
+
+			br { display: none; }
+			&__header { font-size: 1em; margin-bottom: 0; }
+			&__link { font-size: 30px; word-wrap: break-word;	}
+			&__text { font-size: 28px; }
+		}
+
+		.dump {
+			&__descriptor {
+				top: 34%; left: auto; right: 10%;
+				font-size: 20px;
+			}
+		}
+
+		.graphana {
+			&__subheader { font-size: 0.8em; } 
+
+			&__image {
+				&--trace { left: auto; right: 1%; }
+			}
+
+			&__subtitle {
+				top: 35%;
+			}
+		}
+
+		.node-fibers {
+			&__header { font-size: 1em; }
+
+			&__image {
+				&--downloads {
+					width: 55%;
+				}
+			}
+		}
+
+		.no-async {
+			padding: 0 10px!important;
+
+			&__text { font-size: 0.7em;}
+		}
+
+		.event-loop {
+			&__link { font-size: 0.9em; }
+		}
+
+		.loop-anyway {
+			&__header { margin-top: 0; }
+		}
+
+		.event-loop-node {
+			&__image {
+				&--1 { width: 90%; }
+			}
+
+			&__link {
+				&--2, &--3 { width: 50%; }
+				&--2 { top: auto;  bottom: 10%; left: auto; right: 10px;}
+				&--3 { top: auto; bottom: 0; left: 10px; }
+			}
+		}
+
+		.indeed {
+			&__header {
+				&--top {
+					margin-top: 0;
+					font-size: 50px;
+				}
+				&--principal {
+					font-size: 65px;
+				}
+			}
+
+			&__text {
+				&--1 { font-size: 50px; }
+				&--2 { font-size: 45px; }
+			}
+		}
+
+		.neumann-arch {
+			br { display: none; }
+		}
+
+		.async-operation {
+			&__header { font-size: 55px; }
+			&__subheader { font-size: 40px; }
+			&__text {
+				&--danger { font-size: 30px; }
+				&--neutral { font-size: 35px; }
+				&--alarm { font-size: 60px; }
+			}
+		}
+
+		.continuation,
+		.uncaughtException {
+			br { display: none; }
+
+			&__header { font-size: 40px; }
+			&__text { font-size: 25px; }
+			&__code {
+				padding: 0;
+				min-height: auto;
+
+				&-wrap { line-height: 1; }
+			}
+		}
+
+		.no-limits {
+			&__header { font-size: 3em; }
+			&__text { font-size: 1em; }
+		}
+
+		.async-hooks {
+			&__text {
+				font-size: 1em;
+			}
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 45px;
+				
+				&:first-child { margin-top: 0;  }
+			}
+		}
+
+		.example-work {
+			br { display: none; }
+			&__header { font-size: 50px; }
+		}
+
+		.cls {
+			br { display: none; }
+			&__text { font-size: 0.8em; }
+			&__header { font-size: 1.1em; }
+			&__subheader { font-size: 1em; }
+			&__blockquote { font-size: 0.8em; }
+			blockquote { width: 90%; }
+		}
+
+		.cls-from-npm {
+			br { display: none; }
+
+			&__header {
+				font-size: 0.8em;
+				margin-bottom: 0;
+			}
+
+			&__text { font-size: 0.6em; }
+
+			&__code {
+				padding: 0;
+
+				&-wrap { line-height: 1;}
+			}
+		}
+
+		.zonejs {
+			br { display: none; }
+
+			&__header { font-size: 1em; }
+			&__subheader { font-size: 0.9em; }
+
+			&__link {
+				&--sl {
+					left: 10px; top: 160%;
+					height: auto;
+				}
+				&--angular {
+					left: auto; right: 10px; top: 220%;
+					text-align: right;
+				}
+			}
+
+			&__image {
+				&--angular {
+					min-width: auto;
+					width: 70%;
+				}
+			}
+		}
+
+		.async-listener {
+			&__image {
+				&--norris {
+					width: 30%;
+					right: 10px; top: auto; bottom: 30%;
+				}
+			}
+		}
+
+		.how-it-is-made,
+		.what-we-can,
+		.func-explanation,
+		.problem,
+		.working-concept {
+			br { display: none; }
+
+			&__header { font-size: 30px; margin-bottom: 0;}
+
+			&__code,
+			code {
+				font-size: 14px;
+				padding: 5px !important;
+
+				&-wrap { line-height: 1; }
+			}
+		}
+
+		.func-explanation {
+			&__subheader { font-size: 20px; }
+		}
+
+		.issue-248 {
+			br { display: none; }
+			
+			&__subheader {  font-size: 30px; }
+		}
+
+		.problem {
+			&__header { margin-top: 0; }
+			&__link { font-size: 30px; }
+		}
+
+		.kantor {
+			&__header { font-size: 40px; }
+		}
+
+		.chrome-debug {
+			&__header { font-size: 30px; }
+			&__link {
+				width: 40%;
+				bottom: 0;
+			}
+
+			&__image {
+				&--2 { max-height: none; }
+			}
+		}
+
+		.trace-from-dtrace {
+			br { display: none; }
+
+			&__header {
+				&--1 { font-size: 1.5em; }
+				&--2 { font-size: 1.2em; }
+			}
+
+			&__subheader { font-size: 1em; }
+			&__link { font-size: 0.7em; }
+		}
+
+		.asking-help {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+			&__image {
+				width: 40%;
+				top: 50%; 
+
+				&--3 {
+					top: calc(80% + 50px);
+				}
+				&--4 {
+					width: 80%;
+					top: auto; bottom: 20%;
+				}
+			}
+		}
+
+		.solution,
+		.resume {
+			&__header { font-size: 100px; }
+		}
+
+		.working-concept {
+			&__header { margin-top: 0;}
+			&__code {
+				&-wrap { margin: 0 auto 5px; }
+			}
+		}
+
+		.cloud-trace {
+			&__header { margin-top: 0; }
+			&__link { font-size: 18px; }
+		}
+
+		.resume {
+			&__header { margin-top: 0; }
+		}
+
+		.discussions {
+			&__image {
+				&--martin {
+					top: 60%;
+					width: 170px;
+				}
+			}
+		}
+
+		.main-idea {
+			&__subtitle {
+				&--1 { font-size: 1em; }
+				&--2 { font-size: 1.2em; }
+			}
+
+			&__text { font-size: 1.8em;}
+		}
+
+		.i-know-how {
+			br { display: none; }
+			&__header { font-size: 1.2em; }
+			&__digit { font-size: 3em; }
+		}
+
+		.uCircus {
+			&__header { font-size :40px; }
+			br { display: none; }
+		}
+
+		.conclusion {
+			br { display: none; }
+			&__header { font-size: 30px; }
+
+			&__link,
+			&__reveal,
+			&__adaptive  {
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media 	( max-width: 730px ),
+		( max-height: 768px ) {
+	.reveal {
+		.header {
+			&--h1 { font-size: 30px; }
+		}
+
+		.image {
+			&--logo {
+				&-holyjs {
+					max-width: 100px;
+					height: 70px;
+					top: -100px;
+				}
+
+				&-ukit-group {
+					max-width: 70px;
+					top: -90px;
+				}
+			}
+		}
+
+		.introduction {
+			padding-top: 50px !important;
+
+			&__text {
+				font-size: 25px;
+			}
+		}
+
+		.who-am-i {
+			padding: 0 10px; 
+
+			&__header { font-size: 1em; margin-bottom: 0; }
+			br { display: none;}
+
+			&__text {
+				font-size: 20px;
+
+				&--nowdays {
+					font-size: 25px; margin-bottom: 20px;
+
+					
+				}
+				&--finally { font-size: 25px; }
+			}
+		}
+	}
+}
+
+@media	( max-width: 768px ) {
+	.reveal {
+		.team-mascots-me {
+			&__image { max-width: 90%; width: 90%; }
+			&__header { margin: 0; }
+		}
+	
+		.dream {
+			padding: 0 10px !important; 
+
+			&__header { font-size: 30px; }
+			&__text,
+			&__blockquote { font-size: 20px; }
+		}
+
+		.this-talk {
+			&__header { font-size: 40px; }
+			&__text { font-size: 28px; }
+		}
+
+		.intro {
+			&__header { font-size: 70px; }
+		}
+
+		.side-digit {
+			font-size: 500px;
+			top: 0;
+		}
+
+		.and-word-was {
+			padding: 0 10px !important;
+			box-sizing: border-box;
+
+			&__subtitle { font-size: 60px; margin-bottom: 30px; }
+			&__header { font-size: 30px; }
+			&__text { font-size: 25px; }
+		}
+
+		.all-complicated {
+			&__header { font-size: 1.1em; }
+			&__subheader { font-size: 0.8em; }
+		}
+
+		.relations {
+			&__subheader { font-size: 1em; }
+			&__header { font-size: 1.5em; }
+		}
+
+		.what-we-have {
+			z-index: 0;
+			padding: 0 30px !important;
+			box-sizing: border-box;
+
+			&__header {  font-size: 1.1em; }
+			&__text { font-size: 0.7em; }
+			&__digit { z-index: -1; }
+
+			&__header,
+			&__text { z-index: 1; }
+		}
+
+		.collect-data {
+			&__header { font-size: 0.8em;}
+			&__image {
+				&--root { width: 20%; top: 25%; }
+			}
+		}
+
+		.available-data {
+			padding: 0 10px !important;
+
+			br { display: none; }
+
+			&__image {
+				&--test,
+				&--root { width: 20%; }
+				
+				&--team { width: 50%; top: 30%; }
+			}
+
+			&__header { font-size: 0.8em; }
+			&__subheader { font-size: 1em; }
+		}
+
+		.schrodinger {
+			br { display: none; }
+			&__header { font-size: 0.7em; }
+			&__subheader {
+				font-size: 1.2em;
+			}
+		}
+
+		.live-demo,
+		.final-video {
+			&__separator { width: 90%; }
+			&__video { width: 90%; }
+
+			&--3 {
+				.live-demo--3 {
+					&__link {
+						line-height: 0.8;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+
+		.trace {
+			&__header {
+				margin-top: 0;
+				font-size: 1.7em;
+			}
+			&__subheader {
+				font-size: 0.7em;
+
+				&--small { font-size: 0.4em; }
+			}
+		}
+
+		.sti,
+		.polymorph {
+			padding: 0 10px!important;
+
+			&__header { font-size: 0.6em; }
+		}
+
+		.code-example,
+		.driven-errors,
+		.oops {
+			br { display:  none; }
+		}
+
+		.driven-errors,
+		.oops {
+			&__header { font-size: 0.8em; }
+
+			&__code {
+				font-size: 0.3em;
+				min-height: auto;
+
+				&-wrap { line-height: 1.2; }
+			}
+		}
+
+		.oops {
+			&__text { font-size: 0.5em; }
+			
+			&__header {
+				font-size: 0.7em;
+				margin-bottom: 0;
+			}
+
+			&__code {
+				font-size: 16px;
+			}
+
+			&__image { left: 20px; right: auto; }
+		}
+
+		.make-a-spike {
+			&__header { font-size: 1em; }
+		}
+
+		.statefull {
+			&__header { font-size: 1.5em; }
+			&__subheader { font-size: 0.8em; }
+		}
+
+		.banch-of-links {
+			&__header { font-size: 0.6em; }
+			&__link { font-size: 20px; }
+			&__text { font-size: 18px; }
+		}
+
+		.graphana {
+			&__image {
+				&--trace {
+					top: 50%; 
+				}
+			}
+		}
+
+		.cache {
+			&__header { font-size: 0.8em ;}
+		}
+
+		.dots {
+			font-size: 5em;
+			line-height: 0.2;
+		}
+
+		.tracking {
+			&__digit {}
+		}
+
+		.see-js {
+			&__text,
+			&__link { font-size: 36px ;}
+		}
+
+		.neumann-arch {
+			&__image {
+				&--1 { width: 90%; }
+
+			}
+		}
+
+		.async-operation {
+			&__header { font-size: 35px; }
+			&__subheader { font-size: 20px; }
+			&__text {
+				&--danger { font-size: 20px; }
+				&--neutral { font-size: 25px; }
+				&--alarm { font-size: 40px; }
+			}
+		}
+
+		.example-work {
+			&__header { font-size: 30px; }
+		}
+
+		.articles {
+			&__link {
+				&--lorenz {
+					width: 30%;
+					bottom: 0; top: auto;
+				}
+			}
+		}
+
+		.cls {
+			&__text { font-size: 0.7em; }
+			&__header { font-size: 1em; }
+			&__subheader { font-size: 0.9em; }
+			&__blockquote { font-size: 0.6em; }
+		}
+
+		.git-dive {
+			&__text {
+				&--1 { font-size: 0.5em; }
+				&--2 { font-size: 1em; }
+				&--3 { font-size: 0.8em; }
+				&--4 { font-size: 0.55em; }
+			}
+		}
+
+		.limitations {
+			&__header { font-size: 70px; }
+		}
+
+		.fixing {
+			&__header { font-size: 100px; }
+		}
+
+		.trace-from-dtrace {
+			&__header {
+				&--1 { font-size: 1.1em; }
+				&--2 { font-size: 1em; }
+			}
+
+			&__subheader { font-size: 0.8em; }
+			&__link { font-size: 0.5em; }
+		}
+
+		.solution,
+		.resume {
+			&__header { font-size: 70px; }
+		}
+
+		.prosNcons,
+		.cls-npm  {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+		}
+
+		.discussions {
+			&__header { font-size: 30px; }
+			&__image {
+				&--3 {
+					top: 40%;
+				}
+			}
+		}
+
+		.main-idea {
+			&__subtitle {
+				&--1 { font-size: 30px; }
+				&--2 { font-size: 35px; }
+			}
+
+			&__text { font-size: 60px;}
+		}
+
+		.i-know-how {
+			br { display: none; }
+			&__header { font-size: 30px; margin-top: 0;  }
+			&__digit { font-size: 4em; }
+			&__text { font-size: 20px; }
+		}
+
+		.node-crew,
+		.special-thanks {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+		}
+
+		.special-thanks {
+			br { display: none; }
+			&__list { font-size: 20px; }
+		}
+		
+	}
+}
+
+@media 	( max-width: 768px )
+		and ( orientation: landscape ),
+
+		( max-width: 812px )
+		and ( max-height: 375px)
+		and ( orientation: landscape ) {
+	.reveal {
+		.team-mascots-me {
+			br { display: none; }
+
+			&__image { max-width: 50%; }
+		}
+	}
+}
+
+@media ( max-width: 600px ) {
+	.reveal {
+		.introduction {
+			top: 0;
+
+			&__video { height: 50%; }
+		}
+
+		.team-mascots-me {
+			&__header { font-size: 45px; }
+		}
+
+		.what-we-have {
+			br:first-child { display: none; }
+		}
+
+		.live-demo {
+			br { display: none; }
+			&__header,
+			&__subheader { font-size: 1.1em; }
+			&__text { font-size: 0.8em; }
+		}
+
+		.proto-chain {
+			&__text {
+				&--state { font-size: 1em; }
+				&--context { font-size: 0.6em; }
+			}
+		}
+
+		.no-async {
+			&__header { font-size: 0.7em; }
+			&__text { font-size: 0.4em;}
+		}
+
+		.CODE {
+			&__header { font-size: 100px; }
+			&__image { width: 50%; }
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 30px;
+			}
+		}
+
+		.doc-example {
+			&__header { font-size: 30px; }
+		}
+
+		.cls {
+			padding: 0 10px!important;
+
+			&__header { font-size: 0.7em; }
+			&__subheader { font-size: 0.7em; }
+		}
+
+		.limitations {
+			&__header { font-size: 40px; }
+		}
+
+		.asking-help {
+			br { display: none; }
+			&__header,
+			&__text { margin-bottom: 5px; display: block; }
+			&__image {
+				width: 40%;
+				top: 50%; 
+
+				&--3 {
+					top: calc(50% + 50px);
+				}
+				&--4 {
+					width: 80%;
+					top: auto; bottom: 20%;
+				}
+			}
+		}
+
+		.resume {
+			&__digit { font-size: 240px; }
+		}
+	}
+}
+
+@media ( max-width: 550px ) {
+	.reveal {
+		.image {
+			&--logo {
+				&-holyjs { top: -100px; left: 50px; }
+				&-ukit-group { top: -90px; right: 50px; }
+			}
+		}
+		.introduction {
+			padding-top: 0 !important;
+			margin: 0;
+
+			&__link { display: block; }
+			&__text {
+				padding: 0 5px;
+				
+				nobr {
+					word-break: break-word;
+					white-space: inherit;
+					display: block;
+					
+					&:not(:last-child) { margin: 15px 0; }
+				}
+			}
+		}
+
+		.dream {
+			blockquote { width: 90%; }
+		}
+
+		.intro {
+			&__header { font-size: 50px; }
+		}
+	
+		.side-digit {
+			font-size: 300px;
+			top: .1em;
+		}
+
+		.metaphor {
+			&__header { font-size: 1.8em; }
+			&__subheader { font-size: 0.9em; }
+		}
+
+		.available-data {
+			&__header { font-size: 0.5em; }
+			&__subheader { font-size: 0.8em; }
+		}
+
+		.schrodinger {
+			&__header { font-size: 0.5em; }
+			&__subheader {
+				font-size: 0.7em;
+			}
+		}
+
+		.live-demo {
+			&__header,
+			&__subheader { font-size: 0.7em; }
+			&__text { font-size: 0.4em; }
+		}
+
+		.trace {
+			&__header { font-size: 1em; }
+		}
+
+		.code-example {
+			&__text { font-size: 0.5em ;}
+			&__header { font-size: 1em; }
+		}
+
+		.oops {
+			&__image {
+				left: 50%; right: auto; top: 50%;
+				transform: translateX(-50%);
+				width: 50%;
+			}
+		}
+
+		.diving {
+			&__header {
+				font-size: 2em;
+				margin-top: 100px;
+			}
+
+			&__text { font-size: 20px; }
+		}
+
+		.winter {
+			&__header {
+				font-size: 0.8em;
+			}
+		}
+
+		.graphana {
+			&__subheader { font-size: 0.5em; }
+			&__header { font-size: 0.8em; }
+		}
+
+		.scope {
+			&__header { font-size: 0.8em; }
+		}
+
+		.tracking {
+			&__header {
+				z-index: 10;
+
+				&--0 { font-size: 2em; }
+			}
+
+			&__digit { z-index: -1; }
+		}
+
+		.entrypoint,
+		.window-node {
+			&__header { font-size:  0.6em;}
+			&__subheader { font-size: 0.4em; }
+
+			&__code {
+				font-size: 14px;
+				
+				&-wrap { line-height: 1.1; }
+			}
+		}
+
+		.see-js {
+			&__text,
+			&__link { font-size: 22px ;}
+		}
+
+		.indeed {
+			&__header {
+				&--top {
+					margin-top: 0;
+					font-size: 25px;
+				}
+				&--principal {
+					font-size: 30px;
+				}
+			}
+
+			&__text {
+				&--1 { font-size: 28px; }
+				&--2 { font-size: 26px; }
+			}
+		}
+
+		.no-limits {
+			&__header { font-size: 1.5em; }
+			&__text { font-size: 0.6em; }
+		}
+
+		.zonejs {
+			&__header { font-size: 0.6em; }
+			&__subheader { font-size: 0.5em; }
+		}
+
+		.kantor {
+			&__image {
+				width: 80%;
+			}
+		}
+
+		.trace-from-dtrace {
+			&__header {
+				&--1 { font-size: 30px; }
+				&--2 { font-size: 25px; }
+			}
+
+			&__subheader { font-size: 20px; }
+			&__link { font-size: 16px; }
+		}
+
+		.main-idea {
+			&__subtitle {
+				&--1 { font-size: 20px; }
+				&--2 { font-size: 25px; }
+			}
+
+			&__text { font-size: 40px;}
+		}
+	}
+}
+
+@media ( max-width: 450px ) {
+	.reveal {
+		.this-talk {
+			&__header { font-size: 30px; }
+			&__text { font-size: 22px; }
+		}
+
+		.relations {
+			&__subheader { font-size: 22px; z-index: 100;}
+			&__header { font-size: 26px; z-index: 100;}
+		}
+
+		.diving {
+			&__header { font-size: 1.2em; }
+			&__text { font-size: 18px; }
+		}
+
+		.twenty-years-ago {
+			&__header { font-size: 0.6em; }
+		}
+
+		.dump {
+			&__descriptor {
+				top: 38%; right: 20px;
+				font-size: 20px;
+			}
+		}
+
+		.tracking {
+			&__header {
+				&--0 { font-size: 1.3em; }
+			}
+		}
+		
+		.continuation,
+		.uncaughtException {
+			&__header { font-size: 30px; }
+			&__text { font-size: 20px; }
+		}
+
+		.CODE {
+			&__header { font-size: 70px; }
+
+			&__image {
+				width: 80%;
+				z-index: -1;
+				position: relative;
+			}
+		}
+
+		.async-hooks {
+			&__text {
+				font-size: 0.5em;
+				bottom: 0;
+			}
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 20px;
+			}
+		}
+
+		.articles {
+			padding: 0 10px !important;
+
+			br { display: none; }
+
+			&__header {
+				&--1 { font-size: 0.7em; }
+				&--2 { font-size: 0.5em; }
+				&--important { font-size: 1em;}
+			}
+
+			&__text { font-size: 0.7em; }
+		}
+
+		.problem {
+			&__link { font-size: 20px; }
+		}
+
+		.fixing {
+			&__header { font-size: 50px; }
+		}
+
+		.solution,
+		.resume {
+			&__header { font-size: 50px; }
+		}
+
+		.discussions {
+			&__image {
+				&--martin {
+					width: 100px;
+					top: 70%;
+				}
+			}
+		}
+
+		.uCircus {
+			&__header { font-size :30px; }
+		}
+	}
+}
+
+@media ( max-width: 340px ) {
+	.reveal {
+		.metaphor {
+			&__header { font-size: 1.5em; }
+			&__subheader { font-size: 0.9em; }
+		}
+
+		.git-dive {
+			&__text {
+				&--1 { font-size: 0.5em; }
+				&--2 { font-size: 0.7em; left: 0; }
+				&--3 { font-size: 0.8em; top: 40%; }
+				&--4 { font-size: 0.55em; }
+			}
+		}
+
+		.limitations {
+			&__header { font-size: 30px; }
+		}
+
+		.special-thanks {
+			&__header { font-size: 20px; }
+			&__list { font-size: 16px; }
+		}
+	}
+}
+
+@media ( max-width: 320px ) {
+	.reveal {
+		.this-talk {
+			&__header { font-size: 25px; }
+			&__text { font-size: 20px; }
+		}
+	}
+}
+
+@media	only screen
+		and ( max-width: 667px )
+		and ( max-height: 375px ),
+
+		only screen
+		and ( max-width: 736px )
+		and ( max-height: 414px ),
+
+		only screen
+		and ( max-width: 812px )
+		and ( max-height: 375px ),
+
+		only screen
+		and ( max-height: 800px )
+		and ( orientation: landscape )
+		and ( max-width: 1024px ),
+		// Nokia N9
+		only screen
+		and ( max-width: 854px )
+		and ( max-height: 480px )
+		and ( orientation: landscape ) {
+			.reveal {
+				.introduction {
+					padding-top: 50px!important;
+
+					&__logo {
+						&--holyjs {
+							max-width: 100px;
+							height: 70px;
+							top: -42px; z-index: -1;}
+						&--ukit-group {
+							max-width: 70px;
+							top: -38px; }
+					}
+
+					&__header {
+						font-size: 30px;
+						margin-bottom: 20px;
+					}
+
+					&__separator {
+						width: 40%;
+
+						&:last-of-type { display: none;}
+					}
+					
+					&__text {
+						float: right;
+						width: 40%;
+						margin: 0;
+						margin-right: 20px;
+						font-size: 18px;
+
+						nobr { white-space: normal; }
+					}
+
+					&__video {
+						width: 40%; height: 200px;
+						float: left;
+					}
+
+					&__separator,
+					&__video { margin-left: 20px; }
+				}
+
+				.intro {
+					&__header { margin-top: 50px; }
+				}
+
+				.side-digit {
+					font-size: 400px;
+					top: -50%;
+				}
+
+				.and-word-was {
+					padding: 0 10px !important;
+					box-sizing: border-box;
+
+					&__subtitle { font-size: 60px; margin-bottom: 30px; }
+					&__header { font-size: 30px; }
+					&__text { font-size: 25px; }
+				}
+
+				.relations {
+					&__subheader { font-size: 1em; }
+					&__header { font-size: 1.5em; margin-top: 50px; }
+					// &__digit { top: 0; }
+				}
+
+				.debug--in-progress,
+				.debug--in-production,
+				.node-fatal,
+				.push-button,
+				.coding,
+				.bug-assignment,
+				.situa,
+				.boss,
+				.collect-data,
+				.nodejs-robot,
+				.formal-verification,
+				.sertifying-algorithm,
+				.quantum-verification,
+				.twenty-years-ago,
+				.winter,
+				.dump,
+				.dtrace,
+				.graphana,
+				.scope,
+				.threads,
+				.no-async,
+				.event-loop,
+				.loop-anyway,
+				.see-js,
+				.logical-context,
+				.async_hooks,
+				.doc-example,
+				.example-work,
+				.talk-title,
+				.problems-jim,
+				.bubleprof,
+				.google-cloud,
+				.andreas-madsen,
+				.git-dive,
+				.async-listener,
+				.further-dev,
+				.how-it-is-made,
+				.issue-248,
+				.issue-249,
+				.continuation,
+				.chrome-debug,
+				.working-concept,
+				.cloud-trace,
+				.team-thank,
+				.all-in-good-times  {
+					&__image { width: 70%; }
+					&__header { font-size: 1em; margin-bottom: 0; }
+				}
+
+				.push-button,
+				.coding {
+					&__header { font-size: 0.7em; }
+					&__image { max-width: 50%; }
+				}
+
+				.situa,
+				.boss {
+					&__image { max-width: 30%; }
+				}
+
+				.bug-assignment {
+					&__image {
+						&--fun {
+							width: 30%;
+							top: auto; bottom: 0; 
+						}
+					}
+				}
+
+				.stack {
+					&--1{
+						&__header { font-size: 0.8em; margin-bottom: 0; }
+					}
+
+					&--2 {
+						&__header { top: 30%; left: 0; }
+					}
+
+					&__image {
+						top: 30%;
+
+						&--4 { top: 40%; }
+					}
+				}
+
+				.collect-data {
+					&__header { font-size: 0.8em;}
+					&__image {
+						&--root { width: 20%; top: 10%; }
+					}
+				}
+
+				.available-data {
+					br { display: none; }
+					&__image {
+						top: 10%;
+
+						&--team {
+							width: 20%;
+							top: 15%;
+						}
+					}
+					&__header { font-size: 0.5em; }
+					&__subheader { font-size: 0.8em; margin-bottom: 0; }
+				}
+
+				.schrodinger {
+					&__header { font-size: 0.4em; }
+					&__subheader { font-size: 0.8em; }
+				}
+
+				.live-demo {
+					br { display: none; }
+
+					&__header,
+					&__subheader { font-size: 0.7em; }
+					&__text { font-size: 0.4em; }
+					&__video { max-width: 50%; max-height: 120px;  }
+					&__separator { margin: 5px auto; }
+
+					&--3 {
+						.live-demo--3 {
+							&__link {
+								line-height: 0.8;
+								margin-top: 25px;
+							}
+						}
+					}
+				}
+
+
+				.sti,
+				.polymorph {
+					&__header { font-size: 1em; }
+				}
+
+				.proto-chain {
+					&__header {
+						&--4 { font-size:  0.3em; }
+						&--3 { font-size: 0.4em; }
+						&--2 { font-size: 0.6em; }
+					}
+
+					&__text {
+						&--state { font-size: 1em; }
+						&--context { font-size: 0.7em; }
+					}
+				}
+
+				.code-example {
+					&__text { font-size: 0.5em ;}
+					&__header { font-size: 1em; }
+					&__image { width: 50%; }
+				}
+
+				.driven-errors,
+				.oops {
+					&__text { font-size: 0.5em; }
+					&__header {
+						font-size: 0.7em;
+						margin-bottom: 0;
+					}
+					&__code {
+						font-size: 18px;
+						min-height: auto;
+						padding: 0 !important;
+						
+
+						&-wrap {
+							line-height: 1.1; 
+							width: 45%;
+							float: left;
+
+							&--2 { float: right; }
+						}
+					}
+					&__image {
+						left: 50%; right: auto; top: 30%;
+						transform: translateX(-50%);
+						width: 50%;
+					}
+
+				}
+
+				.make-a-spike {
+					&__image {
+						max-width: 40%;
+					}
+				}
+
+				.diving {
+					&__header {
+						font-size: 2em;
+						margin-top: 50px;
+					}
+		
+					&__text { font-size: 20px; }
+
+					&__digit { top: -40%; }
+				}
+
+				.banch-of-links {
+					&__header { font-size: 0.6em; }
+					&__link { font-size: 20px; }
+					&__text { font-size: 18px; }
+				}
+
+				.twenty-years-ago  {
+					&__header { font-size: 0.8em; }
+					&__image {
+						margin-top: 30px;
+						max-width: 45%;
+						float: left;
+
+						&--xhr { float: right; }
+					}
+				}
+
+				.winter {
+					&__header { font-size: 0.8em; }
+					&__image { max-width: 50%;}
+				}
+
+				.dump {
+					&__descriptor {
+						right: 20%;
+					}
+				}
+
+				.dtrace {
+					&__image {
+						&--flamegraph { top: 18%; }
+					}
+				}
+
+				.graphana {
+					&__image {
+						&--trace { top: 30%;  }
+					}
+
+					&__subheader { font-size: 0.5em; }
+					&__header { font-size: 0.8em; }
+					&__subtitle {
+						top: 35%;
+					}
+				}
+ 
+				.node-fibers {
+					&__header { font-size: 1em; }
+		
+					&__image {
+						margin: 0;
+
+						&--downloads {
+							width: 55%;
+						}
+					}
+				}
+
+				.dots {
+					font-size: 5em;
+					line-height: 0.2;
+				}
+
+				.tracking {
+					&__header {
+						&--0 { font-size: 1.3em; }
+					}
+				}
+
+				.entrypoint,
+				.window-node {
+					&__header {
+						font-size:  0.6em;
+					}
+					&__subheader {
+						font-size: 0.4em;
+					}
+
+					&__header,
+					&__subheader { margin: 0; }
+		
+					&__code {
+						font-size: 14px;
+		
+						&-wrap {
+							line-height: 1.1; 
+							margin: 0 auto;
+						}
+					}
+				}
+
+				.no-async {
+					&__header { font-size: 0.7em; }
+					&__text { font-size: 0.4em; }
+				}
+
+				.window-node {
+					&__code {
+						&-wrap { margin-bottom: 20px; }
+					}
+				}
+
+				.event-loop {
+					&__header { margin-top: 0;}
+					&__image { float: left; }
+
+					p { font-size: 0.7em; }
+				}
+
+				.event-loop-node {
+					&__image {
+						&--1 { width: 50%; }
+					}
+		
+					&__link {
+						&--2, &--3 { width: 30%; }
+						&--2 { top: auto;  bottom: 10%; left: auto; right: 10px;}
+						&--3 { top: auto; bottom: 0; left: 10px; }
+					}
+				}
+
+				.see-js {
+					&__text,
+					&__link { font-size: 22px ;}
+				}
+
+				.indeed {
+					&__header {
+						&--top {
+							margin-top: 0;
+							font-size: 25px;
+						}
+						&--principal {
+							font-size: 30px;
+						}
+					}
+		
+					&__text {
+						&--1 { font-size: 28px; }
+						&--2 { font-size: 26px; }
+					}
+				}
+
+				.continuation,
+				.uncaughtException {
+					br { display: none; }
+		
+					&__header { font-size: 40px; margin: 0; }
+					&__text { font-size: 25px; }
+					&__code {
+						min-height: auto;
+						font-size: 14px; padding: 10px 5px!important;
+		
+						&-wrap { line-height: 1; }
+					}
+				}
+
+				.CODE {
+					&__header { font-size: 70px; }
+
+					&__digit {
+						transform: translateY(50%);
+					}
+		
+					&__image {
+						width: 50%;
+						z-index: -1;
+						position: relative;
+					}
+				}
+
+				.no-limits {
+					&__header { font-size: 1.5em; margin-top: 0; }
+					&__text { font-size: 0.6em; }
+				}
+
+				.async-hooks {
+					br { display: none;}
+
+					&__text {
+						font-size: 0.5em;
+						bottom: 0;
+					}
+				}
+
+				.hooks-list {
+					&__hook {
+						font-size: 20px;
+					}
+				}
+
+				.doc-example,
+				.example-work { 
+					&__header {
+						font-size: 30px;
+						margin: 0;
+					}
+
+					&__code {
+						padding: 0!important;
+
+						&-wrap {
+							line-height: 1; margin: 0 auto;
+
+							&--1, &--2 { width: 45%; }
+							&--1 { float: left; margin-top: 1%; }
+							&--2 { float: right; margin-top: 10%; }
+						}
+					}
+				}
+
+				.articles {
+					padding: 0 10px !important;
+		
+					br { display: none; }
+		
+					&__header {
+						&--1 { font-size: 0.7em; }
+						&--2 { font-size: 0.5em; }
+						&--important { font-size: 1em;}
+					}
+		
+					&__text { font-size: 0.7em; }
+
+					&__link {
+						&--lorenz {
+							width: 30%;
+							bottom: 0; top: auto;
+						}
+					}
+				}
+
+				.cls {
+					br { display: none; }
+
+					&__text { font-size: 0.54em; }
+					&__header { font-size: 0.8em; }
+					&__subheader { font-size: 0.5em; }
+					&__blockquote { font-size: 0.6em; }
+				}
+
+				.cls-from-npm {
+					br { display: none; }
+		
+					&__header {
+						font-size: 0.8em;
+						margin-bottom: 0;
+					}
+		
+					&__text { font-size: 0.6em; }
+		
+					&__code {
+						padding: 0;
+		
+						&-wrap { line-height: 1;}
+					}
+				}
+
+				.zonejs {
+					&__header { font-size: 0.6em; }
+					&__subheader { font-size: 0.5em; }
+					
+					&__link {
+						&--sl { left: 10px; top: 100%; }
+						&--angular {
+							left: auto; right: 10px; top: 120%;
+							text-align: right;
+						}
+					}
+		
+					&__image {
+						&--sl { width: 50%; }
+						&--angular {
+							min-width: auto;
+							width: 50%;
+						}
+					}
+				}
+
+				.git-dive {
+					&__text {
+						&--1 { font-size: 0.5em; }
+						&--2 { font-size: 1em; }
+						&--3 { font-size: 0.8em; }
+						&--4 { font-size: 0.55em; }
+					}
+				}
+
+				.limitations {
+					&__header { font-size: 40px; }
+				}
+
+				.async-listener {
+					&__header { font-size: 30px; }
+					&__image {
+						&--norris {
+							width: 30%;
+							right: 10px; top: auto; bottom: 30%;
+						}
+					}
+				}
+
+				.how-it-is-made,
+				.what-we-can,
+				.func-explanation,
+				.problem,
+				.working-concept  {
+					br { display: none; }
+
+					&__header { font-size: 30px; }
+		
+					&__code,
+					code {
+						font-size: 14px;
+						padding: 5px !important;
+		
+						&-wrap { line-height: 1; }
+					}
+				}
+
+				.func-explanation {
+					&__subheader { font-size: 20px; }
+				}
+
+				.problem {
+					&__code {
+						min-height: 150px;
+						&-wrap {
+							float: left;
+							width: 45%;
+
+							&--2 {
+								float: right;
+							}
+						}
+					}
+				}
+
+				.fixing {
+					&__header { font-size: 50px; }
+				}
+
+				.chrome-debug {
+					&__header { font-size: 30px; }
+					&__link {
+						width: 40%;
+						bottom: auto;
+						top: 20%; right: 1%;
+					}
+				}
+
+				.trace-from-dtrace {
+					&__header {
+						margin-bottom: 0;
+
+						&--1 { font-size: 30px; }
+						&--2 { font-size: 25px; }
+					}
+		
+					&__subheader { font-size: 20px; }
+					&__link { font-size: 16px; }
+				}
+
+				.asking-help {
+					br { display: none; }
+					&__header,
+					&__text { margin-bottom: 5px; display: block; }
+					&__image {
+						width: 40%;
+						top: 40%; 
+		
+						&--3 {
+							top: calc(45% + 50px);
+						}
+						&--4 {
+							width: 50%;
+							top: auto; bottom: 20%;
+						}
+					}
+				}
+
+				.solution,
+				.resume {
+					&__header { font-size: 40px; }
+				}
+
+				.resume {
+					&__header { margin-top: 0; }
+					&__digit { font-size: 240px; }
+				}
+
+				.discussions {
+					br { display: none; }
+					a { height: 0; }
+					&__header { font-size: 30px; margin-bottom: 0; }
+					&__image {
+						margin: 0;
+						max-height: 100px;
+						width: auto;
+
+						&--martin {
+							top: 50%; right: 30%;
+							width: 70px;
+						}
+					}
+				}
+
+				.main-idea {
+					br { display: none; }
+
+					&__subtitle {
+						&--1 { font-size: 20px; }
+						&--2 { font-size: 25px; }
+					}
+		
+					&__text { font-size: 40px;}
+				}
+
+				.i-know-how {
+					br { display: none; }
+					&__header { font-size: 30px; margin-top: 0;  }
+					&__digit { font-size: 4em; }
+					&__text { font-size: 20px; }
+				}
+
+				.node-crew,
+				.special-thanks {
+					&__header { font-size: 30px; }
+					&__text { font-size: 20px; }
+				}
+
+				.special-thanks {
+					&__list { font-size: 20px; }
+				}
+			}
+}
+
+@media ( max-height: 700px ) {
+	.reveal {
+		.introduction {
+			&__header { margin: 0; }
+			&__text { font-size: 18px; }
+		}
+	}
+}
+
+@media	( max-height: 320px )
+		and ( orientation: landscape ),
+
+		( max-width: 320px )
+		and ( max-height: 533px ) {
+	.reveal {
+		.introduction {
+			&__separator { margin: 5px auto; }
+			&__header {
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+			&__link { display: inline; }
+
+			&__text {
+				nobr:not(:last-child) { margin: 0; }
+				br { display: none; }
+			}
+		}
+	}
+}
+
+// Iphone 4
+@media 	( max-width: 320px )
+		and ( max-width: 768px )
+		and ( max-height: 480px ) {
+	.reveal {
+		.introduction {
+			&__logo {
+				&--holyjs { top: -90px; }
+				&--ukit-group { top: -83px; }
+			}
+		}
+
+		.who-am-i {
+			&__text { font-size: 16px; }
+			&__header { font-size: 24px; }
+		}
+	}
+}
+
+// Iphone 5/SE
+@media 	( max-width: 320px )
+		and ( max-width: 768px )
+		and ( max-height: 568px ) {
+	.reveal {
+		.introduction {
+			&__logo {
+				&--holyjs { top: -90px; }
+				&--ukit-group { top: -83px; }
+			}
+		}
+	}
+}
+
+// iPad
+@media only screen
+	and ( min-width: 1024px )
+	and ( min-height: 768px )
+	and ( orientation: landscape )
+	and (-webkit-min-device-pixel-ratio: 2) {
+	.reveal {
+		.introduction {
+			&__header {
+				font-size: 30px;
+				margin-bottom: 50px;
+			}
+
+			&__separator,
+			&__text { margin: 0 auto; }
+
+			&__video,
+			&__text { float: none; }
+		}
+
+		.they-invented {
+			br { display: none; }
+			&__header { font-size: 2.8em; margin-bottom: 30px; }
+			&__subheader { font-size: 1.3px; }
+			&__code { font-size: 25px; }
+		}
+
+		.hooks-list {
+			&__hook {
+				font-size: 40px;
+			}
+		}
+
+		.doc-example {
+			&__code {
+				padding: 0!important;
+
+				&-wrap {
+					line-height: 1; margin: 0 auto;
+
+					&--1, &--2 {
+						float: none;
+						width: 90%;
+						margin-top: 1%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media 	( min-height: 769px )
+		and ( max-height: 980px ) {
+	.reveal {
+		.introduction {
+			&__header { margin-bottom: 30px; }
+			&__text { font-size: 28px; }
+		}
+	}
+}
+
+// Nokia Lumia
+@media 	( max-height: 320px )
+		and ( orientation: landscape ) {
+	.reveal {
+		.who-am-i {
+			&__text { font-size: 16px; }
+			&__header { font-size: 24px; }
+		}
+	}
+}
+
+@media ( max-width: 400px ) {
+	.reveal {
+		.team-mascots-me {
+			&__header { font-size: 30px; }
+		}
+	}
+}
+
+// iPad Mini Portrait
+@media	only screen 
+		and ( min-width: 768px )
+		and ( max-height: 1024px )
+		and ( orientation: portrait ) {
+	.reveal {
+		.dream {
+			&__header { font-size: 45px; }
+			&__text { font-size: 30px; }
+			&__blockquote { font-size: 28px; }
+		}
+	}
+}
+
+
+@media	only screen
+		// iPhone X landscape
+		and ( max-width: 812px )
+		and ( max-height: 375px )
+		and ( orientation: landscape )
+		and ( -webkit-min-device-pixel-ratio: 2 ),
+		// iPad landscape
+		only screen
+		and ( min-device-width: 768px)
+		and ( max-device-width: 1024px )
+		and ( orientation: landscape )
+		and ( -webkit-min-device-pixel-ratio: 2 ) {
+	.reveal {
+		.side-digit {
+			transform: translateY(20%);
+		}
+	}
+}
+
+// Blackberry Playbook Landscape
+@media only screen 
+	and ( max-width: 1024px )
+	and ( orientation : landscape ) {
+	.reveal {
+		.they-invented {
+			br { display: none; }
+			&__header { font-size: 36px; margin-bottom: 0; }
+			&__subheader { font-size: 20px; }
+			&__code { font-size: 16px; }
+		}
+	}
+}
+
+// iPhone X Landscape
+@media only screen 
+	and ( min-device-width: 375px ) 
+	and ( max-device-width: 812px )  
+	and ( -webkit-device-pixel-ratio : 3 )
+	and ( orientation: landscape ) {
+		.reveal {
+			.schrodinger {
+				br { display: none; }
+
+				&__image {
+					&--cat {
+						width: 20%;
+						top: 40%;
+					}
+				}
+			}
+
+			.trace {
+				&__header {
+					font-size: 1.7em;
+				}
+				&__subheader {
+					font-size: 0.7em;
+	
+					&--small { font-size: 0.4em; }
+				}
+			}
+			
+			.code-example {
+				br { display: none; }
+			}
+
+			.make-a-spike {
+				&__image { max-width: 25%; }
+			}
+
+			.nodejs-robot {
+				&__image { max-width: 40%; }
+			}
+
+			.dump {
+				&__header { margin-top: 0; }
+			}
+
+			.dump {
+				&__descriptor {
+					top: 28%;
+				}
+			}
+
+			.dtrace {
+				&__text { top: 30%; }
+			}
+		}
+}
+
+@media 	only screen
+		and ( max-width: 850px )
+		and ( max-height: 420px )
+		and ( orientation: landscape ) {
+			.trace {
+				&__header {
+					font-size: 1.7em;
+				}
+				&__subheader {
+					font-size: 0.7em;
+	
+					&--small { font-size: 0.4em; }
+				}
+			}
+		}

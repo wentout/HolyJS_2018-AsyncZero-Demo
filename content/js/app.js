@@ -88,8 +88,8 @@ var defaultOptions = {
 		className: 'asciinema'
 	},
 	pdfSeparateFragments: false,
-	width: 1850,
-	height: 950,
+	width: "100%",
+	height: "100%",
 	margin: 0,
 	minScale: 0.2,
 	maxScale: 1,

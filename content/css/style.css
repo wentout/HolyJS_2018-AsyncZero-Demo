@@ -43,12 +43,14 @@ section {
         cursor: pointer;
         opacity: 0.5; }
 
-.reveal .slide--dark {
-  background-color: #000000; }
-
-.reveal .slide--meanwhile {
-  font-size: 0.85em;
-  margin-top: 3%; }
+.reveal .slide {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .reveal .slide--dark {
+    background-color: #000000; }
+  .reveal .slide--meanwhile {
+    font-size: 0.85em;
+    margin-top: 3%; }
 
 .reveal .link--blank {
   color: #42affa;
@@ -94,7 +96,10 @@ section {
   color: #432dbe;
   font-size: 9em; }
 
-.reveal .team-mascots__image {
+.reveal .introduction__logo {
+  background: transparent; }
+
+.reveal .team-mascots-me__image {
   margin-top: 2%; }
 
 .reveal .doc-example__code-wrap {
@@ -103,6 +108,9 @@ section {
 .reveal .intro__header {
   font-size: 2.7em;
   margin-top: 125px; }
+
+.reveal .present p {
+  margin: 0; }
 
 .reveal .who-am-i {
   font-size: 0.7em; }
@@ -146,7 +154,7 @@ section {
   font-size: 3.7em;
   margin-top: 125px; }
 
-.reveal .metophor__header {
+.reveal .metaphor__header {
   font-size: 5em;
   margin-top: 25px;
   text-transform: none; }
@@ -191,7 +199,7 @@ section {
 
 .reveal .stack--2__header {
   color: red;
-  font-size: 7.1em;
+  font-size: 16vw;
   left: 80px;
   position: absolute;
   top: 145px;
@@ -207,24 +215,27 @@ section {
 .reveal .collect-data__image--note {
   width: 59%; }
 
-.reveal .available-data__image-root, .reveal .available-data__image-test, .reveal .available-data__image-team {
+.reveal .collect-data__image--root {
+  max-width: 270px; }
+
+.reveal .available-data__image--root, .reveal .available-data__image--test, .reveal .available-data__image--team {
   position: absolute;
   z-index: 2; }
 
-.reveal .available-data__image-root, .reveal .available-data__image-test {
+.reveal .available-data__image--root, .reveal .available-data__image--test {
   top: 125px;
   width: 270px; }
 
-.reveal .available-data__image-root {
+.reveal .available-data__image--root {
   left: 30px; }
 
-.reveal .available-data__image-aaa {
+.reveal .available-data__image--aaa {
   width: 25%; }
 
-.reveal .available-data__image-test {
+.reveal .available-data__image--test {
   right: 30px; }
 
-.reveal .available-data__image-team {
+.reveal .available-data__image--team {
   left: 42%;
   top: 400px;
   width: 350px; }
@@ -232,10 +243,10 @@ section {
 .reveal .schrodinger__image {
   position: absolute;
   z-index: 2; }
-  .reveal .schrodinger__image--1 {
+  .reveal .schrodinger__image--cat {
     left: 2%;
     top: 59%; }
-  .reveal .schrodinger__image--2 {
+  .reveal .schrodinger__image--heisenbug {
     right: 2%;
     top: 69%;
     width: 70%; }
@@ -285,10 +296,12 @@ section {
   font-size: 5em;
   margin-top: 225px; }
 
+.reveal .diving__text {
+  display: block; }
+
 .reveal .statefull__header {
   color: orange;
-  font-size: 5em;
-  margin-top: 125px; }
+  font-size: 5em; }
 
 .reveal .dump__header {
   color: orange;
@@ -406,24 +419,25 @@ section {
 .reveal .entrypoint__code-wrap {
   max-width: 100%; }
 
-.reveal .no-async__header {
-  margin-top: 50px; }
-
 .reveal .window-node__code {
   text-align: center; }
 
-.reveal .event-loop__header {
+.reveal .event-loop__header,
+.reveal .loop-anyway__header {
   color: orange;
   margin-top: 50px; }
 
-.reveal .event-loop__link {
+.reveal .event-loop__link,
+.reveal .loop-anyway__link {
   position: absolute; }
-  .reveal .event-loop__link--1 {
+  .reveal .event-loop__link--1,
+  .reveal .loop-anyway__link--1 {
     right: 7%;
     top: 47%;
     width: 40%;
     z-index: 2; }
-  .reveal .event-loop__link--2 {
+  .reveal .event-loop__link--2,
+  .reveal .loop-anyway__link--2 {
     left: 9%;
     top: 59%;
     width: 45%;
@@ -512,7 +526,7 @@ section {
   .reveal .hooks-list__descriptor {
     font-size: 0.5em; }
 
-.reveal .articles__text {
+.reveal .articles__header--important {
   color: orange;
   font-size: 3.5em; }
 
@@ -666,7 +680,7 @@ section {
 .reveal .discussions__image--martin {
   position: absolute;
   right: 32%;
-  top: 620px;
+  top: 560px;
   z-index: 2; }
 
 .reveal .main-idea__text {
@@ -679,8 +693,11 @@ section {
 .reveal .uCircus__header {
   text-transform: none !important; }
 
-.reveal .conclusion__reveal {
+.reveal .conclusion__reveal, .reveal .conclusion__adaptive {
   font-size: 25pt; }
+
+.reveal .live-demo__separator {
+  width: 50%; }
 
 @media print {
   body.print-pdf {
@@ -690,5 +707,2077 @@ section {
     /* font-size: .7em !important; */ }
   body.print-pdf #chalkboard {
     display: none; } }
+
+@media (max-width: 1700px) {
+  .reveal .git-dive__text--1 {
+    font-size: 1.3em; }
+  .reveal .git-dive__text--2 {
+    font-size: 2em;
+    top: 76%; }
+  .reveal .git-dive__text--3 {
+    font-size: 1.5em;
+    top: 60%; }
+  .reveal .git-dive__text--4 {
+    font-size: 1.5em;
+    top: 20%; } }
+
+@media (max-width: 1500px) {
+  .reveal .graphana__subtitle {
+    font-size: 18vw; } }
+
+@media (max-width: 1450px) {
+  .reveal .introduction {
+    padding-top: 100px !important; }
+    .reveal .introduction__logo {
+      max-width: 100px; }
+      .reveal .introduction__logo--ukit-group {
+        right: 50px; }
+  .reveal .collect-data__image--root,
+  .reveal .available-data__image--root {
+    width: 18.7%; }
+  .reveal .available-data__image--test {
+    width: 18.7%; }
+  .reveal .available-data__image--team {
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 35%; }
+  .reveal .available-data__header {
+    font-size: 1.1em; }
+  .reveal .available-data__subheader {
+    font-size: 1.3em; }
+  .reveal .schrodinger__header {
+    font-size: 1.2em; }
+  .reveal .schrodinger__subheader {
+    font-size: 1.8em; }
+  .reveal .schrodinger__image--cat {
+    width: 30%; }
+  .reveal .schrodinger__image--heisenbug {
+    width: 60%; }
+  .reveal .threads__subtitle--alarm {
+    font-size: 11vw;
+    top: 30%; }
+  .reveal .threads__subtitle--state {
+    font-size: 5vw;
+    top: 60%; }
+  .reveal .threads__subtitle--alarm, .reveal .threads__subtitle--state {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .reveal .CODE__header {
+    font-size: 250px; }
+  .reveal .kantor br {
+    display: none; }
+  .reveal .kantor__link {
+    height: auto;
+    text-align: left;
+    top: 100%;
+    width: 100%; }
+    .reveal .kantor__link--2 {
+      top: 150%; }
+  .reveal .kantor__image {
+    height: auto;
+    max-width: 100%;
+    min-width: auto;
+    width: 60%; }
+  .reveal .chrome-debug__link {
+    left: auto;
+    right: 10%;
+    width: 20%; }
+  .reveal .chrome-debug__image--2 {
+    max-width: 100%;
+    min-width: auto; } }
+
+@media (max-width: 1370px) {
+  .reveal .oops__image {
+    max-width: 350px; }
+  .reveal .node-fibers__subtitle {
+    font-size: 11vw;
+    left: 1%;
+    top: 40%;
+    z-index: 1000; }
+  .reveal .i-know-how__header {
+    font-size: 2.2em;
+    margin-bottom: 0; }
+  .reveal .i-know-how__digit {
+    font-size: 11em; } }
+
+@media (max-width: 1200px) {
+  .reveal .oops__code {
+    font-size: 30px; }
+  .reveal .oops__image {
+    left: 20px;
+    right: auto; }
+  .reveal .dump__descriptor {
+    font-size: 30px;
+    top: 30%; }
+  .reveal .discussions__image {
+    height: auto; }
+    .reveal .discussions__image--1, .reveal .discussions__image--2 {
+      width: 45%; }
+    .reveal .discussions__image--3 {
+      width: 60%; }
+    .reveal .discussions__image--martin {
+      left: auto;
+      right: 10%;
+      width: 230px; } }
+
+@media (max-width: 1124px) {
+  .reveal .and-word-was__subtitle {
+    font-size: 4.5em; }
+  .reveal .relations__subheader {
+    font-size: 1.8em; }
+  .reveal .relations__header {
+    font-size: 3em; }
+  .reveal .proto-chain__header--4 {
+    font-size: 0.7em; }
+  .reveal .proto-chain__header--3 {
+    font-size: 0.8em; }
+  .reveal .proto-chain__header--2 {
+    font-size: 1em; }
+  .reveal .proto-chain__text--state {
+    font-size: 2em; }
+  .reveal .proto-chain__text--context {
+    font-size: 1em; }
+  .reveal .tracking br {
+    display: none; }
+  .reveal .tracking__header--0 {
+    font-size: 3em; }
+  .reveal .tracking__header--1 {
+    font-size: 1em; }
+  .reveal .tracking__header--2 {
+    font-size: 0.8em; }
+  .reveal .tracking__header--3 {
+    font-size: 0.6em; }
+  .reveal .no-limits__header {
+    font-size: 5em;
+    margin-top: 0; }
+  .reveal .async-hooks__text {
+    bottom: -10%;
+    left: 50%;
+    top: auto;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%; }
+  .reveal .article__header--1 {
+    font-size: 1.5em; }
+  .reveal .article__header--2 {
+    font-size: 1em; }
+  .reveal .article__header--important {
+    font-size: 1.7em; }
+  .reveal .limitations__header {
+    font-size: 100px; } }
+
+@media (max-width: 1024px) {
+  .reveal .present {
+    padding-top: 0 !important; }
+  .reveal .dream__header {
+    font-size: 70px; }
+  .reveal .dream__text {
+    font-size: 28px; }
+  .reveal .dream__blockquote {
+    font-size: 26px; }
+  .reveal .significant__image {
+    width: 90%; }
+  .reveal .significant br {
+    display: none; }
+  .reveal .significant__text {
+    font-size: 30px; }
+  .reveal .driven-errors br,
+  .reveal .oops br {
+    display: none; }
+  .reveal .driven-errors__header,
+  .reveal .oops__header {
+    font-size: 1em; }
+  .reveal .driven-errors__code,
+  .reveal .oops__code {
+    font-size: 0.6em;
+    padding: 0 !important; }
+    .reveal .driven-errors__code-wrap,
+    .reveal .oops__code-wrap {
+      min-height: auto; }
+  .reveal .oops {
+    padding: 0 10px !important; }
+    .reveal .oops__image {
+      left: auto;
+      right: 20px; }
+  .reveal .statefull__header {
+    font-size: 3em; }
+  .reveal .statefull__subheader {
+    font-size: 1.8em; }
+  .reveal .dtrace__header {
+    margin-top: 0; }
+  .reveal .dtrace p {
+    text-align: left; }
+  .reveal .dtrace__image--dtrace {
+    margin-left: 10px; }
+  .reveal .dtrace__image--flamegraph {
+    left: auto;
+    right: 10px; }
+  .reveal .dtrace__text {
+    font-size: 27vw;
+    top: 50%; }
+  .reveal .cache br {
+    display: none; }
+  .reveal .cache__header {
+    font-size: 1em; }
+  .reveal .cache__code {
+    font-size: 30px;
+    min-height: auto; }
+    .reveal .cache__code-wrap {
+      line-height: 1.3; }
+  .reveal .entrypoint__header {
+    font-size: 1em; }
+  .reveal .entrypoint__subheader {
+    font-size: 0.7em; }
+  .reveal .entrypoint__code {
+    font-size: 20px;
+    min-height: auto;
+    padding: 0 !important; }
+    .reveal .entrypoint__code-wrap {
+      line-height: 1.1; }
+  .reveal .window-node br {
+    display: none; }
+  .reveal .async-operation br {
+    display: none; }
+  .reveal .CODE__header {
+    font-size: 150px;
+    margin-top: 0; }
+  .reveal .hooks-list__hook {
+    font-size: 65px; }
+  .reveal .doc-example br,
+  .reveal .example-work br {
+    display: none; }
+  .reveal .doc-example__code,
+  .reveal .doc-example code,
+  .reveal .example-work__code,
+  .reveal .example-work code {
+    font-size: 16px;
+    padding: 0 !important; }
+    .reveal .doc-example__code-wrap,
+    .reveal .doc-example code-wrap,
+    .reveal .example-work__code-wrap,
+    .reveal .example-work code-wrap {
+      line-height: 1; }
+  .reveal .articles {
+    padding: 0 10px !important; }
+    .reveal .articles br {
+      display: none; }
+    .reveal .articles__header--1 {
+      font-size: 1.1em; }
+    .reveal .articles__header--2 {
+      font-size: 0.8em; }
+    .reveal .articles__header--important {
+      font-size: 1.5em; }
+    .reveal .articles__text {
+      font-size: 1em; }
+    .reveal .articles__link--lorenz {
+      left: auto;
+      right: 10%;
+      top: 20%;
+      width: 30%; }
+    .reveal .articles__image--lorenz {
+      max-width: 100%;
+      min-width: auto; }
+  .reveal .git-dive__text--1 {
+    font-size: 1em; }
+  .reveal .git-dive__text--2 {
+    font-size: 1.4em;
+    top: 76%; }
+  .reveal .git-dive__text--3 {
+    font-size: 1.2em;
+    top: 60%; }
+  .reveal .git-dive__text--4 {
+    font-size: 1.1em;
+    top: 20%; }
+  .reveal .prosNcons br,
+  .reveal .cls-npm br {
+    display: none; } }
+
+@media (max-width: 980px) {
+  .reveal .header--h1 {
+    font-size: 40px;
+    margin-bottom: 70px; }
+  .reveal .image--logo-holyjs {
+    height: 120px;
+    max-width: 140px;
+    top: -80px; }
+  .reveal .introduction__video, .reveal .introduction__separator {
+    width: 90%; }
+  .reveal .present {
+    margin: 0 !important; }
+  .reveal .and-word-was__subtitle {
+    font-size: 3.5em; }
+  .reveal .they-invented br {
+    display: none; }
+  .reveal .they-invented__header {
+    font-size: 36px; }
+  .reveal .they-invented__subheader {
+    font-size: 20px; }
+  .reveal .all-complicated__header,
+  .reveal .cache__header,
+  .reveal .window-node__header {
+    font-size: 1.6em; }
+  .reveal .all-complicated__subheader,
+  .reveal .cache__subheader,
+  .reveal .window-node__subheader {
+    font-size: 1.1em; }
+  .reveal .all-complicated__code,
+  .reveal .all-complicated code,
+  .reveal .they-invented__code,
+  .reveal .they-invented code,
+  .reveal .cache__code,
+  .reveal .cache code,
+  .reveal .window-node__code,
+  .reveal .window-node code,
+  .reveal .continuation__code,
+  .reveal .continuation code,
+  .reveal .uncaughtException__code,
+  .reveal .uncaughtException code,
+  .reveal .cls-from-npm__code,
+  .reveal .cls-from-npm code,
+  .reveal .working-concept__code,
+  .reveal .working-concept code {
+    font-size: 14px;
+    padding: 10px 5px !important; }
+  .reveal .relations__subheader {
+    font-size: 1.3em; }
+  .reveal .relations__header {
+    font-size: 2.2em; }
+  .reveal .debug--in-progress__image,
+  .reveal .debug--in-production__image,
+  .reveal .node-fatal__image,
+  .reveal .push-button__image,
+  .reveal .coding__image,
+  .reveal .bug-assignment__image,
+  .reveal .situa__image,
+  .reveal .boss__image,
+  .reveal .collect-data__image,
+  .reveal .nodejs-robot__image,
+  .reveal .formal-verification__image,
+  .reveal .sertifying-algorithm__image,
+  .reveal .quantum-verification__image,
+  .reveal .twenty-years-ago__image,
+  .reveal .winter__image,
+  .reveal .dump__image,
+  .reveal .dtrace__image,
+  .reveal .graphana__image,
+  .reveal .scope__image,
+  .reveal .threads__image,
+  .reveal .no-async__image,
+  .reveal .event-loop__image,
+  .reveal .loop-anyway__image,
+  .reveal .see-js__image,
+  .reveal .logical-context__image,
+  .reveal .async_hooks__image,
+  .reveal .doc-example__image,
+  .reveal .talk-title__image,
+  .reveal .problems-jim__image,
+  .reveal .bubleprof__image,
+  .reveal .google-cloud__image,
+  .reveal .andreas-madsen__image,
+  .reveal .git-dive__image,
+  .reveal .async-listener__image,
+  .reveal .further-dev__image,
+  .reveal .how-it-is-made__image,
+  .reveal .what-we-can__image,
+  .reveal .func-explanation__image,
+  .reveal .issue-248__image,
+  .reveal .problem__image,
+  .reveal .issue-249__image,
+  .reveal .continuation__image,
+  .reveal .chrome-debug__image,
+  .reveal .working-concept__image,
+  .reveal .cloud-trace__image,
+  .reveal .team-thank__image,
+  .reveal .all-in-good-times__image {
+    width: 90%; }
+  .reveal .debug--in-progress__header,
+  .reveal .debug--in-production__header,
+  .reveal .node-fatal__header,
+  .reveal .push-button__header,
+  .reveal .coding__header,
+  .reveal .bug-assignment__header,
+  .reveal .situa__header,
+  .reveal .boss__header,
+  .reveal .collect-data__header,
+  .reveal .nodejs-robot__header,
+  .reveal .formal-verification__header,
+  .reveal .sertifying-algorithm__header,
+  .reveal .quantum-verification__header,
+  .reveal .twenty-years-ago__header,
+  .reveal .winter__header,
+  .reveal .dump__header,
+  .reveal .dtrace__header,
+  .reveal .graphana__header,
+  .reveal .scope__header,
+  .reveal .threads__header,
+  .reveal .no-async__header,
+  .reveal .event-loop__header,
+  .reveal .loop-anyway__header,
+  .reveal .see-js__header,
+  .reveal .logical-context__header,
+  .reveal .async_hooks__header,
+  .reveal .doc-example__header,
+  .reveal .talk-title__header,
+  .reveal .problems-jim__header,
+  .reveal .bubleprof__header,
+  .reveal .google-cloud__header,
+  .reveal .andreas-madsen__header,
+  .reveal .git-dive__header,
+  .reveal .async-listener__header,
+  .reveal .further-dev__header,
+  .reveal .how-it-is-made__header,
+  .reveal .what-we-can__header,
+  .reveal .func-explanation__header,
+  .reveal .issue-248__header,
+  .reveal .problem__header,
+  .reveal .issue-249__header,
+  .reveal .continuation__header,
+  .reveal .chrome-debug__header,
+  .reveal .working-concept__header,
+  .reveal .cloud-trace__header,
+  .reveal .team-thank__header,
+  .reveal .all-in-good-times__header {
+    font-size: 1em; }
+  .reveal .push-button br,
+  .reveal .coding br,
+  .reveal .bug-assignment br,
+  .reveal .stack br,
+  .reveal .nodejs-robot br,
+  .reveal .twenty-years-ago br,
+  .reveal .winter br,
+  .reveal .dump br,
+  .reveal .dtrace br,
+  .reveal .graphana br,
+  .reveal .scope br,
+  .reveal .threads br,
+  .reveal .no-async br,
+  .reveal .event-loop br,
+  .reveal .loop-anyway br,
+  .reveal .async_hooks br,
+  .reveal .talk-title br,
+  .reveal .problems-jim br,
+  .reveal .bubleprof br,
+  .reveal .google-cloud br,
+  .reveal .andreas-madsen br,
+  .reveal .further-dev br,
+  .reveal .issue-248 br,
+  .reveal .issue-249 br,
+  .reveal .continuation br,
+  .reveal .chrome-debug br,
+  .reveal .cloud-trace br,
+  .reveal .team-thank br {
+    display: none; }
+  .reveal .push-button__header,
+  .reveal .coding__header {
+    font-size: 0.8em; }
+  .reveal .what-we-have__header {
+    font-size: 1.5em; }
+  .reveal .what-we-have__text {
+    font-size: 1em; }
+  .reveal .metaphor__header {
+    font-size: 3em; }
+  .reveal .metaphor__subheader {
+    font-size: 1.4em; }
+  .reveal .bug-assignment {
+    padding: 0 10px !important; }
+    .reveal .bug-assignment__image--fun {
+      bottom: 0;
+      top: auto;
+      width: 30%; }
+  .reveal .stack {
+    padding: 0 10px !important; }
+    .reveal .stack--1__header {
+      font-size: 0.8em;
+      margin-bottom: 0; }
+    .reveal .stack--2__header {
+      left: 0;
+      top: 50%; }
+    .reveal .stack__image {
+      top: 50%; }
+      .reveal .stack__image--4 {
+        top: 60%; }
+  .reveal .schrodinger__subheader--heisenbug {
+    padding-left: 10%; }
+  .reveal .trace__header {
+    margin-top: 0; }
+  .reveal .sti__header,
+  .reveal .polymorph__header {
+    font-size: 1em; }
+  .reveal .proto-chain__header--4 {
+    font-size: 0.3em; }
+  .reveal .proto-chain__header--3 {
+    font-size: 0.4em; }
+  .reveal .proto-chain__header--2 {
+    font-size: 0.6em; }
+  .reveal .proto-chain__text--state {
+    font-size: 1.5em; }
+  .reveal .proto-chain__text--context {
+    font-size: 0.7em; }
+  .reveal .make-a-spike__header {
+    margin-bottom: 0; }
+  .reveal .make-a-spike br {
+    display: none; }
+  .reveal .diving__header {
+    font-size: 3em; }
+  .reveal .diving__text {
+    font-size: 30px; }
+  .reveal .banch-of-links {
+    padding: 0 10px !important; }
+    .reveal .banch-of-links br {
+      display: none; }
+    .reveal .banch-of-links__header {
+      font-size: 1em;
+      margin-bottom: 0; }
+    .reveal .banch-of-links__link {
+      font-size: 30px;
+      word-wrap: break-word; }
+    .reveal .banch-of-links__text {
+      font-size: 28px; }
+  .reveal .dump__descriptor {
+    font-size: 20px;
+    left: auto;
+    right: 10%;
+    top: 34%; }
+  .reveal .graphana__subheader {
+    font-size: 0.8em; }
+  .reveal .graphana__image--trace {
+    left: auto;
+    right: 1%; }
+  .reveal .graphana__subtitle {
+    top: 35%; }
+  .reveal .node-fibers__header {
+    font-size: 1em; }
+  .reveal .node-fibers__image--downloads {
+    width: 55%; }
+  .reveal .no-async {
+    padding: 0 10px !important; }
+    .reveal .no-async__text {
+      font-size: 0.7em; }
+  .reveal .event-loop__link {
+    font-size: 0.9em; }
+  .reveal .loop-anyway__header {
+    margin-top: 0; }
+  .reveal .event-loop-node__image--1 {
+    width: 90%; }
+  .reveal .event-loop-node__link--2, .reveal .event-loop-node__link--3 {
+    width: 50%; }
+  .reveal .event-loop-node__link--2 {
+    bottom: 10%;
+    left: auto;
+    right: 10px;
+    top: auto; }
+  .reveal .event-loop-node__link--3 {
+    bottom: 0;
+    left: 10px;
+    top: auto; }
+  .reveal .indeed__header--top {
+    font-size: 50px;
+    margin-top: 0; }
+  .reveal .indeed__header--principal {
+    font-size: 65px; }
+  .reveal .indeed__text--1 {
+    font-size: 50px; }
+  .reveal .indeed__text--2 {
+    font-size: 45px; }
+  .reveal .neumann-arch br {
+    display: none; }
+  .reveal .async-operation__header {
+    font-size: 55px; }
+  .reveal .async-operation__subheader {
+    font-size: 40px; }
+  .reveal .async-operation__text--danger {
+    font-size: 30px; }
+  .reveal .async-operation__text--neutral {
+    font-size: 35px; }
+  .reveal .async-operation__text--alarm {
+    font-size: 60px; }
+  .reveal .continuation br,
+  .reveal .uncaughtException br {
+    display: none; }
+  .reveal .continuation__header,
+  .reveal .uncaughtException__header {
+    font-size: 40px; }
+  .reveal .continuation__text,
+  .reveal .uncaughtException__text {
+    font-size: 25px; }
+  .reveal .continuation__code,
+  .reveal .uncaughtException__code {
+    min-height: auto;
+    padding: 0; }
+    .reveal .continuation__code-wrap,
+    .reveal .uncaughtException__code-wrap {
+      line-height: 1; }
+  .reveal .no-limits__header {
+    font-size: 3em; }
+  .reveal .no-limits__text {
+    font-size: 1em; }
+  .reveal .async-hooks__text {
+    font-size: 1em; }
+  .reveal .hooks-list__hook {
+    font-size: 45px; }
+    .reveal .hooks-list__hook:first-child {
+      margin-top: 0; }
+  .reveal .example-work br {
+    display: none; }
+  .reveal .example-work__header {
+    font-size: 50px; }
+  .reveal .cls br {
+    display: none; }
+  .reveal .cls__text {
+    font-size: 0.8em; }
+  .reveal .cls__header {
+    font-size: 1.1em; }
+  .reveal .cls__subheader {
+    font-size: 1em; }
+  .reveal .cls__blockquote {
+    font-size: 0.8em; }
+  .reveal .cls blockquote {
+    width: 90%; }
+  .reveal .cls-from-npm br {
+    display: none; }
+  .reveal .cls-from-npm__header {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  .reveal .cls-from-npm__text {
+    font-size: 0.6em; }
+  .reveal .cls-from-npm__code {
+    padding: 0; }
+    .reveal .cls-from-npm__code-wrap {
+      line-height: 1; }
+  .reveal .zonejs br {
+    display: none; }
+  .reveal .zonejs__header {
+    font-size: 1em; }
+  .reveal .zonejs__subheader {
+    font-size: 0.9em; }
+  .reveal .zonejs__link--sl {
+    height: auto;
+    left: 10px;
+    top: 160%; }
+  .reveal .zonejs__link--angular {
+    left: auto;
+    right: 10px;
+    text-align: right;
+    top: 220%; }
+  .reveal .zonejs__image--angular {
+    min-width: auto;
+    width: 70%; }
+  .reveal .async-listener__image--norris {
+    bottom: 30%;
+    right: 10px;
+    top: auto;
+    width: 30%; }
+  .reveal .how-it-is-made br,
+  .reveal .what-we-can br,
+  .reveal .func-explanation br,
+  .reveal .problem br,
+  .reveal .working-concept br {
+    display: none; }
+  .reveal .how-it-is-made__header,
+  .reveal .what-we-can__header,
+  .reveal .func-explanation__header,
+  .reveal .problem__header,
+  .reveal .working-concept__header {
+    font-size: 30px;
+    margin-bottom: 0; }
+  .reveal .how-it-is-made__code,
+  .reveal .how-it-is-made code,
+  .reveal .what-we-can__code,
+  .reveal .what-we-can code,
+  .reveal .func-explanation__code,
+  .reveal .func-explanation code,
+  .reveal .problem__code,
+  .reveal .problem code,
+  .reveal .working-concept__code,
+  .reveal .working-concept code {
+    font-size: 14px;
+    padding: 5px !important; }
+    .reveal .how-it-is-made__code-wrap,
+    .reveal .how-it-is-made code-wrap,
+    .reveal .what-we-can__code-wrap,
+    .reveal .what-we-can code-wrap,
+    .reveal .func-explanation__code-wrap,
+    .reveal .func-explanation code-wrap,
+    .reveal .problem__code-wrap,
+    .reveal .problem code-wrap,
+    .reveal .working-concept__code-wrap,
+    .reveal .working-concept code-wrap {
+      line-height: 1; }
+  .reveal .func-explanation__subheader {
+    font-size: 20px; }
+  .reveal .issue-248 br {
+    display: none; }
+  .reveal .issue-248__subheader {
+    font-size: 30px; }
+  .reveal .problem__header {
+    margin-top: 0; }
+  .reveal .problem__link {
+    font-size: 30px; }
+  .reveal .kantor__header {
+    font-size: 40px; }
+  .reveal .chrome-debug__header {
+    font-size: 30px; }
+  .reveal .chrome-debug__link {
+    bottom: 0;
+    width: 40%; }
+  .reveal .chrome-debug__image--2 {
+    max-height: none; }
+  .reveal .trace-from-dtrace br {
+    display: none; }
+  .reveal .trace-from-dtrace__header--1 {
+    font-size: 1.5em; }
+  .reveal .trace-from-dtrace__header--2 {
+    font-size: 1.2em; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 1em; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 0.7em; }
+  .reveal .asking-help__header {
+    font-size: 30px; }
+  .reveal .asking-help__text {
+    font-size: 20px; }
+  .reveal .asking-help__image {
+    top: 50%;
+    width: 40%; }
+    .reveal .asking-help__image--3 {
+      top: calc(80% + 50px); }
+    .reveal .asking-help__image--4 {
+      bottom: 20%;
+      top: auto;
+      width: 80%; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 100px; }
+  .reveal .working-concept__header {
+    margin-top: 0; }
+  .reveal .working-concept__code-wrap {
+    margin: 0 auto 5px; }
+  .reveal .cloud-trace__header {
+    margin-top: 0; }
+  .reveal .cloud-trace__link {
+    font-size: 18px; }
+  .reveal .resume__header {
+    margin-top: 0; }
+  .reveal .discussions__image--martin {
+    top: 60%;
+    width: 170px; }
+  .reveal .main-idea__subtitle--1 {
+    font-size: 1em; }
+  .reveal .main-idea__subtitle--2 {
+    font-size: 1.2em; }
+  .reveal .main-idea__text {
+    font-size: 1.8em; }
+  .reveal .i-know-how br {
+    display: none; }
+  .reveal .i-know-how__header {
+    font-size: 1.2em; }
+  .reveal .i-know-how__digit {
+    font-size: 3em; }
+  .reveal .uCircus__header {
+    font-size: 40px; }
+  .reveal .uCircus br {
+    display: none; }
+  .reveal .conclusion br {
+    display: none; }
+  .reveal .conclusion__header {
+    font-size: 30px; }
+  .reveal .conclusion__link, .reveal .conclusion__reveal, .reveal .conclusion__adaptive {
+    font-size: 22px; } }
+
+@media (max-width: 730px), (max-height: 768px) {
+  .reveal .header--h1 {
+    font-size: 30px; }
+  .reveal .image--logo-holyjs {
+    height: 70px;
+    max-width: 100px;
+    top: -100px; }
+  .reveal .image--logo-ukit-group {
+    max-width: 70px;
+    top: -90px; }
+  .reveal .introduction {
+    padding-top: 50px !important; }
+    .reveal .introduction__text {
+      font-size: 25px; }
+  .reveal .who-am-i {
+    padding: 0 10px; }
+    .reveal .who-am-i__header {
+      font-size: 1em;
+      margin-bottom: 0; }
+    .reveal .who-am-i br {
+      display: none; }
+    .reveal .who-am-i__text {
+      font-size: 20px; }
+      .reveal .who-am-i__text--nowdays {
+        font-size: 25px;
+        margin-bottom: 20px; }
+      .reveal .who-am-i__text--finally {
+        font-size: 25px; } }
+
+@media (max-width: 768px) {
+  .reveal .team-mascots-me__image {
+    max-width: 90%;
+    width: 90%; }
+  .reveal .team-mascots-me__header {
+    margin: 0; }
+  .reveal .dream {
+    padding: 0 10px !important; }
+    .reveal .dream__header {
+      font-size: 30px; }
+    .reveal .dream__text, .reveal .dream__blockquote {
+      font-size: 20px; }
+  .reveal .this-talk__header {
+    font-size: 40px; }
+  .reveal .this-talk__text {
+    font-size: 28px; }
+  .reveal .intro__header {
+    font-size: 70px; }
+  .reveal .side-digit {
+    font-size: 500px;
+    top: 0; }
+  .reveal .and-word-was {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px !important; }
+    .reveal .and-word-was__subtitle {
+      font-size: 60px;
+      margin-bottom: 30px; }
+    .reveal .and-word-was__header {
+      font-size: 30px; }
+    .reveal .and-word-was__text {
+      font-size: 25px; }
+  .reveal .all-complicated__header {
+    font-size: 1.1em; }
+  .reveal .all-complicated__subheader {
+    font-size: 0.8em; }
+  .reveal .relations__subheader {
+    font-size: 1em; }
+  .reveal .relations__header {
+    font-size: 1.5em; }
+  .reveal .what-we-have {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 30px !important;
+    z-index: 0; }
+    .reveal .what-we-have__header {
+      font-size: 1.1em; }
+    .reveal .what-we-have__text {
+      font-size: 0.7em; }
+    .reveal .what-we-have__digit {
+      z-index: -1; }
+    .reveal .what-we-have__header, .reveal .what-we-have__text {
+      z-index: 1; }
+  .reveal .collect-data__header {
+    font-size: 0.8em; }
+  .reveal .collect-data__image--root {
+    top: 25%;
+    width: 20%; }
+  .reveal .available-data {
+    padding: 0 10px !important; }
+    .reveal .available-data br {
+      display: none; }
+    .reveal .available-data__image--test, .reveal .available-data__image--root {
+      width: 20%; }
+    .reveal .available-data__image--team {
+      top: 30%;
+      width: 50%; }
+    .reveal .available-data__header {
+      font-size: 0.8em; }
+    .reveal .available-data__subheader {
+      font-size: 1em; }
+  .reveal .schrodinger br {
+    display: none; }
+  .reveal .schrodinger__header {
+    font-size: 0.7em; }
+  .reveal .schrodinger__subheader {
+    font-size: 1.2em; }
+  .reveal .live-demo__separator,
+  .reveal .final-video__separator {
+    width: 90%; }
+  .reveal .live-demo__video,
+  .reveal .final-video__video {
+    width: 90%; }
+  .reveal .live-demo--3 .live-demo--3__link,
+  .reveal .final-video--3 .live-demo--3__link {
+    line-height: 0.8;
+    margin-top: 25px; }
+  .reveal .trace__header {
+    font-size: 1.7em;
+    margin-top: 0; }
+  .reveal .trace__subheader {
+    font-size: 0.7em; }
+    .reveal .trace__subheader--small {
+      font-size: 0.4em; }
+  .reveal .sti,
+  .reveal .polymorph {
+    padding: 0 10px !important; }
+    .reveal .sti__header,
+    .reveal .polymorph__header {
+      font-size: 0.6em; }
+  .reveal .code-example br,
+  .reveal .driven-errors br,
+  .reveal .oops br {
+    display: none; }
+  .reveal .driven-errors__header,
+  .reveal .oops__header {
+    font-size: 0.8em; }
+  .reveal .driven-errors__code,
+  .reveal .oops__code {
+    font-size: 0.3em;
+    min-height: auto; }
+    .reveal .driven-errors__code-wrap,
+    .reveal .oops__code-wrap {
+      line-height: 1.2; }
+  .reveal .oops__text {
+    font-size: 0.5em; }
+  .reveal .oops__header {
+    font-size: 0.7em;
+    margin-bottom: 0; }
+  .reveal .oops__code {
+    font-size: 16px; }
+  .reveal .oops__image {
+    left: 20px;
+    right: auto; }
+  .reveal .make-a-spike__header {
+    font-size: 1em; }
+  .reveal .statefull__header {
+    font-size: 1.5em; }
+  .reveal .statefull__subheader {
+    font-size: 0.8em; }
+  .reveal .banch-of-links__header {
+    font-size: 0.6em; }
+  .reveal .banch-of-links__link {
+    font-size: 20px; }
+  .reveal .banch-of-links__text {
+    font-size: 18px; }
+  .reveal .graphana__image--trace {
+    top: 50%; }
+  .reveal .cache__header {
+    font-size: 0.8em; }
+  .reveal .dots {
+    font-size: 5em;
+    line-height: 0.2; }
+  .reveal .see-js__text, .reveal .see-js__link {
+    font-size: 36px; }
+  .reveal .neumann-arch__image--1 {
+    width: 90%; }
+  .reveal .async-operation__header {
+    font-size: 35px; }
+  .reveal .async-operation__subheader {
+    font-size: 20px; }
+  .reveal .async-operation__text--danger {
+    font-size: 20px; }
+  .reveal .async-operation__text--neutral {
+    font-size: 25px; }
+  .reveal .async-operation__text--alarm {
+    font-size: 40px; }
+  .reveal .example-work__header {
+    font-size: 30px; }
+  .reveal .articles__link--lorenz {
+    bottom: 0;
+    top: auto;
+    width: 30%; }
+  .reveal .cls__text {
+    font-size: 0.7em; }
+  .reveal .cls__header {
+    font-size: 1em; }
+  .reveal .cls__subheader {
+    font-size: 0.9em; }
+  .reveal .cls__blockquote {
+    font-size: 0.6em; }
+  .reveal .git-dive__text--1 {
+    font-size: 0.5em; }
+  .reveal .git-dive__text--2 {
+    font-size: 1em; }
+  .reveal .git-dive__text--3 {
+    font-size: 0.8em; }
+  .reveal .git-dive__text--4 {
+    font-size: 0.55em; }
+  .reveal .limitations__header {
+    font-size: 70px; }
+  .reveal .fixing__header {
+    font-size: 100px; }
+  .reveal .trace-from-dtrace__header--1 {
+    font-size: 1.1em; }
+  .reveal .trace-from-dtrace__header--2 {
+    font-size: 1em; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 0.8em; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 0.5em; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 70px; }
+  .reveal .prosNcons__header,
+  .reveal .cls-npm__header {
+    font-size: 30px; }
+  .reveal .prosNcons__text,
+  .reveal .cls-npm__text {
+    font-size: 20px; }
+  .reveal .discussions__header {
+    font-size: 30px; }
+  .reveal .discussions__image--3 {
+    top: 40%; }
+  .reveal .main-idea__subtitle--1 {
+    font-size: 30px; }
+  .reveal .main-idea__subtitle--2 {
+    font-size: 35px; }
+  .reveal .main-idea__text {
+    font-size: 60px; }
+  .reveal .i-know-how br {
+    display: none; }
+  .reveal .i-know-how__header {
+    font-size: 30px;
+    margin-top: 0; }
+  .reveal .i-know-how__digit {
+    font-size: 4em; }
+  .reveal .i-know-how__text {
+    font-size: 20px; }
+  .reveal .node-crew__header,
+  .reveal .special-thanks__header {
+    font-size: 30px; }
+  .reveal .node-crew__text,
+  .reveal .special-thanks__text {
+    font-size: 20px; }
+  .reveal .special-thanks br {
+    display: none; }
+  .reveal .special-thanks__list {
+    font-size: 20px; } }
+
+@media (max-width: 768px) and (orientation: landscape), (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
+  .reveal .team-mascots-me br {
+    display: none; }
+  .reveal .team-mascots-me__image {
+    max-width: 50%; } }
+
+@media (max-width: 600px) {
+  .reveal .introduction {
+    top: 0; }
+    .reveal .introduction__video {
+      height: 50%; }
+  .reveal .team-mascots-me__header {
+    font-size: 45px; }
+  .reveal .what-we-have br:first-child {
+    display: none; }
+  .reveal .live-demo br {
+    display: none; }
+  .reveal .live-demo__header, .reveal .live-demo__subheader {
+    font-size: 1.1em; }
+  .reveal .live-demo__text {
+    font-size: 0.8em; }
+  .reveal .proto-chain__text--state {
+    font-size: 1em; }
+  .reveal .proto-chain__text--context {
+    font-size: 0.6em; }
+  .reveal .no-async__header {
+    font-size: 0.7em; }
+  .reveal .no-async__text {
+    font-size: 0.4em; }
+  .reveal .CODE__header {
+    font-size: 100px; }
+  .reveal .CODE__image {
+    width: 50%; }
+  .reveal .hooks-list__hook {
+    font-size: 30px; }
+  .reveal .doc-example__header {
+    font-size: 30px; }
+  .reveal .cls {
+    padding: 0 10px !important; }
+    .reveal .cls__header {
+      font-size: 0.7em; }
+    .reveal .cls__subheader {
+      font-size: 0.7em; }
+  .reveal .limitations__header {
+    font-size: 40px; }
+  .reveal .asking-help br {
+    display: none; }
+  .reveal .asking-help__header, .reveal .asking-help__text {
+    display: block;
+    margin-bottom: 5px; }
+  .reveal .asking-help__image {
+    top: 50%;
+    width: 40%; }
+    .reveal .asking-help__image--3 {
+      top: calc(50% + 50px); }
+    .reveal .asking-help__image--4 {
+      bottom: 20%;
+      top: auto;
+      width: 80%; }
+  .reveal .resume__digit {
+    font-size: 240px; } }
+
+@media (max-width: 550px) {
+  .reveal .image--logo-holyjs {
+    left: 50px;
+    top: -100px; }
+  .reveal .image--logo-ukit-group {
+    right: 50px;
+    top: -90px; }
+  .reveal .introduction {
+    margin: 0;
+    padding-top: 0 !important; }
+    .reveal .introduction__link {
+      display: block; }
+    .reveal .introduction__text {
+      padding: 0 5px; }
+      .reveal .introduction__text nobr {
+        display: block;
+        white-space: inherit;
+        word-break: break-word; }
+        .reveal .introduction__text nobr:not(:last-child) {
+          margin: 15px 0; }
+  .reveal .dream blockquote {
+    width: 90%; }
+  .reveal .intro__header {
+    font-size: 50px; }
+  .reveal .side-digit {
+    font-size: 300px;
+    top: .1em; }
+  .reveal .metaphor__header {
+    font-size: 1.8em; }
+  .reveal .metaphor__subheader {
+    font-size: 0.9em; }
+  .reveal .available-data__header {
+    font-size: 0.5em; }
+  .reveal .available-data__subheader {
+    font-size: 0.8em; }
+  .reveal .schrodinger__header {
+    font-size: 0.5em; }
+  .reveal .schrodinger__subheader {
+    font-size: 0.7em; }
+  .reveal .live-demo__header, .reveal .live-demo__subheader {
+    font-size: 0.7em; }
+  .reveal .live-demo__text {
+    font-size: 0.4em; }
+  .reveal .trace__header {
+    font-size: 1em; }
+  .reveal .code-example__text {
+    font-size: 0.5em; }
+  .reveal .code-example__header {
+    font-size: 1em; }
+  .reveal .oops__image {
+    left: 50%;
+    right: auto;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50%; }
+  .reveal .diving__header {
+    font-size: 2em;
+    margin-top: 100px; }
+  .reveal .diving__text {
+    font-size: 20px; }
+  .reveal .winter__header {
+    font-size: 0.8em; }
+  .reveal .graphana__subheader {
+    font-size: 0.5em; }
+  .reveal .graphana__header {
+    font-size: 0.8em; }
+  .reveal .scope__header {
+    font-size: 0.8em; }
+  .reveal .tracking__header {
+    z-index: 10; }
+    .reveal .tracking__header--0 {
+      font-size: 2em; }
+  .reveal .tracking__digit {
+    z-index: -1; }
+  .reveal .entrypoint__header,
+  .reveal .window-node__header {
+    font-size: 0.6em; }
+  .reveal .entrypoint__subheader,
+  .reveal .window-node__subheader {
+    font-size: 0.4em; }
+  .reveal .entrypoint__code,
+  .reveal .window-node__code {
+    font-size: 14px; }
+    .reveal .entrypoint__code-wrap,
+    .reveal .window-node__code-wrap {
+      line-height: 1.1; }
+  .reveal .see-js__text, .reveal .see-js__link {
+    font-size: 22px; }
+  .reveal .indeed__header--top {
+    font-size: 25px;
+    margin-top: 0; }
+  .reveal .indeed__header--principal {
+    font-size: 30px; }
+  .reveal .indeed__text--1 {
+    font-size: 28px; }
+  .reveal .indeed__text--2 {
+    font-size: 26px; }
+  .reveal .no-limits__header {
+    font-size: 1.5em; }
+  .reveal .no-limits__text {
+    font-size: 0.6em; }
+  .reveal .zonejs__header {
+    font-size: 0.6em; }
+  .reveal .zonejs__subheader {
+    font-size: 0.5em; }
+  .reveal .kantor__image {
+    width: 80%; }
+  .reveal .trace-from-dtrace__header--1 {
+    font-size: 30px; }
+  .reveal .trace-from-dtrace__header--2 {
+    font-size: 25px; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 20px; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 16px; }
+  .reveal .main-idea__subtitle--1 {
+    font-size: 20px; }
+  .reveal .main-idea__subtitle--2 {
+    font-size: 25px; }
+  .reveal .main-idea__text {
+    font-size: 40px; } }
+
+@media (max-width: 450px) {
+  .reveal .this-talk__header {
+    font-size: 30px; }
+  .reveal .this-talk__text {
+    font-size: 22px; }
+  .reveal .relations__subheader {
+    font-size: 22px;
+    z-index: 100; }
+  .reveal .relations__header {
+    font-size: 26px;
+    z-index: 100; }
+  .reveal .diving__header {
+    font-size: 1.2em; }
+  .reveal .diving__text {
+    font-size: 18px; }
+  .reveal .twenty-years-ago__header {
+    font-size: 0.6em; }
+  .reveal .dump__descriptor {
+    font-size: 20px;
+    right: 20px;
+    top: 38%; }
+  .reveal .tracking__header--0 {
+    font-size: 1.3em; }
+  .reveal .continuation__header,
+  .reveal .uncaughtException__header {
+    font-size: 30px; }
+  .reveal .continuation__text,
+  .reveal .uncaughtException__text {
+    font-size: 20px; }
+  .reveal .CODE__header {
+    font-size: 70px; }
+  .reveal .CODE__image {
+    position: relative;
+    width: 80%;
+    z-index: -1; }
+  .reveal .async-hooks__text {
+    bottom: 0;
+    font-size: 0.5em; }
+  .reveal .hooks-list__hook {
+    font-size: 20px; }
+  .reveal .articles {
+    padding: 0 10px !important; }
+    .reveal .articles br {
+      display: none; }
+    .reveal .articles__header--1 {
+      font-size: 0.7em; }
+    .reveal .articles__header--2 {
+      font-size: 0.5em; }
+    .reveal .articles__header--important {
+      font-size: 1em; }
+    .reveal .articles__text {
+      font-size: 0.7em; }
+  .reveal .problem__link {
+    font-size: 20px; }
+  .reveal .fixing__header {
+    font-size: 50px; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 50px; }
+  .reveal .discussions__image--martin {
+    top: 70%;
+    width: 100px; }
+  .reveal .uCircus__header {
+    font-size: 30px; } }
+
+@media (max-width: 340px) {
+  .reveal .metaphor__header {
+    font-size: 1.5em; }
+  .reveal .metaphor__subheader {
+    font-size: 0.9em; }
+  .reveal .git-dive__text--1 {
+    font-size: 0.5em; }
+  .reveal .git-dive__text--2 {
+    font-size: 0.7em;
+    left: 0; }
+  .reveal .git-dive__text--3 {
+    font-size: 0.8em;
+    top: 40%; }
+  .reveal .git-dive__text--4 {
+    font-size: 0.55em; }
+  .reveal .limitations__header {
+    font-size: 30px; }
+  .reveal .special-thanks__header {
+    font-size: 20px; }
+  .reveal .special-thanks__list {
+    font-size: 16px; } }
+
+@media (max-width: 320px) {
+  .reveal .this-talk__header {
+    font-size: 25px; }
+  .reveal .this-talk__text {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 667px) and (max-height: 375px), only screen and (max-width: 736px) and (max-height: 414px), only screen and (max-width: 812px) and (max-height: 375px), only screen and (max-height: 800px) and (orientation: landscape) and (max-width: 1024px), only screen and (max-width: 854px) and (max-height: 480px) and (orientation: landscape) {
+  .reveal .introduction {
+    padding-top: 50px !important; }
+    .reveal .introduction__logo--holyjs {
+      height: 70px;
+      max-width: 100px;
+      top: -42px;
+      z-index: -1; }
+    .reveal .introduction__logo--ukit-group {
+      max-width: 70px;
+      top: -38px; }
+    .reveal .introduction__header {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    .reveal .introduction__separator {
+      width: 40%; }
+      .reveal .introduction__separator:last-of-type {
+        display: none; }
+    .reveal .introduction__text {
+      float: right;
+      font-size: 18px;
+      margin: 0;
+      margin-right: 20px;
+      width: 40%; }
+      .reveal .introduction__text nobr {
+        white-space: normal; }
+    .reveal .introduction__video {
+      float: left;
+      height: 200px;
+      width: 40%; }
+    .reveal .introduction__separator, .reveal .introduction__video {
+      margin-left: 20px; }
+  .reveal .intro__header {
+    margin-top: 50px; }
+  .reveal .side-digit {
+    font-size: 400px;
+    top: -50%; }
+  .reveal .and-word-was {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px !important; }
+    .reveal .and-word-was__subtitle {
+      font-size: 60px;
+      margin-bottom: 30px; }
+    .reveal .and-word-was__header {
+      font-size: 30px; }
+    .reveal .and-word-was__text {
+      font-size: 25px; }
+  .reveal .relations__subheader {
+    font-size: 1em; }
+  .reveal .relations__header {
+    font-size: 1.5em;
+    margin-top: 50px; }
+  .reveal .debug--in-progress__image,
+  .reveal .debug--in-production__image,
+  .reveal .node-fatal__image,
+  .reveal .push-button__image,
+  .reveal .coding__image,
+  .reveal .bug-assignment__image,
+  .reveal .situa__image,
+  .reveal .boss__image,
+  .reveal .collect-data__image,
+  .reveal .nodejs-robot__image,
+  .reveal .formal-verification__image,
+  .reveal .sertifying-algorithm__image,
+  .reveal .quantum-verification__image,
+  .reveal .twenty-years-ago__image,
+  .reveal .winter__image,
+  .reveal .dump__image,
+  .reveal .dtrace__image,
+  .reveal .graphana__image,
+  .reveal .scope__image,
+  .reveal .threads__image,
+  .reveal .no-async__image,
+  .reveal .event-loop__image,
+  .reveal .loop-anyway__image,
+  .reveal .see-js__image,
+  .reveal .logical-context__image,
+  .reveal .async_hooks__image,
+  .reveal .doc-example__image,
+  .reveal .example-work__image,
+  .reveal .talk-title__image,
+  .reveal .problems-jim__image,
+  .reveal .bubleprof__image,
+  .reveal .google-cloud__image,
+  .reveal .andreas-madsen__image,
+  .reveal .git-dive__image,
+  .reveal .async-listener__image,
+  .reveal .further-dev__image,
+  .reveal .how-it-is-made__image,
+  .reveal .issue-248__image,
+  .reveal .issue-249__image,
+  .reveal .continuation__image,
+  .reveal .chrome-debug__image,
+  .reveal .working-concept__image,
+  .reveal .cloud-trace__image,
+  .reveal .team-thank__image,
+  .reveal .all-in-good-times__image {
+    width: 70%; }
+  .reveal .debug--in-progress__header,
+  .reveal .debug--in-production__header,
+  .reveal .node-fatal__header,
+  .reveal .push-button__header,
+  .reveal .coding__header,
+  .reveal .bug-assignment__header,
+  .reveal .situa__header,
+  .reveal .boss__header,
+  .reveal .collect-data__header,
+  .reveal .nodejs-robot__header,
+  .reveal .formal-verification__header,
+  .reveal .sertifying-algorithm__header,
+  .reveal .quantum-verification__header,
+  .reveal .twenty-years-ago__header,
+  .reveal .winter__header,
+  .reveal .dump__header,
+  .reveal .dtrace__header,
+  .reveal .graphana__header,
+  .reveal .scope__header,
+  .reveal .threads__header,
+  .reveal .no-async__header,
+  .reveal .event-loop__header,
+  .reveal .loop-anyway__header,
+  .reveal .see-js__header,
+  .reveal .logical-context__header,
+  .reveal .async_hooks__header,
+  .reveal .doc-example__header,
+  .reveal .example-work__header,
+  .reveal .talk-title__header,
+  .reveal .problems-jim__header,
+  .reveal .bubleprof__header,
+  .reveal .google-cloud__header,
+  .reveal .andreas-madsen__header,
+  .reveal .git-dive__header,
+  .reveal .async-listener__header,
+  .reveal .further-dev__header,
+  .reveal .how-it-is-made__header,
+  .reveal .issue-248__header,
+  .reveal .issue-249__header,
+  .reveal .continuation__header,
+  .reveal .chrome-debug__header,
+  .reveal .working-concept__header,
+  .reveal .cloud-trace__header,
+  .reveal .team-thank__header,
+  .reveal .all-in-good-times__header {
+    font-size: 1em;
+    margin-bottom: 0; }
+  .reveal .push-button__header,
+  .reveal .coding__header {
+    font-size: 0.7em; }
+  .reveal .push-button__image,
+  .reveal .coding__image {
+    max-width: 50%; }
+  .reveal .situa__image,
+  .reveal .boss__image {
+    max-width: 30%; }
+  .reveal .bug-assignment__image--fun {
+    bottom: 0;
+    top: auto;
+    width: 30%; }
+  .reveal .stack--1__header {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  .reveal .stack--2__header {
+    left: 0;
+    top: 30%; }
+  .reveal .stack__image {
+    top: 30%; }
+    .reveal .stack__image--4 {
+      top: 40%; }
+  .reveal .collect-data__header {
+    font-size: 0.8em; }
+  .reveal .collect-data__image--root {
+    top: 10%;
+    width: 20%; }
+  .reveal .available-data br {
+    display: none; }
+  .reveal .available-data__image {
+    top: 10%; }
+    .reveal .available-data__image--team {
+      top: 15%;
+      width: 20%; }
+  .reveal .available-data__header {
+    font-size: 0.5em; }
+  .reveal .available-data__subheader {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  .reveal .schrodinger__header {
+    font-size: 0.4em; }
+  .reveal .schrodinger__subheader {
+    font-size: 0.8em; }
+  .reveal .live-demo br {
+    display: none; }
+  .reveal .live-demo__header, .reveal .live-demo__subheader {
+    font-size: 0.7em; }
+  .reveal .live-demo__text {
+    font-size: 0.4em; }
+  .reveal .live-demo__video {
+    max-height: 120px;
+    max-width: 50%; }
+  .reveal .live-demo__separator {
+    margin: 5px auto; }
+  .reveal .live-demo--3 .live-demo--3__link {
+    line-height: 0.8;
+    margin-top: 25px; }
+  .reveal .sti__header,
+  .reveal .polymorph__header {
+    font-size: 1em; }
+  .reveal .proto-chain__header--4 {
+    font-size: 0.3em; }
+  .reveal .proto-chain__header--3 {
+    font-size: 0.4em; }
+  .reveal .proto-chain__header--2 {
+    font-size: 0.6em; }
+  .reveal .proto-chain__text--state {
+    font-size: 1em; }
+  .reveal .proto-chain__text--context {
+    font-size: 0.7em; }
+  .reveal .code-example__text {
+    font-size: 0.5em; }
+  .reveal .code-example__header {
+    font-size: 1em; }
+  .reveal .code-example__image {
+    width: 50%; }
+  .reveal .driven-errors__text,
+  .reveal .oops__text {
+    font-size: 0.5em; }
+  .reveal .driven-errors__header,
+  .reveal .oops__header {
+    font-size: 0.7em;
+    margin-bottom: 0; }
+  .reveal .driven-errors__code,
+  .reveal .oops__code {
+    font-size: 18px;
+    min-height: auto;
+    padding: 0 !important; }
+    .reveal .driven-errors__code-wrap,
+    .reveal .oops__code-wrap {
+      float: left;
+      line-height: 1.1;
+      width: 45%; }
+      .reveal .driven-errors__code-wrap--2,
+      .reveal .oops__code-wrap--2 {
+        float: right; }
+  .reveal .driven-errors__image,
+  .reveal .oops__image {
+    left: 50%;
+    right: auto;
+    top: 30%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50%; }
+  .reveal .make-a-spike__image {
+    max-width: 40%; }
+  .reveal .diving__header {
+    font-size: 2em;
+    margin-top: 50px; }
+  .reveal .diving__text {
+    font-size: 20px; }
+  .reveal .diving__digit {
+    top: -40%; }
+  .reveal .banch-of-links__header {
+    font-size: 0.6em; }
+  .reveal .banch-of-links__link {
+    font-size: 20px; }
+  .reveal .banch-of-links__text {
+    font-size: 18px; }
+  .reveal .twenty-years-ago__header {
+    font-size: 0.8em; }
+  .reveal .twenty-years-ago__image {
+    float: left;
+    margin-top: 30px;
+    max-width: 45%; }
+    .reveal .twenty-years-ago__image--xhr {
+      float: right; }
+  .reveal .winter__header {
+    font-size: 0.8em; }
+  .reveal .winter__image {
+    max-width: 50%; }
+  .reveal .dump__descriptor {
+    right: 20%; }
+  .reveal .dtrace__image--flamegraph {
+    top: 18%; }
+  .reveal .graphana__image--trace {
+    top: 30%; }
+  .reveal .graphana__subheader {
+    font-size: 0.5em; }
+  .reveal .graphana__header {
+    font-size: 0.8em; }
+  .reveal .graphana__subtitle {
+    top: 35%; }
+  .reveal .node-fibers__header {
+    font-size: 1em; }
+  .reveal .node-fibers__image {
+    margin: 0; }
+    .reveal .node-fibers__image--downloads {
+      width: 55%; }
+  .reveal .dots {
+    font-size: 5em;
+    line-height: 0.2; }
+  .reveal .tracking__header--0 {
+    font-size: 1.3em; }
+  .reveal .entrypoint__header,
+  .reveal .window-node__header {
+    font-size: 0.6em; }
+  .reveal .entrypoint__subheader,
+  .reveal .window-node__subheader {
+    font-size: 0.4em; }
+  .reveal .entrypoint__header, .reveal .entrypoint__subheader,
+  .reveal .window-node__header,
+  .reveal .window-node__subheader {
+    margin: 0; }
+  .reveal .entrypoint__code,
+  .reveal .window-node__code {
+    font-size: 14px; }
+    .reveal .entrypoint__code-wrap,
+    .reveal .window-node__code-wrap {
+      line-height: 1.1;
+      margin: 0 auto; }
+  .reveal .no-async__header {
+    font-size: 0.7em; }
+  .reveal .no-async__text {
+    font-size: 0.4em; }
+  .reveal .window-node__code-wrap {
+    margin-bottom: 20px; }
+  .reveal .event-loop__header {
+    margin-top: 0; }
+  .reveal .event-loop__image {
+    float: left; }
+  .reveal .event-loop p {
+    font-size: 0.7em; }
+  .reveal .event-loop-node__image--1 {
+    width: 50%; }
+  .reveal .event-loop-node__link--2, .reveal .event-loop-node__link--3 {
+    width: 30%; }
+  .reveal .event-loop-node__link--2 {
+    bottom: 10%;
+    left: auto;
+    right: 10px;
+    top: auto; }
+  .reveal .event-loop-node__link--3 {
+    bottom: 0;
+    left: 10px;
+    top: auto; }
+  .reveal .see-js__text, .reveal .see-js__link {
+    font-size: 22px; }
+  .reveal .indeed__header--top {
+    font-size: 25px;
+    margin-top: 0; }
+  .reveal .indeed__header--principal {
+    font-size: 30px; }
+  .reveal .indeed__text--1 {
+    font-size: 28px; }
+  .reveal .indeed__text--2 {
+    font-size: 26px; }
+  .reveal .continuation br,
+  .reveal .uncaughtException br {
+    display: none; }
+  .reveal .continuation__header,
+  .reveal .uncaughtException__header {
+    font-size: 40px;
+    margin: 0; }
+  .reveal .continuation__text,
+  .reveal .uncaughtException__text {
+    font-size: 25px; }
+  .reveal .continuation__code,
+  .reveal .uncaughtException__code {
+    font-size: 14px;
+    min-height: auto;
+    padding: 10px 5px !important; }
+    .reveal .continuation__code-wrap,
+    .reveal .uncaughtException__code-wrap {
+      line-height: 1; }
+  .reveal .CODE__header {
+    font-size: 70px; }
+  .reveal .CODE__digit {
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%); }
+  .reveal .CODE__image {
+    position: relative;
+    width: 50%;
+    z-index: -1; }
+  .reveal .no-limits__header {
+    font-size: 1.5em;
+    margin-top: 0; }
+  .reveal .no-limits__text {
+    font-size: 0.6em; }
+  .reveal .async-hooks br {
+    display: none; }
+  .reveal .async-hooks__text {
+    bottom: 0;
+    font-size: 0.5em; }
+  .reveal .hooks-list__hook {
+    font-size: 20px; }
+  .reveal .doc-example__header,
+  .reveal .example-work__header {
+    font-size: 30px;
+    margin: 0; }
+  .reveal .doc-example__code,
+  .reveal .example-work__code {
+    padding: 0 !important; }
+    .reveal .doc-example__code-wrap,
+    .reveal .example-work__code-wrap {
+      line-height: 1;
+      margin: 0 auto; }
+      .reveal .doc-example__code-wrap--1, .reveal .doc-example__code-wrap--2,
+      .reveal .example-work__code-wrap--1,
+      .reveal .example-work__code-wrap--2 {
+        width: 45%; }
+      .reveal .doc-example__code-wrap--1,
+      .reveal .example-work__code-wrap--1 {
+        float: left;
+        margin-top: 1%; }
+      .reveal .doc-example__code-wrap--2,
+      .reveal .example-work__code-wrap--2 {
+        float: right;
+        margin-top: 10%; }
+  .reveal .articles {
+    padding: 0 10px !important; }
+    .reveal .articles br {
+      display: none; }
+    .reveal .articles__header--1 {
+      font-size: 0.7em; }
+    .reveal .articles__header--2 {
+      font-size: 0.5em; }
+    .reveal .articles__header--important {
+      font-size: 1em; }
+    .reveal .articles__text {
+      font-size: 0.7em; }
+    .reveal .articles__link--lorenz {
+      bottom: 0;
+      top: auto;
+      width: 30%; }
+  .reveal .cls br {
+    display: none; }
+  .reveal .cls__text {
+    font-size: 0.54em; }
+  .reveal .cls__header {
+    font-size: 0.8em; }
+  .reveal .cls__subheader {
+    font-size: 0.5em; }
+  .reveal .cls__blockquote {
+    font-size: 0.6em; }
+  .reveal .cls-from-npm br {
+    display: none; }
+  .reveal .cls-from-npm__header {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  .reveal .cls-from-npm__text {
+    font-size: 0.6em; }
+  .reveal .cls-from-npm__code {
+    padding: 0; }
+    .reveal .cls-from-npm__code-wrap {
+      line-height: 1; }
+  .reveal .zonejs__header {
+    font-size: 0.6em; }
+  .reveal .zonejs__subheader {
+    font-size: 0.5em; }
+  .reveal .zonejs__link--sl {
+    left: 10px;
+    top: 100%; }
+  .reveal .zonejs__link--angular {
+    left: auto;
+    right: 10px;
+    text-align: right;
+    top: 120%; }
+  .reveal .zonejs__image--sl {
+    width: 50%; }
+  .reveal .zonejs__image--angular {
+    min-width: auto;
+    width: 50%; }
+  .reveal .git-dive__text--1 {
+    font-size: 0.5em; }
+  .reveal .git-dive__text--2 {
+    font-size: 1em; }
+  .reveal .git-dive__text--3 {
+    font-size: 0.8em; }
+  .reveal .git-dive__text--4 {
+    font-size: 0.55em; }
+  .reveal .limitations__header {
+    font-size: 40px; }
+  .reveal .async-listener__header {
+    font-size: 30px; }
+  .reveal .async-listener__image--norris {
+    bottom: 30%;
+    right: 10px;
+    top: auto;
+    width: 30%; }
+  .reveal .how-it-is-made br,
+  .reveal .what-we-can br,
+  .reveal .func-explanation br,
+  .reveal .problem br,
+  .reveal .working-concept br {
+    display: none; }
+  .reveal .how-it-is-made__header,
+  .reveal .what-we-can__header,
+  .reveal .func-explanation__header,
+  .reveal .problem__header,
+  .reveal .working-concept__header {
+    font-size: 30px; }
+  .reveal .how-it-is-made__code,
+  .reveal .how-it-is-made code,
+  .reveal .what-we-can__code,
+  .reveal .what-we-can code,
+  .reveal .func-explanation__code,
+  .reveal .func-explanation code,
+  .reveal .problem__code,
+  .reveal .problem code,
+  .reveal .working-concept__code,
+  .reveal .working-concept code {
+    font-size: 14px;
+    padding: 5px !important; }
+    .reveal .how-it-is-made__code-wrap,
+    .reveal .how-it-is-made code-wrap,
+    .reveal .what-we-can__code-wrap,
+    .reveal .what-we-can code-wrap,
+    .reveal .func-explanation__code-wrap,
+    .reveal .func-explanation code-wrap,
+    .reveal .problem__code-wrap,
+    .reveal .problem code-wrap,
+    .reveal .working-concept__code-wrap,
+    .reveal .working-concept code-wrap {
+      line-height: 1; }
+  .reveal .func-explanation__subheader {
+    font-size: 20px; }
+  .reveal .problem__code {
+    min-height: 150px; }
+    .reveal .problem__code-wrap {
+      float: left;
+      width: 45%; }
+      .reveal .problem__code-wrap--2 {
+        float: right; }
+  .reveal .fixing__header {
+    font-size: 50px; }
+  .reveal .chrome-debug__header {
+    font-size: 30px; }
+  .reveal .chrome-debug__link {
+    bottom: auto;
+    right: 1%;
+    top: 20%;
+    width: 40%; }
+  .reveal .trace-from-dtrace__header {
+    margin-bottom: 0; }
+    .reveal .trace-from-dtrace__header--1 {
+      font-size: 30px; }
+    .reveal .trace-from-dtrace__header--2 {
+      font-size: 25px; }
+  .reveal .trace-from-dtrace__subheader {
+    font-size: 20px; }
+  .reveal .trace-from-dtrace__link {
+    font-size: 16px; }
+  .reveal .asking-help br {
+    display: none; }
+  .reveal .asking-help__header, .reveal .asking-help__text {
+    display: block;
+    margin-bottom: 5px; }
+  .reveal .asking-help__image {
+    top: 40%;
+    width: 40%; }
+    .reveal .asking-help__image--3 {
+      top: calc(45% + 50px); }
+    .reveal .asking-help__image--4 {
+      bottom: 20%;
+      top: auto;
+      width: 50%; }
+  .reveal .solution__header,
+  .reveal .resume__header {
+    font-size: 40px; }
+  .reveal .resume__header {
+    margin-top: 0; }
+  .reveal .resume__digit {
+    font-size: 240px; }
+  .reveal .discussions br {
+    display: none; }
+  .reveal .discussions a {
+    height: 0; }
+  .reveal .discussions__header {
+    font-size: 30px;
+    margin-bottom: 0; }
+  .reveal .discussions__image {
+    margin: 0;
+    max-height: 100px;
+    width: auto; }
+    .reveal .discussions__image--martin {
+      right: 30%;
+      top: 50%;
+      width: 70px; }
+  .reveal .main-idea br {
+    display: none; }
+  .reveal .main-idea__subtitle--1 {
+    font-size: 20px; }
+  .reveal .main-idea__subtitle--2 {
+    font-size: 25px; }
+  .reveal .main-idea__text {
+    font-size: 40px; }
+  .reveal .i-know-how br {
+    display: none; }
+  .reveal .i-know-how__header {
+    font-size: 30px;
+    margin-top: 0; }
+  .reveal .i-know-how__digit {
+    font-size: 4em; }
+  .reveal .i-know-how__text {
+    font-size: 20px; }
+  .reveal .node-crew__header,
+  .reveal .special-thanks__header {
+    font-size: 30px; }
+  .reveal .node-crew__text,
+  .reveal .special-thanks__text {
+    font-size: 20px; }
+  .reveal .special-thanks__list {
+    font-size: 20px; } }
+
+@media (max-height: 700px) {
+  .reveal .introduction__header {
+    margin: 0; }
+  .reveal .introduction__text {
+    font-size: 18px; } }
+
+@media (max-height: 320px) and (orientation: landscape), (max-width: 320px) and (max-height: 533px) {
+  .reveal .introduction__separator {
+    margin: 5px auto; }
+  .reveal .introduction__header {
+    font-size: 25px;
+    margin-bottom: 20px; }
+  .reveal .introduction__link {
+    display: inline; }
+  .reveal .introduction__text nobr:not(:last-child) {
+    margin: 0; }
+  .reveal .introduction__text br {
+    display: none; } }
+
+@media (max-width: 320px) and (max-width: 768px) and (max-height: 480px) {
+  .reveal .introduction__logo--holyjs {
+    top: -90px; }
+  .reveal .introduction__logo--ukit-group {
+    top: -83px; }
+  .reveal .who-am-i__text {
+    font-size: 16px; }
+  .reveal .who-am-i__header {
+    font-size: 24px; } }
+
+@media (max-width: 320px) and (max-width: 768px) and (max-height: 568px) {
+  .reveal .introduction__logo--holyjs {
+    top: -90px; }
+  .reveal .introduction__logo--ukit-group {
+    top: -83px; } }
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .reveal .introduction__header {
+    font-size: 30px;
+    margin-bottom: 50px; }
+  .reveal .introduction__separator, .reveal .introduction__text {
+    margin: 0 auto; }
+  .reveal .introduction__video, .reveal .introduction__text {
+    float: none; }
+  .reveal .they-invented br {
+    display: none; }
+  .reveal .they-invented__header {
+    font-size: 2.8em;
+    margin-bottom: 30px; }
+  .reveal .they-invented__subheader {
+    font-size: 1.3px; }
+  .reveal .they-invented__code {
+    font-size: 25px; }
+  .reveal .hooks-list__hook {
+    font-size: 40px; }
+  .reveal .doc-example__code {
+    padding: 0 !important; }
+    .reveal .doc-example__code-wrap {
+      line-height: 1;
+      margin: 0 auto; }
+      .reveal .doc-example__code-wrap--1, .reveal .doc-example__code-wrap--2 {
+        float: none;
+        margin-top: 1%;
+        width: 90%; } }
+
+@media (min-height: 769px) and (max-height: 980px) {
+  .reveal .introduction__header {
+    margin-bottom: 30px; }
+  .reveal .introduction__text {
+    font-size: 28px; } }
+
+@media (max-height: 320px) and (orientation: landscape) {
+  .reveal .who-am-i__text {
+    font-size: 16px; }
+  .reveal .who-am-i__header {
+    font-size: 24px; } }
+
+@media (max-width: 400px) {
+  .reveal .team-mascots-me__header {
+    font-size: 30px; } }
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .reveal .dream__header {
+    font-size: 45px; }
+  .reveal .dream__text {
+    font-size: 30px; }
+  .reveal .dream__blockquote {
+    font-size: 28px; } }
+
+@media only screen and (max-width: 812px) and (max-height: 375px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .reveal .side-digit {
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); } }
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .reveal .they-invented br {
+    display: none; }
+  .reveal .they-invented__header {
+    font-size: 36px;
+    margin-bottom: 0; }
+  .reveal .they-invented__subheader {
+    font-size: 20px; }
+  .reveal .they-invented__code {
+    font-size: 16px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .reveal .schrodinger br {
+    display: none; }
+  .reveal .schrodinger__image--cat {
+    top: 40%;
+    width: 20%; }
+  .reveal .trace__header {
+    font-size: 1.7em; }
+  .reveal .trace__subheader {
+    font-size: 0.7em; }
+    .reveal .trace__subheader--small {
+      font-size: 0.4em; }
+  .reveal .code-example br {
+    display: none; }
+  .reveal .make-a-spike__image {
+    max-width: 25%; }
+  .reveal .nodejs-robot__image {
+    max-width: 40%; }
+  .reveal .dump__header {
+    margin-top: 0; }
+  .reveal .dump__descriptor {
+    top: 28%; }
+  .reveal .dtrace__text {
+    top: 30%; } }
+
+@media only screen and (max-width: 850px) and (max-height: 420px) and (orientation: landscape) {
+  .trace__header {
+    font-size: 1.7em; }
+  .trace__subheader {
+    font-size: 0.7em; }
+    .trace__subheader--small {
+      font-size: 0.4em; } }
 
 /*# sourceMappingURL=sourcemaps/style.css.map */
