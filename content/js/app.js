@@ -139,9 +139,9 @@ window.Reveal.addKeyBinding(221, function () {
 });
 
 
-window.Reveal.addEventListener('ready', configureControls);
-window.Reveal.addEventListener('slidechanged', configureControls);
-window.Reveal.addEventListener('menu-ready', configureControls);
+// window.Reveal.addEventListener('ready', configureControls);
+// window.Reveal.addEventListener('slidechanged', configureControls);
+// window.Reveal.addEventListener('menu-ready', configureControls);
 window.Reveal.initialize(options);
 
 
