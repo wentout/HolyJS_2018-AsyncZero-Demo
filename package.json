@@ -38,6 +38,8 @@
 		"serve-favicon": "^2.5.0"
 	},
 	"devDependencies": {
+		"glob-parent": "^6.0.2",
+		"grunt": "^1.5.2",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^6.0.0",
 		"gulp-postcss": "^9.0.0",
