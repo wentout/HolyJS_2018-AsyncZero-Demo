@@ -24,8 +24,8 @@ const modules = {};
 	// routes
 	[
 
-		// talk slides
-		'slides',
+		// talk slides were here
+		// 'slides',
 
 		// talk demo
 		'demo',

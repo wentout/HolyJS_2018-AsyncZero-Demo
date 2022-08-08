@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 
 mongoose
 	.connect('mongodb://localhost:27017/holyjs_demo', {
-		useNewUrlParser : true
+		useNewUrlParser : true,
+		useUnifiedTopology: true
 	})
 	.then(() => {
 		log('Connected to HolyJS Demo DB');
