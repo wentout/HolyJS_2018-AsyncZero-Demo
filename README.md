@@ -11,7 +11,7 @@ https://www.npmjs.com/package/context-dive
 My smiley shaved face on HolyJS website:
 https://holyjs-moscow.ru/en/talks/4lfrt7et7wwmuaaiequwcy/
 
-HolyJS youtube channel: https://www.youtube.com/channel/UC2Jwo4Q0s-ucjGseHP8XUSQ
+HolyJS youtube channel: https://www.youtube.com/watch?v=6Tg2UA4XaQY
 
 
 # Preparations
